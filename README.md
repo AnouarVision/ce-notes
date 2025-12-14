@@ -14,7 +14,9 @@ The content is accessible through a simple web interface, both on desktop and mo
 ---
 
 ## Live Version
-The project is available online via **GitHub Pages**:
+
+The project is available online via **GitHub Pages**:  
+https://anouarvision.github.io/ce-notes/
 
 ---
 
