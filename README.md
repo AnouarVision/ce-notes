@@ -1,8 +1,8 @@
-<h1 align="center">CE notes</h1>
-
 <div align="center">
   <img src="mascotte.png" alt="CE notes mascot" width="130">
 </div>
+
+<h1 align="center">CE notes</h1>
 
 ## Overview
 This repository contains notes and code related to **Computer Engineering** (UNIFI) and **Information Technology** (ITS Umbria Academy).
