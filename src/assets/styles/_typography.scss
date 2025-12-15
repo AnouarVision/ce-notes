@@ -1,34 +1,39 @@
+@use "./variables";
+
 body {
-  font-family: $font-main;
-  font-size: $fs-body;
-  color: $text-gray-300;
-  background-color: $bg-dark-1;
+  font-family: variables.$font-main;
+  font-size: variables.$fs-body;
+  color: variables.$text-gray-300;
+  background-color: variables.$bg-dark-1;
   line-height: 1.6;
 }
 
 h1,
 h2,
 h3 {
-  color: $text-white;
+  color: variables.$text-white;
   margin: 0;
 }
 
 h1 {
-  font-size: clamp($fs-hero-min, 6vw, $fs-hero-max);
+  font-size: clamp(
+    variables.$fs-hero-min,
+    6vw,
+    variables.$fs-hero-max);
   font-weight: 800;
 }
 
 h2 {
-  font-size: $fs-h2;
+  font-size: variables.$fs-h2;
   font-weight: 700;
 }
 
 p {
   margin: 0;
-  color: $text-gray-400;
+  color: variables.$text-gray-400;
 }
 
 small {
-  font-size: $fs-small;
-  color: $text-gray-500;
+  font-size: variables.$fs-small;
+  color: variables.$text-gray-500;
 }
