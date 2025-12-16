@@ -1,0 +1,73 @@
+@use "../../assets/styles/variables";
+@use "sass:color";
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  height: 64px;
+  background-color: variables.$bg-dark-1;
+  border-bottom: 1px solid variables.$border-color;
+
+  display: none;
+}
+
+.inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: variables.$text-white;
+}
+
+//Menu Button
+
+.menuButton {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+
+  background: none;
+  border: none;
+  color: variables.$text-white;
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    color 0.2s ease,
+    text-shadow 0.25s ease;
+
+  padding: 6px;
+}
+
+//Hover and Focus effects
+.menuButton:hover,
+.menuButton:focus-visible {
+  transform: scale(1.2);
+
+  color: variables.$primary;
+
+  text-shadow:
+    0 0 8px rgba(variables.$primary, 0.8),
+    0 0 16px rgba(variables.$primary, 0.6),
+    0 0 32px rgba(variables.$primary, 0.4);
+}
+
+//Click feedback
+.menuButton:active {
+  transform: scale(1.05);
+}
+
+
+//Mobile Navbar visible only on small screens
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+  }
+}

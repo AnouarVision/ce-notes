@@ -1,0 +1,108 @@
+@use "../../assets/styles/variables";
+@use "../../assets/styles/mixins";
+
+// Navbar Container
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  height: 64px;
+  background-color: variables.$bg-dark-1;
+  border-bottom: 1px solid variables.$border-color;
+}
+
+.inner {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: variables.$space-4;
+  padding-inline: variables.$space-5;
+}
+
+//Logo
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: variables.$text-white;
+}
+
+//Navigation
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: variables.$space-4;
+}
+
+.nav a {
+  position: relative;
+  font-size: 0.95rem;
+  color: variables.$text-gray-300;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: variables.$primary;
+  }
+
+  &.active {
+    color: variables.$primary;
+  }
+}
+
+
+//Actions
+.actions {
+  display: flex;
+  align-items: center;
+  gap: variables.$space-2;
+}
+
+.search {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  border-radius: variables.$radius-button-sm;
+
+  background-color: rgb(61, 57, 57);
+
+  color: variables.$text-gray-300;
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.1s ease;
+
+  .material-symbols-outlined {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  &:hover {
+    color: variables.$text-white;
+    background-color: rgb(110, 105, 105);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}

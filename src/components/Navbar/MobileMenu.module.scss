@@ -1,0 +1,85 @@
+@use "../../assets/styles/variables";
+
+// Mobile Menu Overlay and Slide-in Menu
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  z-index: 999;
+}
+
+.menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+
+  width: 80%;
+  max-width: 320px;
+  height: 100%;
+
+  background-color: variables.$bg-dark-2;
+  padding: variables.$space-3;
+
+  display: flex;
+  flex-direction: column;
+  gap: variables.$space-4;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+
+  padding: 12px 16px;
+  border-radius: variables.$radius-button-sm;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: variables.$text-white;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  background-color: variables.$bg-dark-1;
+  border-color: variables.$primary;
+
+  transform: translateX(4px);
+
+  box-shadow:
+    0 0 0 1px rgba(variables.$primary, 0.35),
+    0 0 20px rgba(variables.$primary, 0.45);
+}
+
+.menu a:active {
+  transform: translateX(2px);
+  box-shadow:
+    0 0 12px rgba(variables.$primary, 0.35);
+}
+
+//Open State
+
+.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.open .menu {
+  transform: translateX(0);
+}
