@@ -1,0 +1,16 @@
+@use "../../assets/styles/variables";
+
+.footer {
+  padding: variables.$space-4 0;
+  background-color: variables.$bg-dark-1;
+  border-top: 1px solid variables.$border-color;
+}
+
+.inner {
+  text-align: center;
+}
+
+.inner p {
+  font-size: variables.$fs-small;
+  color: variables.$text-gray-500;
+}
