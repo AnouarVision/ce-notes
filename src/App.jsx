@@ -8,7 +8,7 @@ import Exercises from "./pages/Exercises/Exercises";
 
 export default function App() {
   return(
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout><Home /> </Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
