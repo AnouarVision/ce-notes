@@ -15,8 +15,8 @@ The content is accessible through a simple web interface, both on desktop and mo
 
 ## Live Version
 
-The project is available online via **GitHub Pages**:  
-https://anouarvision.github.io/ce-notes/
+The project is available online via **Netlify**:  
+https://ce-notes.netlify.app/
 
 ---
 
