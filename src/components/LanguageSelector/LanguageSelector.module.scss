@@ -1,0 +1,83 @@
+@use "../../assets/styles/variables";
+
+.selector {
+  position: relative;
+}
+
+//Trigger
+.trigger {
+  width: 44px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: variables.$bg-dark-2;
+  border: 1px solid variables.$border-color;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+
+  &:hover {
+    border-color: variables.$primary;
+    box-shadow: 0 0 12px rgba(variables.$primary, 0.35);
+  }
+
+  span {
+    width: 120px;
+    height: 80px;
+  }
+}
+
+//Menu
+.menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+
+  min-width: 140px;
+  padding: variables.$space-2;
+
+  background-color: variables.$bg-dark-2;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$radius-card;
+
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  z-index: 100;
+}
+
+//Option
+.option {
+  width: 100%;
+  padding: 8px 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: variables.$text-white;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    background-color: variables.$bg-dark-1;
+    color: variables.$primary;
+  }
+
+  span:first-child {
+    font-size: 1.1rem;
+  }
+}
