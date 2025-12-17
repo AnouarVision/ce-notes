@@ -1,0 +1,155 @@
+@use "../../assets/styles/variables";
+
+//Layout
+.about {
+  padding: variables.$space-6 0;
+  background-color: variables.$bg-dark-2;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: variables.$space-5;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 20px;
+}
+
+//Hero
+.hero {
+  text-align: center;
+  max-width: 720px;
+
+  h1 {
+    font-size: variables.$fs-hero-max;
+    font-weight: 800;
+    color: variables.$text-white;
+    margin-bottom: variables.$space-2;
+  }
+}
+
+.highlight {
+  color: variables.$primary;
+}
+
+.subtitle {
+  font-size: variables.$fs-body;
+  color: variables.$text-gray-400;
+  line-height: 1.6;
+}
+
+//Cards
+.card {
+  width: 100%;
+
+  padding: variables.$space-5;
+  border-radius: variables.$radius-card;
+
+  background-color: variables.$bg-surface;
+  border: 1px solid variables.$border-color;
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: variables.$text-white;
+    margin-bottom: variables.$space-2;
+  }
+
+  p {
+    font-size: variables.$fs-body;
+    color: variables.$text-gray-300;
+    line-height: 1.7;
+    margin-bottom: variables.$space-2;
+  }
+}
+
+// Muted Card
+.cardMuted {
+  @extend .card;
+  background-color: variables.$bg-dark-1;
+
+  p {
+    font-size: variables.$fs-small;
+    color: variables.$text-gray-400;
+  }
+}
+
+//Core Values
+.values {
+  width: 100%;
+  text-align: center;
+}
+
+.valuesTitle {
+  font-size: variables.$fs-h2;
+  font-weight: 700;
+  color: variables.$text-white;
+  margin-bottom: variables.$space-4;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: variables.$space-4;
+}
+
+.valueCard {
+  padding: variables.$space-4;
+  border-radius: variables.$radius-card;
+
+  background-color: variables.$bg-surface;
+  border: 1px solid variables.$border-color;
+
+  text-align: left;
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: variables.$text-white;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-size: variables.$fs-small;
+    color: variables.$text-gray-400;
+    line-height: 1.6;
+  }
+}
+
+.check {
+  display: inline-block;
+  margin-bottom: variables.$space-2;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: variables.$primary;
+}
+
+//List
+.list {
+  margin-top: variables.$space-2;
+  padding-left: 1.2rem;
+
+  li {
+    font-size: variables.$fs-body;
+    color: variables.$text-gray-300;
+    margin-bottom: 6px;
+  }
+}
+
+// Responsive Design
+// Tablet: Reduce the grid to 2 columns
+@media (max-width: 1024px) {
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Mobile: Reduce the grid to 1 column for small screens
+@media (max-width: 600px) {
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}
