@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./LanguageSelector.module.scss";
 
 const LANGUAGES = {
@@ -13,9 +14,11 @@ const LANGUAGES = {
 };
 
 export default function LanguageSelector() {
+  const { i18n }= useTranslation();
   const [open, setOpen] = useState(false);
-  const [lang, setLang] = useState("en");
   const ref = useRef(null);
+
+  const lang = i18n.language;
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -32,16 +35,14 @@ export default function LanguageSelector() {
 
   // Handle language selection
   const handleSelect = (code) => {
-    setLang(code);
+    i18n.changeLanguage(code);
     setOpen(false);
   };
 
   return (
     <div className={styles.selector} ref={ref}>
-      {/* Trigger Button */}
       <button
         className={styles.trigger}
-        aria-haspopup="true"
         aria-expanded={open}
         aria-label={LANGUAGES[lang].label}
         onClick={() => setOpen((v) => !v)}
@@ -49,24 +50,18 @@ export default function LanguageSelector() {
         <span className={LANGUAGES[lang].flag} />
       </button>
 
-      {/* Dropdown Menu */}
       {open && (
         <div className={styles.menu}>
-          <button
-            className={styles.option}
-            onClick={() => handleSelect("it")}
-          >
-            <span className="fi fi-it" />
-            <span>Italian</span>
-          </button>
-
-          <button
-            className={styles.option}
-            onClick={() => handleSelect("en")}
-          >
-            <span className="fi fi-gb" />
-            <span>English</span>
-          </button>
+          {Object.entries(LANGUAGES).map(([code, l]) => (
+            <button
+              key={code}
+              className={styles.option}
+              onClick={() => handleSelect(code)}
+            >
+              <span className={l.flag} />
+              <span>{l.label}</span>
+            </button>
+          ))}
         </div>
       )}
     </div>

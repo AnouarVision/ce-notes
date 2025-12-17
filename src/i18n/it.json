@@ -1,0 +1,54 @@
+{
+  "about": {
+    "hero": {
+      "title": "Cos'è ",
+      "subtitle": "Un hub di studio personale per Ingegneria Informatica e Informatica, focalizzato su chiarezza, struttura e comprensione a lungo termine."
+    },
+
+    "mission": {
+      "title": "Missione",
+      "p1": "CE Notes nasce per raccogliere e organizzare i temi fondamentali dell’ingegneria informatica e delle discipline affini in un unico spazio coerente.",
+      "p2": "L’obiettivo non è la velocità o le scorciatoie, ma la costruzione di solide basi attraverso spiegazioni ben strutturate e ragionamento rigoroso."
+    },
+
+    "values": {
+      "title": "Valori fondamentali",
+      "clarity": {
+        "title": "Chiarezza",
+        "description": "I concetti complessi vengono spiegati in modo chiaro e accessibile. Nessun gergo superfluo, solo conoscenza diretta ed essenziale."
+      },
+      "practicality": {
+        "title": "Praticità",
+        "description": "La teoria incontra la pratica. Ogni concetto è supportato da esempi reali e implementazioni di codice funzionanti."
+      },
+      "organization": {
+        "title": "Organizzazione",
+        "description": "I contenuti sono strutturati con cura sia per una consultazione rapida sia per uno studio approfondito. Trova ciò che serve, quando serve."
+      },
+      "completeness": {
+        "title": "Completezza",
+        "description": "Dalle basi agli argomenti avanzati, viene coperta la conoscenza essenziale che ogni ingegnere dovrebbe possedere."
+      }
+    },
+
+    "coverage": {
+      "title": "Cosa copre CE Notes",
+      "description": "La piattaforma abbraccia le principali aree dell’ingegneria informatica e delle basi scientifiche, tra cui:",
+      "list": {
+        "cybersecurity": "Cybersecurity",
+        "dsa": "Algoritmi e strutture dati",
+        "databases": "Basi di dati",
+        "cs": "Fondamenti di informatica",
+        "algebra": "Geometria e algebra lineare",
+        "analysis": "Analisi matematica",
+        "networking": "Reti di calcolatori",
+        "physics": "Fisica"
+      }
+    },
+
+    "audience": {
+      "title": "A chi è rivolto",
+      "description": "CE Notes è pensato come riferimento strutturato e a lungo termine per studenti, autodidatti e professionisti, con un focus sui concetti fondamentali piuttosto che su tutorial frammentati."
+    }
+  }
+}

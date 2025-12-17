@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 
 import "./assets/styles/main.scss"
 import "flag-icons/css/flag-icons.min.css";
+import "./i18n";
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(

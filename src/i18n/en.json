@@ -1,0 +1,54 @@
+{
+  "about": {
+    "hero": {
+      "title": "About ",
+      "subtitle": "A personal study hub for Computer Engineering and Computer Science, focused on clarity, structure and long-term understanding."
+    },
+
+    "mission": {
+      "title": "Mission",
+      "p1": "CE Notes was created to collect and organize fundamental topics in computer engineering and related disciplines in a single, coherent place.",
+      "p2": "The goal is not speed or shortcuts, but building solid foundations through well-structured explanations and rigorous reasoning."
+    },
+
+    "values": {
+      "title": "Core Values",
+      "clarity": {
+        "title": "Clarity",
+        "description": "Complex concepts are explained in a clear and accessible way. No unnecessary jargon, just straightforward knowledge."
+      },
+      "practicality": {
+        "title": "Practicality",
+        "description": "Theory meets practice. Every concept is backed by real-world examples and working code implementations."
+      },
+      "organization": {
+        "title": "Organization",
+        "description": "Content is carefully structured for both quick reference and deep learning. Find what you need, when you need it."
+      },
+      "completeness": {
+        "title": "Completeness",
+        "description": "From fundamentals to advanced topics, the essential knowledge every engineer should know is covered."
+      }
+    },
+
+    "coverage": {
+      "title": "What CE Notes Covers",
+      "description": "The platform spans the core areas of computer engineering and scientific foundations, including:",
+      "list": {
+        "cybersecurity": "Cybersecurity",
+        "dsa": "Data Structures & Algorithms",
+        "databases": "Databases",
+        "cs": "Introductory Computer Science",
+        "algebra": "Linear Algebra & Geometry",
+        "analysis": "Mathematical Analysis",
+        "networking": "Networking",
+        "physics": "Physics"
+      }
+    },
+
+    "audience": {
+      "title": "Who This Is For",
+      "description": "CE Notes is designed as a structured, long-term reference for students, self-learners and professionals, focusing on fundamental concepts rather than fragmented tutorials."
+    }
+  }
+}
