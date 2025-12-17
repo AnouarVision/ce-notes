@@ -1,0 +1,113 @@
+@use "../../assets/styles/variables";
+@use "sass:color";
+
+.topics {
+  padding: variables.$space-6 variables.$space-4;
+  background-color: variables.$bg-dark-3;
+}
+
+.title {
+  text-align: center;
+  font-size: variables.$fs-h2;
+  font-weight: 700;
+  color: variables.$text-white;
+  margin-bottom: variables.$space-5;
+}
+
+// Grid container
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: variables.$space-4;
+}
+
+// Topic Card
+
+.card {
+  position: relative;
+  padding: variables.$space-4;
+  border-radius: variables.$radius-card;
+
+  background-color: variables.$bg-surface;
+  border: 1px solid variables.$border-color;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: variables.$text-white;
+    margin-bottom: variables.$space-2;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: variables.$text-gray-400;
+  }
+
+  // Subtle hover gradient overlay
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04),
+      transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: variables.$primary;
+
+    box-shadow:
+      0 12px 32px rgba(0, 0, 0, 0.45),
+      0 0 0 1px color.adjust(variables.$primary, $alpha: -0.65),
+      0 0 24px color.adjust(variables.$primary, $alpha: -0.75);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+//Icon Topic Logo
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: variables.$space-3;
+
+  font-size: 1.8rem;
+  color: variables.$text-gray-400;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.grid > .card:nth-child(odd) .logo {
+  color: variables.$primary;
+}
+
+
+// Responsive adjustments
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
