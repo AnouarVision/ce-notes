@@ -1,54 +1,123 @@
 {
-  "about": {
-    "hero": {
-      "title": "Cos'è ",
-      "subtitle": "Un hub di studio personale per Ingegneria Informatica e Informatica, focalizzato su chiarezza, struttura e comprensione a lungo termine."
+    "navbar": {
+        "links": {
+            "topics": "Aree di studio",
+            "exercises": "Esercizi"
+        },
+        "actions": {
+            "search": "Cerca"
+        }
     },
-
-    "mission": {
-      "title": "Missione",
-      "p1": "CE Notes nasce per raccogliere e organizzare i temi fondamentali dell’ingegneria informatica e delle discipline affini in un unico spazio coerente.",
-      "p2": "L’obiettivo non è la velocità o le scorciatoie, ma la costruzione di solide basi attraverso spiegazioni ben strutturate e ragionamento rigoroso."
+    "home": {
+        "hero": {
+            "subtitle": "Appunti tecnici ed esercizi su Ingegneria Informatica e Informatica.",
+            "cta": "Inizia a leggere"
+        },
+        "topics": {
+            "title": "Aree di studio",
+            "cybersecurity": {
+            "title": "Cybersecurity",
+            "description": "Principi fondamentali della sicurezza dei sistemi informatici, inclusi crittografia, controllo degli accessi, progettazione di sistemi sicuri, sicurezza delle reti e minacce informatiche moderne."
+            },
+            "dataStructures": {
+            "title": "Algoritmi e strutture dati",
+            "description": "Studio dell’efficienza algoritmica e dell’organizzazione dei dati, comprendente strutture dati fondamentali, tecniche algoritmiche, algoritmi di ricerca e ordinamento, algoritmi su grafi e analisi della complessità."
+            },
+            "databases": {
+            "title": "Basi di dati",
+            "description": "Fondamenti dei sistemi di basi di dati, inclusi modellazione dei dati, database relazionali, progettazione degli schemi e normalizzazione, SQL e concetti di base di concorrenza e affidabilità."
+            },
+            "introCs": {
+            "title": "Fondamenti di informatica",
+            "description": "Basi dell’informatica, dalla rappresentazione dei dati a basso livello e dall’esecuzione delle macchine fino alla programmazione ad alto livello, alla progettazione orientata agli oggetti e ai principali pattern software."
+            },
+            "linearAlgebra": {
+            "title": "Geometria e algebra lineare",
+            "description": "Vettori, trasformazioni lineari, matrici, sistemi di equazioni e interpretazioni geometriche nello spazio bidimensionale e tridimensionale."
+            },
+            "analysis": {
+            "title": "Analisi matematica",
+            "description": "Studio dell’analisi reale, dei limiti, delle successioni e delle serie, del calcolo differenziale e integrale, delle equazioni differenziali ordinarie e dell’analisi multivariata, includendo misura, integrazione e calcolo vettoriale."
+            },
+            "networking": {
+            "title": "Reti di calcolatori",
+            "description": "Trasmissione dei dati, protocolli di rete, modello ISO/OSI, instradamento, servizi di rete e concetti fondamentali di sicurezza."
+            },
+            "physics": {
+            "title": "Fisica",
+            "description": "Fondamenti della fisica classica, comprendenti cinematica e dinamica, sistemi di particelle, moto dei corpi rigidi, termodinamica, fenomeni elettrici e magnetici ed equazioni di Maxwell."
+            }
+        }
     },
+    "maintenance": {
+        "title": "Esercizi in manutenzione",
+        "description": "Questa sezione è attualmente in fase di sviluppo e revisione. Torna a controllare presto.",
 
-    "values": {
-      "title": "Valori fondamentali",
-      "clarity": {
-        "title": "Chiarezza",
-        "description": "I concetti complessi vengono spiegati in modo chiaro e accessibile. Nessun gergo superfluo, solo conoscenza diretta ed essenziale."
-      },
-      "practicality": {
-        "title": "Praticità",
-        "description": "La teoria incontra la pratica. Ogni concetto è supportato da esempi reali e implementazioni di codice funzionanti."
-      },
-      "organization": {
-        "title": "Organizzazione",
-        "description": "I contenuti sono strutturati con cura sia per una consultazione rapida sia per uno studio approfondito. Trova ciò che serve, quando serve."
-      },
-      "completeness": {
-        "title": "Completezza",
-        "description": "Dalle basi agli argomenti avanzati, viene coperta la conoscenza essenziale che ogni ingegnere dovrebbe possedere."
-      }
+        "status": "In manutenzione",
+        "message": "La piattaforma è in fase di miglioramento. Questa sezione sarà disponibile a breve.",
+
+        "eta": {
+        "label": "Tempo stimato",
+        "available": "Disponibile ora"
+        },
+
+        "questions": "Hai domande?",
+        "contact": "Contattami a",
+        "thanks": "Grazie per la pazienza."
     },
+    "about": {
+        "hero": {
+            "title": "Cos'è ",
+            "subtitle": "Un hub di studio personale per Ingegneria Informatica e Informatica, focalizzato su chiarezza, struttura e comprensione a lungo termine."
+        },
 
-    "coverage": {
-      "title": "Cosa copre CE Notes",
-      "description": "La piattaforma abbraccia le principali aree dell’ingegneria informatica e delle basi scientifiche, tra cui:",
-      "list": {
-        "cybersecurity": "Cybersecurity",
-        "dsa": "Algoritmi e strutture dati",
-        "databases": "Basi di dati",
-        "cs": "Fondamenti di informatica",
-        "algebra": "Geometria e algebra lineare",
-        "analysis": "Analisi matematica",
-        "networking": "Reti di calcolatori",
-        "physics": "Fisica"
-      }
+        "mission": {
+            "title": "Missione",
+            "p1": "CE Notes nasce per raccogliere e organizzare i temi fondamentali dell’ingegneria informatica e delle discipline affini in un unico spazio coerente.",
+            "p2": "L’obiettivo non è la velocità o le scorciatoie, ma la costruzione di solide basi attraverso spiegazioni ben strutturate e ragionamento rigoroso."
+        },
+
+        "values": {
+            "title": "Valori fondamentali",
+            "clarity": {
+            "title": "Chiarezza",
+            "description": "I concetti complessi vengono spiegati in modo chiaro e accessibile. Nessun gergo superfluo, solo conoscenza diretta ed essenziale."
+            },
+            "practicality": {
+            "title": "Praticità",
+            "description": "La teoria incontra la pratica. Ogni concetto è supportato da esempi reali e implementazioni di codice funzionanti."
+            },
+            "organization": {
+            "title": "Organizzazione",
+            "description": "I contenuti sono strutturati con cura sia per una consultazione rapida sia per uno studio approfondito. Trova ciò che serve, quando serve."
+            },
+            "completeness": {
+            "title": "Completezza",
+            "description": "Dalle basi agli argomenti avanzati, viene coperta la conoscenza essenziale che ogni ingegnere dovrebbe possedere."
+            }
+        },
+
+        "coverage": {
+            "title": "Cosa copre CE Notes",
+            "description": "La piattaforma abbraccia le principali aree dell’ingegneria informatica e delle basi scientifiche, tra cui:",
+            "list": {
+            "cybersecurity": "Cybersecurity",
+            "dsa": "Algoritmi e strutture dati",
+            "databases": "Basi di dati",
+            "cs": "Fondamenti di informatica",
+            "algebra": "Geometria e algebra lineare",
+            "analysis": "Analisi matematica",
+            "networking": "Reti di calcolatori",
+            "physics": "Fisica"
+            }
+        },
+
+        "audience": {
+            "title": "A chi è rivolto",
+            "description": "CE Notes è pensato come riferimento strutturato e a lungo termine per studenti, autodidatti e professionisti, con un focus sui concetti fondamentali piuttosto che su tutorial frammentati."
+        }
     },
-
-    "audience": {
-      "title": "A chi è rivolto",
-      "description": "CE Notes è pensato come riferimento strutturato e a lungo termine per studenti, autodidatti e professionisti, con un focus sui concetti fondamentali piuttosto che su tutorial frammentati."
+    "footer": {
+        "tagline": "Strumento di studio personale."
     }
-  }
 }

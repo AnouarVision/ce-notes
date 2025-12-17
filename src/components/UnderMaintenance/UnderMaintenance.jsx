@@ -1,11 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import styles from "./UnderMaintenance.module.scss";
 
 export default function UnderMaintenance({
-  title = "Exercises under maintenance",
-  description = "This section is currently being built and refined. Check back soon.",
+  titleKey = "maintenance.title",
+  descriptionKey = "maintenance.description",
   releaseDate,
 }) {
+  const { t } = useTranslation();
+
+  const title = t(titleKey);
+  const description = t(descriptionKey);
+
   const words = title.split(" ");
   const lastWord = words.pop();
   const baseTitle = words.join(" ");
@@ -60,24 +66,24 @@ export default function UnderMaintenance({
         <div className={styles.card}>
           <div className={styles.status}>
             <span className={styles.dot} />
-            UNDER MAINTENANCE
+            {t("maintenance.status").toUpperCase()}
           </div>
 
           <p className={styles.message}>
-            The platform is being improved. This section will be available shortly.
+            {t("maintenance.message")}
           </p>
 
           {remaining && (
             <p className={styles.et}>
-              Estimated time: {remaining}
+              {t("maintenance.eta.label")}: {remaining}
             </p>
           )}
         </div>
 
         <div className={styles.divider} />
 
-        <p className={styles.questions}> Have questions? </p>
-        Contact me to:{" "}
+        <p className={styles.questions}> {t("maintenance.questions")} </p>
+        {t("maintenance.contact")}{" "}
         <a
             href="mailto:anouarnaouri904@gmail.com"
             className={styles.email}
@@ -87,7 +93,7 @@ export default function UnderMaintenance({
 
 
         <p className={styles.thanks}>
-          Thank you for your patience.
+          {t("maintenance.thanks")}
         </p>
       </div>
     </section>

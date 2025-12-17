@@ -1,11 +1,13 @@
+import { useTranslation } from "react-i18next";
 import styles from "./Footer.module.scss";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className={styles.footer}>
       <div className={`${styles.inner} container`}>
         <p>
-          © {new Date().getFullYear()} CE notes. A personal study tool.
+          © {new Date().getFullYear()} CE notes. {t("footer.tagline")}
         </p>
       </div>
     </footer>

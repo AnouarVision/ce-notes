@@ -1,54 +1,124 @@
 {
-  "about": {
-    "hero": {
-      "title": "About ",
-      "subtitle": "A personal study hub for Computer Engineering and Computer Science, focused on clarity, structure and long-term understanding."
+    "navbar":{
+        "links": {
+            "topics": "Topics",
+            "exercises": "Exercises"
+        },
+        "actions": {
+            "search": "Search"
+        }
+    },
+    "home": {
+        "hero": {
+            "subtitle": "Technical notes and exercises across Computer Engineering and Computer Science domains.",
+            "cta": "Start reading"
+        },
+        "topics": {
+            "title": "Knowledge Domains",
+            "cybersecurity": {
+                "title": "Cybersecurity",
+                "description": "Core principles of computer security, including cryptography, access control, secure system design, network security, and modern cyber threats."
+            },
+            "dataStructures": {
+            "title": "Data Structures & Algorithms",
+            "description": "Study of algorithmic efficiency and data organization, covering core data structures, algorithmic techniques, searching and sorting, graph algorithms, and complexity analysis."
+            },
+            "databases": {
+            "title": "Databases",
+            "description": "Fundamentals of database systems, including data modeling, relational databases, schema design and normalization, SQL, and basic concepts of concurrency and reliability."
+            },
+            "introCs": {
+            "title": "Introductory Computer Science",
+            "description": "Foundations of computer science, from low-level data representation and machine execution to high-level programming, object-oriented design, and core software design patterns."
+            },
+            "linearAlgebra": {
+            "title": "Linear Algebra & Geometry",
+            "description": "Vectors, linear transformations, matrices, systems of equations, and geometric interpretations in two- and three-dimensional space."
+            },
+            "analysis": {
+            "title": "Mathematical Analysis",
+            "description": "Study of real analysis, limits, sequences and series, differential and integral calculus, ordinary differential equations, and multivariable analysis, including measure, integration, and vector calculus."
+            },
+            "networking": {
+            "title": "Networking",
+            "description": "Data transmission, network protocols, the ISO/OSI model, routing, network services, and fundamental security concepts."
+            },
+            "physics": {
+            "title": "Physics",
+            "description": "Foundations of classical physics, including kinematics and dynamics, systems of particles, rigid body motion, thermodynamics, electric and magnetic phenomena, and Maxwell’s equations."
+            }
+        }
+    },
+    "maintenance": {
+        "title": "Exercises under maintenance",
+        "description": "This section is currently being built and refined. Check back soon.",
+
+        "status": "Under maintenance",
+        "message": "The platform is being improved. This section will be available shortly.",
+
+        "eta": {
+            "label": "Estimated time",
+            "available": "Available now"
+        },
+
+        "questions": "Have questions?",
+        "contact": "Contact me at",
+        "thanks": "Thank you for your patience."
     },
 
-    "mission": {
-      "title": "Mission",
-      "p1": "CE Notes was created to collect and organize fundamental topics in computer engineering and related disciplines in a single, coherent place.",
-      "p2": "The goal is not speed or shortcuts, but building solid foundations through well-structured explanations and rigorous reasoning."
-    },
+    "about": {
+        "hero": {
+            "title": "About ",
+            "subtitle": "A personal study hub for Computer Engineering and Computer Science, focused on clarity, structure and long-term understanding."
+        },
 
-    "values": {
-      "title": "Core Values",
-      "clarity": {
-        "title": "Clarity",
-        "description": "Complex concepts are explained in a clear and accessible way. No unnecessary jargon, just straightforward knowledge."
-      },
-      "practicality": {
-        "title": "Practicality",
-        "description": "Theory meets practice. Every concept is backed by real-world examples and working code implementations."
-      },
-      "organization": {
-        "title": "Organization",
-        "description": "Content is carefully structured for both quick reference and deep learning. Find what you need, when you need it."
-      },
-      "completeness": {
-        "title": "Completeness",
-        "description": "From fundamentals to advanced topics, the essential knowledge every engineer should know is covered."
-      }
-    },
+        "mission": {
+            "title": "Mission",
+            "p1": "CE Notes was created to collect and organize fundamental topics in computer engineering and related disciplines in a single, coherent place.",
+            "p2": "The goal is not speed or shortcuts, but building solid foundations through well-structured explanations and rigorous reasoning."
+        },
 
-    "coverage": {
-      "title": "What CE Notes Covers",
-      "description": "The platform spans the core areas of computer engineering and scientific foundations, including:",
-      "list": {
-        "cybersecurity": "Cybersecurity",
-        "dsa": "Data Structures & Algorithms",
-        "databases": "Databases",
-        "cs": "Introductory Computer Science",
-        "algebra": "Linear Algebra & Geometry",
-        "analysis": "Mathematical Analysis",
-        "networking": "Networking",
-        "physics": "Physics"
-      }
-    },
+        "values": {
+            "title": "Core Values",
+            "clarity": {
+            "title": "Clarity",
+            "description": "Complex concepts are explained in a clear and accessible way. No unnecessary jargon, just straightforward knowledge."
+            },
+            "practicality": {
+            "title": "Practicality",
+            "description": "Theory meets practice. Every concept is backed by real-world examples and working code implementations."
+            },
+            "organization": {
+            "title": "Organization",
+            "description": "Content is carefully structured for both quick reference and deep learning. Find what you need, when you need it."
+            },
+            "completeness": {
+            "title": "Completeness",
+            "description": "From fundamentals to advanced topics, the essential knowledge every engineer should know is covered."
+            }
+        },
 
-    "audience": {
-      "title": "Who This Is For",
-      "description": "CE Notes is designed as a structured, long-term reference for students, self-learners and professionals, focusing on fundamental concepts rather than fragmented tutorials."
+        "coverage": {
+            "title": "What CE Notes Covers",
+            "description": "The platform spans the core areas of computer engineering and scientific foundations, including:",
+            "list": {
+            "cybersecurity": "Cybersecurity",
+            "dsa": "Data Structures & Algorithms",
+            "databases": "Databases",
+            "cs": "Introductory Computer Science",
+            "algebra": "Linear Algebra & Geometry",
+            "analysis": "Mathematical Analysis",
+            "networking": "Networking",
+            "physics": "Physics"
+            }
+        },
+
+        "audience": {
+            "title": "Who This Is For",
+            "description": "CE Notes is designed as a structured, long-term reference for students, self-learners and professionals, focusing on fundamental concepts rather than fragmented tutorials."
+        }
+    },
+    "footer": {
+        "tagline": "A personal study tool."
     }
-  }
 }

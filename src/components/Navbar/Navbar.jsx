@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import { NavLink, Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 import logo from "../../assets/icons/logo_ce_notes.png";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 export default function Navbar() {
+  const { t } = useTranslation();
   return (
     <nav className={styles.navbar}>
       <div className={`${styles.inner} container`}>
@@ -23,12 +25,12 @@ export default function Navbar() {
         <ul className={styles.nav}>
           <li>
             <NavLink to="/" end>
-              Topics
+              {t("navbar.links.topics")}
             </NavLink>
           </li>
           <li>
             <NavLink to="/exercises">
-              Exercises
+              {t("navbar.links.exercises")}
             </NavLink>
           </li>
           <li>
@@ -42,7 +44,7 @@ export default function Navbar() {
           <LanguageSelector />
           <button className={styles.search} aria-label="Search">
             <span className="material-symbols-outlined">search</span>
-            <span className={styles.searchText}>Search</span>
+            <span className={styles.searchText}>{t("navbar.actions.search")}</span>
           </button>
 
         </div>

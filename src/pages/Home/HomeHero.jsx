@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import styles from "./HomeHero.module.scss";
 
 export default function HomeHero() {
+  const { t } = useTranslation();
   return (
     <section className={styles.hero}>
       <div className={`${styles.inner} container`}>
@@ -11,10 +13,10 @@ export default function HomeHero() {
         </h1>
 
         <p className={styles.subtitle}>
-          Technical notes and exercises across CE and IT domains.
+          {t("home.hero.subtitle")}
         </p>
 
-        <button className={styles.cta}>Start Reading →</button>
+        <button className={styles.cta}>{t("home.hero.cta")} →</button>
       </div>
     </section>
   );
