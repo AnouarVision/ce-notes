@@ -18,16 +18,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding: 0 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
 }
 
 .logo {
   font-size: 1rem;
   font-weight: 700;
   color: variables.$text-white;
+  text-decoration: none;
 }
 
 //Menu Button
-
 .menuButton {
   font-size: 1.6rem;
   font-weight: 700;
@@ -63,7 +71,6 @@
 .menuButton:active {
   transform: scale(1.05);
 }
-
 
 //Mobile Navbar visible only on small screens
 @media (max-width: 768px) {
