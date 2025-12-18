@@ -1,0 +1,82 @@
+@use "../../assets/styles/variables";
+
+.wrapper {
+  margin-top: 0;
+}
+
+/* Trigger row */
+.trigger {
+  width: 100%;
+  padding: 14px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  color: variables.$text-white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.label {
+  opacity: 0.9;
+}
+
+/* Chevron */
+.chevron {
+  font-size: 22px;
+  opacity: 0.6;
+  transition: transform 0.2s ease;
+}
+
+[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+/* Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  margin-top: 6px;
+  padding-left: 6px;
+}
+
+.option {
+  width: 100%;
+  padding: 10px 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: variables.$bg-dark-1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: variables.$radius-button-sm;
+
+  color: variables.$text-white;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.option:hover {
+  background-color: variables.$bg-dark-2;
+  border-color: variables.$primary;
+}

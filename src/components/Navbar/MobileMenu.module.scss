@@ -21,7 +21,7 @@
 
   width: 80%;
   max-width: 320px;
-  height: 100%;
+  height: calc(100vh - 60px);
 
   background-color: variables.$bg-dark-2;
   padding: variables.$space-3;
@@ -30,8 +30,65 @@
   flex-direction: column;
   gap: variables.$space-4;
 
+  overflow-y: auto;
+
   transform: translateX(100%);
   transition: transform 0.3s ease;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  padding: 13px 14px;
+
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  background-color: variables.$bg-dark-1;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.searchContainer:focus-within {
+  border-color: variables.$primary;
+  box-shadow: 0 0 0 1px rgba(variables.$primary, 0.35);
+}
+
+.searchIcon {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+}
+
+.searchInput {
+  flex: 1;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: variables.$text-white;
+  font-size: 1rem;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ─ Divider */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .menu a {
