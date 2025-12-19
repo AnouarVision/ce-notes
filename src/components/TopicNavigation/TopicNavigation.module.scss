@@ -1,0 +1,78 @@
+@use "../../assets/styles/variables";
+@use "../../assets/styles/card";
+
+// Navigation container
+.navigation {
+  @include card.card;
+
+  position: sticky;
+  top: 96px;
+
+  display: flex;
+  flex-direction: column;
+  gap: variables.$space-4;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: variables.$text-white;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: variables.$space-2;
+}
+
+.button {
+  display: block;
+  width: 100%;
+
+  padding: 10px 14px;
+  border-radius: variables.$radius-button-sm;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  color: rgba(255, 255, 255, 0.75);
+  background-color: transparent;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.button:hover {
+  background-color: variables.$bg-dark-1;
+  color: variables.$text-white;
+}
+
+.active {
+  background-color: rgba(variables.$primary, 0.25);
+  color: variables.$primary;
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    position: static;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: variables.$space-2;
+  }
+
+  .button {
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}

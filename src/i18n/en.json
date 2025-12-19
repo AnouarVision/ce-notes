@@ -118,6 +118,139 @@
             "description": "CE Notes is designed as a structured, long-term reference for students, self-learners and professionals, focusing on fundamental concepts rather than fragmented tutorials."
         }
     },
+    "topicPage": {
+        "overviewTitle": "Overview",
+        "navigationTitle": "Navigation",
+        "relatedSectionsTitle": "Related Sections"
+    },
+    "topics": {
+        "physics": {
+            "title": "Physics",
+            "subtitle": "Fundamental laws of nature, motion and energy.",
+
+            "overview": "Classical physics provides a quantitative description of natural phenomena based on a small number of fundamental principles, expressed through precise mathematical relations.\n\nThe study begins with the introduction of the mathematical tools necessary for physical modeling, including scalar and vector quantities, differential and integral calculus, and ordinary differential equations of first and second order. These tools allow physical quantities to be defined operationally and related through well-defined physical laws.\n\nThe core of the subject is classical mechanics, where the motion of bodies is described within well-defined reference frames. Kinematics addresses the geometrical aspects of motion through the concepts of position, velocity, and acceleration, while dynamics establishes the connection between motion and its causes through Newton’s laws.\n\nThe treatment is extended from single particles to systems of particles and rigid bodies, introducing rotational motion, moments of inertia, rolling motion, collisions, and oscillatory phenomena.\n\nThe final part of the subject concerns thermodynamics, where macroscopic systems are described in terms of state variables and transformations, culminating in the concepts of entropy and irreversibility.",
+            "related": {
+                "mathTools": "Mathematical Tools for Physics",
+                "kinematics": "Kinematics",
+                "dynamics": "Dynamics and Newton’s Laws",
+                "workEnergy": "Work and Energy",
+                "systems": "Systems of Particles and Rigid Bodies",
+                "gravitation": "Gravitation",
+                "thermodynamics": "Thermodynamics"
+            }
+        },
+        "cybersecurity": {
+            "title": "Cybersecurity",
+            "subtitle": "Fundamental principles of computer and information security.",
+            "overview": "Cybersecurity provides a systematic treatment of the fundamental principles of computer and information security, with particular emphasis on the protection of information and distributed systems. The discipline is framed within the context of information systems and is grounded in the core security objectives of confidentiality, integrity, and availability.\n\nThe concepts of risk, threats, vulnerabilities, and attack vectors are introduced, together with models for risk analysis and conceptual tools for security evaluation. It addresses authentication, authorization, and access control mechanisms, analyzing discretionary, mandatory, and role-based models.\n\nA central part is devoted to formal security models and security policies, including classical models such as Bell–LaPadula, Biba, Clark–Wilson, and the Chinese Wall model, as well as secure design principles and their implications for the construction of trustworthy systems. The role of cryptography in system security is also introduced, covering symmetric and asymmetric encryption, digital signatures, public key infrastructures, and authentication protocols.\n\nIt further explores principles of secure design and defensive programming, analyzing major classes of software vulnerabilities and mitigation techniques. Common threats and attacks are examined, including various forms of malware, denial-of-service attacks, and social engineering techniques.\n\nThe treatment extends to network security, addressing secure network architectures, the use of cryptography for protecting communications, and defense mechanisms such as firewalls, intrusion detection systems, and traffic monitoring. Finally, advanced topics are introduced, including identity management, operating system and container security, and the foundations of smart contract and blockchain security.",
+            "related": {
+                "foundations": "Foundational Security Concepts",
+                "accessControl": "Authentication and Access Control",
+                "securityModels": "Security Models and Policies",
+                "cryptography": "Cryptography and Secure Protocols",
+                "secureDesign": "Secure Design Principles",
+                "defensiveProgramming": "Defensive Programming",
+                "threatsAttacks": "Threats and Attacks",
+                "networkSecurity": "Network Security",
+                "identityManagement": "Identity Management",
+                "systemSecurity": "System and Application Security"
+            }
+        },
+        "dataStructures": {
+            "title": "Algorithms and Data Structures",
+            "subtitle": "Design, analysis and structures for efficient data processing.",
+            "overview": "Algorithms and data structures introduces the fundamental principles for the design and analysis of efficient algorithms and the data structures used to organize information. The treatment begins with the formal definition of an algorithm and the study of complexity analysis criteria, introducing the concept of a fundamental operation, problem size, and Big-O notation, with particular attention to worst-case and average-case complexity, both in time and space.\n\nElementary internal data structures, such as arrays and linked lists, are then analyzed, focusing on their main operations and computational complexity. On this basis, abstract data structures are introduced, including stacks, queues, priority queues, and trees, as conceptual models for algorithm design.\n\nIt subsequently addresses search algorithms, including binary search, binary search trees and their balanced variants, such as AVL and 2–3 trees, as well as digital search techniques based on tries and randomized search methods.\n\nA central part is devoted to sorting algorithms, analyzing both elementary algorithms and more efficient methods such as Quicksort, Mergesort, and Heap sort, together with selection algorithms. The treatment concludes with the study of graphs, introducing common graph representations, traversal algorithms, and, in the case of weighted graphs, algorithms for computing minimum spanning trees.",
+            "related": {
+                "algorithmAnalysis": "Algorithm Analysis",
+                "elementaryStructures": "Elementary Data Structures",
+                "abstractStructures": "Abstract Data Structures",
+                "searchAlgorithms": "Search Algorithms",
+                "sortingAlgorithms": "Sorting Algorithms",
+                "graphs": "Graphs",
+                "weightedGraphs": "Weighted Graphs and Spanning Trees"
+            }
+        },
+        "databases": {
+            "title": "Database Systems",
+            "subtitle": "Models, languages and design of information systems.",
+            "overview": "Database systems introduces the fundamental principles of information systems and database management systems, analyzing the conceptual, logical, and physical models used for data representation and management. The treatment begins with the relational model, introducing the notion of relation and the main integrity constraints.\n\nRelational algebra is then presented as a formal language for querying data, analyzing fundamental operations such as union, intersection, difference, selection, projection, and join. On this basis, the SQL language is studied, including data types, table creation, integrity constraint specification, and data querying through the SELECT statement, with grouping, ordering, aggregate operators, nested queries, and views.\n\nA significant part is devoted to database design. The Entity–Relationship model is introduced as a tool for conceptual design, addressing entities, relationships, attributes, cardinalities, and generalizations. Logical design follows, with the analysis of redundancies, restructuring of ER schemas, and translation into the relational model.\n\nIt continues with the study of normal forms and functional dependencies, introducing decomposition techniques, minimal covers, and normalization procedures up to third normal form and Boyce–Codd normal form. Advanced topics such as active databases, triggers, and transaction management are also addressed. The use of a real system, such as PostgreSQL, provides practical case studies to contextualize the theoretical concepts.",
+            "related": {
+                "informationSystems": "Information Systems and Databases",
+                "relationalModel": "Relational Model",
+                "relationalAlgebra": "Relational Algebra",
+                "sql": "SQL Language",
+                "databaseDesign": "Database Design",
+                "normalization": "Normal Forms and Normalization",
+                "transactions": "Transactions and Active Databases",
+                "caseStudies": "Case Studies: PostgreSQL"
+            }
+        },
+        "introCs": {
+            "title": "Foundations of Computer Science",
+            "subtitle": "Information representation, programming, and data structures.",
+
+            "overview": "Foundations of computer science provide a systematic view of the principles underlying computing systems and programming. It introduces low-level representation of information, analyzing numerical data encoding, instruction representation, and processor architecture. Particular attention is devoted to the C programming language as a tool for understanding the relationship between software and hardware, including the processes of compilation, assembly, and execution.\n\nThe fundamental concepts that characterize a programming language are then introduced, including syntax, formal grammar, semantics, and syntactic structures. The C language is studied in depth, covering data types, variables and constants, operators and expressions, pointers, arrays, control statements, functions, and structured data.\n\nIt continues with the study of elementary data structures and associated programming paradigms, addressing lists in their different representations, as well as iteration and recursion. In this context, the C++ language is introduced, with particular reference to object-oriented programming, including classes and objects, data abstraction, inheritance, polymorphism, virtual functions, generic programming, and exception handling.\n\nThe treatment is completed with an analysis of the fundamental mechanisms of object-oriented programming, such as encapsulation, delegation, substitutability, and resource management. Finally, the principles underlying design patterns and programming idioms are introduced, with reference to recurring solutions such as RAII, Observer, Factory, Singleton, and Adapter.",
+
+            "related": {
+                "lowLevelRepresentation": "Low-Level Representation",
+                "cLanguage": "The C Programming Language",
+                "dataStructures": "Elementary Data Structures",
+                "objectOriented": "Object-Oriented Programming",
+                "designPrinciples": "Software Design Principles",
+                "designPatterns": "Fundamental Design Patterns"
+            }
+        },
+        "linearAlgebra": {
+            "title": "Linear Algebra and Geometry",
+            "subtitle": "Vector spaces, matrices, and linear transformations.",
+            "overview": "Linear algebra and geometry introduces the fundamental mathematical structures used to describe and analyze linear systems in scientific and engineering contexts. The treatment begins with the study of Euclidean spaces and vectors, addressing coordinates, scalar and vector products, and the tools of analytic geometry in space.\n\nLinear systems and their representation through matrices are then introduced, with particular emphasis on the Gaussian elimination method as a fundamental tool for solving systems and analyzing their properties. Matrix algebra is developed systematically, including basic operations, invertible matrices, and the computation of the inverse.\n\nIt continues with the study of vector spaces and linear transformations, introducing concepts such as kernel and image, generators and linear independence, dimension and rank. In this framework, the representation theorem, the rank–nullity theorem, and Grassmann’s formula are presented.\n\nA central part is devoted to determinants, their properties and computational techniques, including Laplace expansions and the Binet theorem, as well as the relationship between determinant and rank. Eigenvalues and eigenvectors are subsequently introduced, together with the study of similar matrices and the problem of canonical forms.\n\nThe treatment concludes with the study of Euclidean spaces and orthogonal structures, including orthonormal bases, orthogonal matrices, orthogonal projections, and the Gram–Schmidt algorithm, leading to the method of least squares. Finally, spectral theorems, both in the real and complex cases and the study of quadratic forms are presented.",
+            "related": {
+                "euclideanSpaces": "Euclidean Spaces and Vectors",
+                "linearSystems": "Linear Systems and Gaussian Elimination",
+                "matrixAlgebra": "Matrix Algebra",
+                "vectorSpaces": "Vector Spaces and Linear Transformations",
+                "determinants": "Determinants and Rank",
+                "eigenvalues": "Eigenvalues and Eigenvectors",
+                "orthogonality": "Orthogonality and Least Squares",
+                "spectralTheorems": "Spectral Theorems and Quadratic Forms"
+            }
+        },
+        "analysis": {
+            "title": "Mathematical Analysis",
+            "subtitle": "Real numbers, functions and infinitesimal calculus.",
+            "overview": "Mathematical analysis provides the theoretical foundations of infinitesimal calculus and the study of real-valued functions. The treatment begins with real numbers and their algebraic and order properties, introducing the concepts of supremum and infimum and the axiom of completeness as the basis of analysis.\n\nThe language and syntax of mathematics are then introduced, together with basic set theory and elementary logic, which are essential for the rigorous formulation of mathematical results. The study of real functions and their graphs forms the starting point for the analysis of limits, continuity, and differentiability.\n\nA central part is devoted to differential calculus in one variable, with applications to the qualitative study of functions and optimization problems. This is followed by the introduction of the Riemann integral and the fundamental theorem of calculus, which establishes the connection between differentiation and integration.\n\nIt also addresses the study of convex functions, Taylor’s formula, and asymptotic expansions as tools for function approximation. The treatment is completed with an introduction to ordinary differential equations, numerical sequences, and series, providing an essential foundation for further developments in analysis and its applications.",
+            "related": {
+                "realNumbers": "Real Numbers and Completeness",
+                "logicAndSets": "Logic and Set Theory",
+                "functions": "Real Functions",
+                "differentialCalculus": "Differential Calculus",
+                "optimization": "Optimization Problems",
+                "integration": "Riemann Integral",
+                "taylor": "Taylor Formula and Asymptotic Expansions",
+                "differentialEquations": "Ordinary Differential Equations",
+                "sequencesSeries": "Sequences and Series"
+            }
+        },
+        "networking": {
+            "title": "Networking",
+            "subtitle": "Principles of data communication and computer networks.",
+
+            "overview": "Networking studies the fundamental principles governing the transmission of information between interconnected computing systems. The subject introduces the concept of information and its measurement, the main network topologies, and the role of protocols as sets of rules that regulate communication between distributed entities.\n\nA significant part is devoted to data transmission, analyzing the nature of analog and digital signals, modulation and multiplexing techniques, the operation of modems, and communication interfaces. Issues related to coding, transmission errors, and the distinction between synchronous and asynchronous systems are also addressed.\n\nThe study of computer networks continues with the analysis of network structures, distinguishing between switched and dedicated networks, point-to-point and multipoint systems, and the main types of wide area networks (WANs). In this context, the ISO/OSI model is introduced as a conceptual framework for the design and analysis of network protocols.\n\nParticular attention is given to the lower and intermediate layers of the ISO/OSI stack. The data link layer is examined through the specifications of data link control protocols, including BSC, HDLC, SDLC, and PPP. The network layer addresses the IP protocol, the definition of subnets and interfaces, and routing configuration mechanisms, both static and dynamic.\n\nThe treatment is completed with the study of network services, including name management through host tables and DNS, access to network resources, and electronic mail services. Finally, the main aspects of network management and security are introduced, with reference to risk assessment, access control, firewalls, TCP wrappers, and network monitoring tools.",
+
+            "related": {
+                "informationTheory": "Information and Its Measurement",
+                "networkTopologies": "Network Topologies",
+                "protocols": "Communication Protocols",
+                "dataTransmission": "Data Transmission",
+                "osiModel": "ISO/OSI Model",
+                "dataLinkLayer": "Data Link Layer",
+                "networkLayer": "Network Layer and IP Protocol",
+                "networkServices": "Network Services",
+                "networkSecurity": "Network Security"
+            }
+        }
+
+  },
     "footer": {
         "tagline": "A personal study tool."
     }

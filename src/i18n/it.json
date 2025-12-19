@@ -16,51 +16,48 @@
         "topics": {
             "title": "Aree di studio",
             "cybersecurity": {
-            "title": "Cybersecurity",
-            "description": "Principi fondamentali della sicurezza dei sistemi informatici, inclusi crittografia, controllo degli accessi, progettazione di sistemi sicuri, sicurezza delle reti e minacce informatiche moderne."
+                "title": "Cybersecurity",
+                "description": "Principi fondamentali della sicurezza dei sistemi informatici, inclusi crittografia, controllo degli accessi, progettazione di sistemi sicuri, sicurezza delle reti e minacce informatiche moderne."
             },
             "dataStructures": {
-            "title": "Algoritmi e strutture dati",
-            "description": "Studio dell’efficienza algoritmica e dell’organizzazione dei dati, comprendente strutture dati fondamentali, tecniche algoritmiche, algoritmi di ricerca e ordinamento, algoritmi su grafi e analisi della complessità."
+                "title": "Algoritmi e strutture dati",
+                "description": "Studio dell’efficienza algoritmica e dell’organizzazione dei dati, comprendente strutture dati fondamentali, tecniche algoritmiche, algoritmi di ricerca e ordinamento, algoritmi su grafi e analisi della complessità."
             },
             "databases": {
-            "title": "Basi di dati",
-            "description": "Fondamenti dei sistemi di basi di dati, inclusi modellazione dei dati, database relazionali, progettazione degli schemi e normalizzazione, SQL e concetti di base di concorrenza e affidabilità."
+                "title": "Basi di dati",
+                "description": "Fondamenti dei sistemi di basi di dati, inclusi modellazione dei dati, database relazionali, progettazione degli schemi e normalizzazione, SQL e concetti di base di concorrenza e affidabilità."
             },
             "introCs": {
-            "title": "Fondamenti di informatica",
-            "description": "Basi dell’informatica, dalla rappresentazione dei dati a basso livello e dall’esecuzione delle macchine fino alla programmazione ad alto livello, alla progettazione orientata agli oggetti e ai principali pattern software."
+                "title": "Fondamenti di informatica",
+                "description": "Basi dell’informatica, dalla rappresentazione dei dati a basso livello e dall’esecuzione delle macchine fino alla programmazione ad alto livello, alla progettazione orientata agli oggetti e ai principali pattern software."
             },
             "linearAlgebra": {
-            "title": "Geometria e algebra lineare",
-            "description": "Vettori, trasformazioni lineari, matrici, sistemi di equazioni e interpretazioni geometriche nello spazio bidimensionale e tridimensionale."
+                "title": "Geometria e algebra lineare",
+                "description": "Vettori, trasformazioni lineari, matrici, sistemi di equazioni e interpretazioni geometriche nello spazio bidimensionale e tridimensionale."
             },
             "analysis": {
-            "title": "Analisi matematica",
-            "description": "Studio dell’analisi reale, dei limiti, delle successioni e delle serie, del calcolo differenziale e integrale, delle equazioni differenziali ordinarie e dell’analisi multivariata, includendo misura, integrazione e calcolo vettoriale."
+                "title": "Analisi matematica",
+                "description": "Studio dell’analisi reale, dei limiti, delle successioni e delle serie, del calcolo differenziale e integrale, delle equazioni differenziali ordinarie e dell’analisi multivariata, includendo misura, integrazione e calcolo vettoriale."
             },
             "networking": {
-            "title": "Reti di calcolatori",
-            "description": "Trasmissione dei dati, protocolli di rete, modello ISO/OSI, instradamento, servizi di rete e concetti fondamentali di sicurezza."
+                "title": "Reti di calcolatori",
+                "description": "Trasmissione dei dati, protocolli di rete, modello ISO/OSI, instradamento, servizi di rete e concetti fondamentali di sicurezza."
             },
             "physics": {
-            "title": "Fisica",
-            "description": "Fondamenti della fisica classica, comprendenti cinematica e dinamica, sistemi di particelle, moto dei corpi rigidi, termodinamica, fenomeni elettrici e magnetici ed equazioni di Maxwell."
+                "title": "Fisica",
+                "description": "Fondamenti della fisica classica, comprendenti cinematica e dinamica, sistemi di particelle, moto dei corpi rigidi, termodinamica, fenomeni elettrici e magnetici ed equazioni di Maxwell."
             }
         }
     },
     "maintenance": {
         "title": "Esercizi in manutenzione",
         "description": "Questa sezione è attualmente in fase di sviluppo e revisione. Torna a controllare presto.",
-
         "status": "In manutenzione",
         "message": "La piattaforma è in fase di miglioramento. Questa sezione sarà disponibile a breve.",
-
         "eta": {
-        "label": "Tempo stimato",
-        "available": "Disponibile ora"
+            "label": "Tempo stimato",
+            "available": "Disponibile ora"
         },
-
         "questions": "Hai domande?",
         "contact": "Contattami a",
         "thanks": "Grazie per la pazienza."
@@ -70,51 +67,174 @@
             "title": "Cos'è ",
             "subtitle": "Un hub di studio personale per Ingegneria Informatica e Informatica, focalizzato su chiarezza, struttura e comprensione a lungo termine."
         },
-
         "mission": {
             "title": "Missione",
             "p1": "CE Notes nasce per raccogliere e organizzare i temi fondamentali dell’ingegneria informatica e delle discipline affini in un unico spazio coerente.",
             "p2": "L’obiettivo non è la velocità o le scorciatoie, ma la costruzione di solide basi attraverso spiegazioni ben strutturate e ragionamento rigoroso."
         },
-
         "values": {
             "title": "Valori fondamentali",
             "clarity": {
-            "title": "Chiarezza",
-            "description": "I concetti complessi vengono spiegati in modo chiaro e accessibile. Nessun gergo superfluo, solo conoscenza diretta ed essenziale."
+                "title": "Chiarezza",
+                "description": "I concetti complessi vengono spiegati in modo chiaro e accessibile. Nessun gergo superfluo, solo conoscenza diretta ed essenziale."
             },
             "practicality": {
-            "title": "Praticità",
-            "description": "La teoria incontra la pratica. Ogni concetto è supportato da esempi reali e implementazioni di codice funzionanti."
+                "title": "Praticità",
+                "description": "La teoria incontra la pratica. Ogni concetto è supportato da esempi reali e implementazioni di codice funzionanti."
             },
             "organization": {
-            "title": "Organizzazione",
-            "description": "I contenuti sono strutturati con cura sia per una consultazione rapida sia per uno studio approfondito. Trova ciò che serve, quando serve."
+                "title": "Organizzazione",
+                "description": "I contenuti sono strutturati con cura sia per una consultazione rapida sia per uno studio approfondito. Trova ciò che serve, quando serve."
             },
             "completeness": {
-            "title": "Completezza",
-            "description": "Dalle basi agli argomenti avanzati, viene coperta la conoscenza essenziale che ogni ingegnere dovrebbe possedere."
+                "title": "Completezza",
+                "description": "Dalle basi agli argomenti avanzati, viene coperta la conoscenza essenziale che ogni ingegnere dovrebbe possedere."
             }
         },
-
         "coverage": {
             "title": "Cosa copre CE Notes",
             "description": "La piattaforma abbraccia le principali aree dell’ingegneria informatica e delle basi scientifiche, tra cui:",
             "list": {
-            "cybersecurity": "Cybersecurity",
-            "dsa": "Algoritmi e strutture dati",
-            "databases": "Basi di dati",
-            "cs": "Fondamenti di informatica",
-            "algebra": "Geometria e algebra lineare",
-            "analysis": "Analisi matematica",
-            "networking": "Reti di calcolatori",
-            "physics": "Fisica"
+                "cybersecurity": "Cybersecurity",
+                "dsa": "Algoritmi e strutture dati",
+                "databases": "Basi di dati",
+                "cs": "Fondamenti di informatica",
+                "algebra": "Geometria e algebra lineare",
+                "analysis": "Analisi matematica",
+                "networking": "Reti di calcolatori",
+                "physics": "Fisica"
             }
         },
-
         "audience": {
             "title": "A chi è rivolto",
             "description": "CE Notes è pensato come riferimento strutturato e a lungo termine per studenti, autodidatti e professionisti, con un focus sui concetti fondamentali piuttosto che su tutorial frammentati."
+        }
+    },
+    "topicPage": {
+        "overviewTitle": "Panoramica",
+        "navigationTitle": "Navigazione",
+        "relatedSectionsTitle": "Sezioni correlate"
+    },
+    "topics": {
+        "physics": {
+            "title": "Fisica",
+            "subtitle": "Leggi fondamentali della natura, del moto e dell’energia.",
+            "overview": "La fisica classica fornisce una descrizione quantitativa dei fenomeni naturali basata su un numero limitato di principi fondamentali, espressi mediante relazioni matematiche precise.\n\nLo studio ha inizio con l’introduzione degli strumenti matematici necessari alla modellizzazione dei fenomeni fisici, tra cui grandezze scalari e vettoriali, calcolo differenziale e integrale ed equazioni differenziali ordinarie del primo e del secondo ordine. Tali strumenti consentono di definire operativamente le grandezze fisiche e di metterle in relazione attraverso leggi ben determinate.\n\nIl nucleo centrale della disciplina è costituito dalla meccanica classica, nella quale il moto dei corpi viene descritto all’interno di sistemi di riferimento opportunamente definiti. La cinematica analizza gli aspetti geometrici del moto attraverso i concetti di posizione, velocità e accelerazione, mentre la dinamica stabilisce il legame tra il moto e le sue cause mediante le leggi di Newton. Particolare attenzione è dedicata alle forze, al lavoro, all’energia, alla quantità di moto e al momento angolare, insieme ai corrispondenti principi di conservazione, che rappresentano un quadro unificante per l’analisi dei sistemi fisici.\n\nLo studio viene esteso dal caso del punto materiale ai sistemi di punti materiali e ai corpi rigidi, introducendo il moto rotatorio, i momenti d’inerzia, il rotolamento, gli urti e i fenomeni oscillatori. Il concetto di forza centrale conduce naturalmente allo studio della gravitazione, delle leggi di Keplero e della distinzione tra massa inerziale e massa gravitazionale.\n\nLa parte finale è dedicata alla termodinamica, nella quale i sistemi macroscopici vengono descritti mediante variabili di stato e trasformazioni termodinamiche. Le leggi della termodinamica sono introdotte attraverso lo studio dei gas ideali, del calore, del lavoro e della conservazione dell’energia, culminando nei concetti di entropia e irreversibilità, che pongono limiti fondamentali ai processi fisici e alla conversione dell’energia.",
+            "related": {
+                "mathTools": "Strumenti matematici per la fisica",
+                "kinematics": "Cinematica",
+                "dynamics": "Dinamica e leggi di Newton",
+                "workEnergy": "Lavoro ed energia",
+                "systems": "Sistemi di punti materiali e corpi rigidi",
+                "gravitation": "Gravitazione",
+                "thermodynamics": "Termodinamica"
+            }
+        },
+        "cybersecurity": {
+            "title": "Cybersecurity",
+            "subtitle": "Principi fondamentali della sicurezza dei sistemi informatici.",
+            "overview": "Cybersecurity fornisce una trattazione sistematica dei principi fondamentali della sicurezza dei sistemi informatici, con particolare riferimento alla protezione delle informazioni e dei sistemi distribuiti. La disciplina è inquadrata nel contesto dei sistemi informativi e si fonda sui concetti di riservatezza, integrità e disponibilità come obiettivi primari della sicurezza.\n\nVengono introdotti i concetti di rischio, minaccia, vulnerabilità e vettore di attacco, insieme ai modelli di analisi del rischio e agli strumenti concettuali per la valutazione della sicurezza. Affronta i meccanismi di autenticazione, autorizzazione e controllo degli accessi, analizzando sia modelli discrezionali sia modelli obbligatori e basati sui ruoli.\n\nUna parte centrale è dedicata ai modelli di sicurezza formali e alle politiche di sicurezza, includendo modelli classici come Bell–LaPadula, Biba, Clark–Wilson e Chinese Wall, nonché i principi di progettazione sicura e le loro implicazioni nella realizzazione di sistemi affidabili. Viene inoltre introdotto il ruolo della crittografia nella sicurezza dei sistemi, considerando la cifratura simmetrica e asimmetrica, le firme digitali, le infrastrutture a chiave pubblica e i protocolli di autenticazione.\n\nApprofondisce i principi della progettazione sicura e della programmazione difensiva, analizzando le principali classi di vulnerabilità software e le tecniche di mitigazione. Vengono inoltre studiati i principali tipi di attacchi e minacce, incluse le forme di malware, gli attacchi di negazione del servizio e le tecniche di ingegneria sociale.\n\nLa trattazione si estende alla sicurezza delle reti, affrontando architetture di rete sicure, l’uso della crittografia per la protezione delle comunicazioni e i meccanismi di difesa quali firewall, sistemi di rilevamento delle intrusioni e monitoraggio del traffico. Infine, Introduce temi avanzati quali la gestione delle identità, la sicurezza dei sistemi operativi e dei container, nonché le basi della sicurezza dei contratti intelligenti e delle piattaforme blockchain.",
+            "related": {
+                "foundations": "Concetti fondamentali di sicurezza",
+                "accessControl": "Autenticazione e controllo degli accessi",
+                "securityModels": "Modelli e politiche di sicurezza",
+                "cryptography": "Crittografia e protocolli sicuri",
+                "secureDesign": "Principi di progettazione sicura",
+                "defensiveProgramming": "Programmazione difensiva",
+                "threatsAttacks": "Minacce e attacchi",
+                "networkSecurity": "Sicurezza delle reti",
+                "identityManagement": "Gestione delle identità",
+                "systemSecurity": "Sicurezza dei sistemi e delle applicazioni"
+            }
+        },
+        "dataStructures": {
+            "title": "Algoritmi e Strutture Dati",
+            "subtitle": "Progettazione, analisi e strutture per il trattamento efficiente dei dati.",
+            "overview": "Algoritmi e strutture dati introduce i principi fondamentali per la progettazione e l’analisi di algoritmi efficienti e delle strutture dati utilizzate per l’organizzazione delle informazioni. La trattazione inizia con la definizione formale di algoritmo e con lo studio dei criteri di analisi della complessità, introducendo il concetto di operazione fondamentale, la dimensione del problema e la notazione asintotica O grande, con particolare attenzione alla complessità nel caso peggiore e nel caso medio, sia in tempo che in spazio.\n\nVengono quindi analizzate le strutture dati elementari interne, come vettori e liste concatenate, studiandone le principali operazioni e la loro complessità computazionale. Su queste basi si introducono le strutture dati astratte, tra cui pile, code, code con priorità e alberi, come modelli concettuali per la progettazione di algoritmi.\n\nAffronta successivamente gli algoritmi di ricerca, includendo la ricerca binaria, gli alberi binari di ricerca e le loro varianti bilanciate, come gli alberi AVL e 2–3, nonché tecniche di ricerca digitale basate su trie e metodi di ricerca casuale.\n\nUna parte centrale è dedicata agli algoritmi di ordinamento, analizzando sia gli algoritmi elementari sia algoritmi più efficienti come Quicksort, Mergesort e Heap sort, oltre agli algoritmi di selezione. La trattazione si conclude con lo studio dei grafi, introducendo le principali rappresentazioni, gli algoritmi di visita e, nel caso di grafi pesati, gli algoritmi per il calcolo del minimo albero ricoprente.",
+            "related": {
+                "algorithmAnalysis": "Analisi degli algoritmi",
+                "elementaryStructures": "Strutture dati elementari",
+                "abstractStructures": "Strutture dati astratte",
+                "searchAlgorithms": "Algoritmi di ricerca",
+                "sortingAlgorithms": "Algoritmi di ordinamento",
+                "graphs": "Grafi",
+                "weightedGraphs": "Grafi pesati e alberi ricoprenti"
+            }
+        },
+        "databases": {
+            "title": "Basi di Dati",
+            "subtitle": "Modelli, linguaggi e progettazione di sistemi informativi.",
+            "overview": "Basi di dati introduce i principi fondamentali dei sistemi informativi e dei sistemi di gestione di basi di dati, analizzando i modelli concettuali, logici e fisici utilizzati per la rappresentazione e la gestione delle informazioni. La trattazione inizia con il modello relazionale, introducendo il concetto di relazione e i principali vincoli di integrità.\n\nViene quindi presentata l’algebra relazionale come linguaggio formale per l’interrogazione dei dati, analizzando le operazioni fondamentali quali unione, intersezione, differenza, selezione, proiezione e join. Su queste basi si sviluppa lo studio del linguaggio SQL, considerandone i tipi di dato, la creazione delle tabelle, la definizione dei vincoli di integrità e le interrogazioni attraverso il comando SELECT, incluse operazioni di raggruppamento, ordinamento, operatori aggregati, interrogazioni nidificate e viste.\n\nUna parte rilevante è dedicata alla progettazione delle basi di dati. Viene introdotto il modello Entity-Relationship come strumento per la progettazione concettuale, affrontando entità, relazioni, attributi, cardinalità e generalizzazioni. Segue la progettazione logica, con l’analisi delle ridondanze, la ristrutturazione degli schemi ER e la traduzione nel modello relazionale.\n\nSi prosegue con lo studio delle forme normali e delle dipendenze funzionali, introducendo le tecniche di decomposizione, la copertura minimale e le procedure di normalizzazione fino alla terza forma normale e alla forma normale di Boyce-Codd. Vengono infine affrontati temi avanzati quali le basi di dati attive, i trigger e la gestione delle transazioni. L’utilizzo di un sistema reale, come PostgreSQL, consente di contestualizzare i concetti teorici attraverso casi di studio.",
+            "related": {
+                "informationSystems": "Sistemi informativi e basi di dati",
+                "relationalModel": "Modello relazionale",
+                "relationalAlgebra": "Algebra relazionale",
+                "sql": "Il linguaggio SQL",
+                "databaseDesign": "Progettazione di basi di dati",
+                "normalization": "Forme normali e normalizzazione",
+                "transactions": "Transazioni e basi di dati attive",
+                "caseStudies": "Casi di studio: PostgreSQL"
+            }
+        },
+        "introCs": {
+            "title": "Fondamenti di Informatica",
+            "subtitle": "Rappresentazione dell’informazione, programmazione e strutture dati.",
+            "overview": "Fondamenti di informatica fornisce una visione sistematica dei principi alla base dei sistemi di calcolo e della programmazione. Si introduce la rappresentazione di basso livello dell’informazione, analizzando la codifica numerica dei dati, la rappresentazione delle istruzioni e l’architettura dei processori. Particolare attenzione è dedicata al linguaggio C come strumento per comprendere il legame tra software e hardware, includendo il processo di compilazione, assemblaggio ed esecuzione.\n\nVengono quindi introdotti i concetti fondamentali che caratterizzano un linguaggio di programmazione, quali sintassi, grammatica formale, semantica e strutture sintattiche. Il linguaggio C è studiato in modo approfondito, considerando tipi di dato, variabili e costanti, operatori ed espressioni, puntatori, array, istruzioni di controllo, funzioni e dati strutturati.\n\nSi prosegue con lo studio delle strutture dati elementari e dei paradigmi di programmazione associati, affrontando le liste nelle loro diverse rappresentazioni, l’iterazione e la ricorsione. In questo contesto viene introdotto il linguaggio C++, con particolare riferimento alla programmazione orientata agli oggetti, includendo classi e oggetti, astrazione dei dati, ereditarietà, polimorfismo, funzioni virtuali, programmazione generica e gestione delle eccezioni.\n\nLa trattazione si completa con l’analisi dei meccanismi fondamentali della programmazione orientata agli oggetti, quali incapsulamento, delega, sostituibilità e gestione delle risorse. Vengono infine introdotti i principi alla base dei design pattern e degli idiomi di programmazione, con riferimento a soluzioni ricorrenti come RAII, Observer, Factory, Singleton e Adapter.",
+            "related": {
+                "lowLevelRepresentation": "Rappresentazione di basso livello",
+                "cLanguage": "Il linguaggio C",
+                "dataStructures": "Strutture dati elementari",
+                "objectOriented": "Programmazione orientata agli oggetti",
+                "designPrinciples": "Principi di progettazione software",
+                "designPatterns": "Design pattern fondamentali"
+            }
+        },
+        "linearAlgebra": {
+            "title": "Geometria e Algebra Lineare",
+            "subtitle": "Strutture vettoriali, matrici e applicazioni lineari.",
+            "overview": "Geometria e algebra lineare introduce lo studio delle strutture matematiche fondamentali utilizzate per descrivere e analizzare sistemi lineari in ambito scientifico e ingegneristico. La trattazione inizia con lo studio dello spazio euclideo e dei vettori, affrontando il concetto di coordinate, il prodotto scalare e il prodotto vettoriale, e sviluppando gli strumenti della geometria analitica nello spazio.\n\nVengono quindi introdotti i sistemi lineari e la loro rappresentazione mediante matrici, con particolare riferimento al metodo di eliminazione di Gauss come strumento fondamentale per la risoluzione dei sistemi e lo studio delle loro proprietà. L’algebra delle matrici è analizzata in modo sistematico, includendo le operazioni fondamentali, le matrici invertibili e il calcolo dell’inversa.\n\nSi prosegue con lo studio degli spazi vettoriali e delle applicazioni lineari, introducendo concetti quali nucleo e immagine, generatori e indipendenza lineare, dimensione e rango. In questo contesto vengono presentati il teorema di rappresentazione, il teorema di nullità più rango e la formula di Grassmann.\n\nUna parte centrale è dedicata al determinante, alle sue proprietà e alle tecniche di calcolo, inclusi gli sviluppi di Laplace e il teorema di Binet, nonché alla relazione tra determinante e rango. Successivamente vengono introdotti autovalori e autovettori, lo studio delle matrici simili e il problema della forma canonica.\n\nLa trattazione si conclude con lo studio degli spazi euclidei e delle strutture ortogonali, includendo basi ortonormali, matrici ortogonali, proiezioni ortogonali e l’algoritmo di Gram-Schmidt, fino al metodo dei minimi quadrati. Vengono infine presentati i teoremi spettrali, sia nel caso reale che complesso e lo studio delle forme quadratiche.",
+            "related": {
+                "euclideanSpaces": "Spazi euclidei e vettori",
+                "linearSystems": "Sistemi lineari e metodo di Gauss",
+                "matrixAlgebra": "Algebra delle matrici",
+                "vectorSpaces": "Spazi vettoriali e applicazioni lineari",
+                "determinants": "Determinante e rango",
+                "eigenvalues": "Autovalori e autovettori",
+                "orthogonality": "Ortogonalità e minimi quadrati",
+                "spectralTheorems": "Teoremi spettrali e forme quadratiche"
+            }
+        },
+        "analysis": {
+            "title": "Analisi Matematica",
+            "subtitle": "Numeri reali, funzioni e calcolo infinitesimale.",
+            "overview": "Analisi matematica fornisce le basi teoriche del calcolo infinitesimale e dello studio delle funzioni reali. La trattazione inizia con lo studio dei numeri reali, delle loro proprietà algebriche e d’ordine, introducendo i concetti di estremo superiore e inferiore e l’assioma di continuità come fondamento dell’analisi.\n\nVengono quindi introdotti il linguaggio e la sintassi della matematica, la terminologia degli insiemi e gli elementi fondamentali della logica matematica, necessari per la formulazione rigorosa dei risultati. Lo studio delle funzioni reali e dei loro grafici costituisce il punto di partenza per l’analisi dei concetti di limite, continuità e derivabilità.\n\nUna parte centrale è dedicata al calcolo differenziale in una variabile, con applicazioni allo studio qualitativo delle funzioni e ai problemi di ottimizzazione. Segue l’introduzione dell’integrale di Riemann e del teorema fondamentale del calcolo, che stabilisce il legame tra integrazione e derivazione.\n\nAffronta inoltre lo studio delle funzioni convesse, la formula di Taylor e gli sviluppi asintotici come strumenti per l’approssimazione delle funzioni. La trattazione si completa con un’introduzione alle equazioni differenziali ordinarie, alle successioni e alle serie numeriche, fornendo una base essenziale per gli sviluppi successivi dell’analisi matematica e delle sue applicazioni.",
+            "related": {
+                "realNumbers": "Numeri reali e continuità",
+                "logicAndSets": "Logica e teoria degli insiemi",
+                "functions": "Funzioni reali",
+                "differentialCalculus": "Calcolo differenziale",
+                "optimization": "Problemi di ottimizzazione",
+                "integration": "Integrale di Riemann",
+                "taylor": "Formula di Taylor e sviluppi asintotici",
+                "differentialEquations": "Equazioni differenziali ordinarie",
+                "sequencesSeries": "Successioni e serie numeriche"
+            }
+        },
+        "networking": {
+            "title": "Networking",
+            "subtitle": "Principi della comunicazione dei dati e delle reti di calcolatori.",
+            "overview": "Il networking studia i principi fondamentali della trasmissione dell’informazione tra sistemi di calcolo interconnessi. L’argomento introduce il concetto di informazione e la sua misura, le principali topologie di rete e il ruolo dei protocolli come insieme di regole che governano la comunicazione tra entità distribuite.\n\nUna parte rilevante è dedicata alla trasmissione dei dati, analizzando la natura dei segnali analogici e digitali, le tecniche di modulazione e multiplazione, il funzionamento dei modem e delle interfacce di comunicazione. Vengono inoltre affrontati i problemi legati al codice, all’errore e alla distinzione tra sistemi sincroni e asincroni.\n\nLo studio delle reti di calcolatori prosegue con l’analisi delle strutture di rete, distinguendo tra reti commutate e dedicate, sistemi point-to-point e multipoint, e le principali tipologie di reti WAN. In questo contesto viene introdotto il modello ISO/OSI come riferimento concettuale per la progettazione e l’analisi dei protocolli di rete.\n\nParticolare attenzione è riservata ai livelli inferiori e intermedi dello stack ISO/OSI. Il secondo livello viene analizzato attraverso le specifiche dei protocolli di controllo del collegamento dati, tra cui BSC, HDLC, SDLC e PPP. Il terzo livello affronta il protocollo IP, la definizione delle sottoreti e delle interfacce, e i meccanismi di instradamento, sia statici che dinamici.\n\nLa trattazione si completa con lo studio dei servizi di rete, includendo la gestione dei nomi tramite host table e DNS, l’accesso alle risorse di rete e i servizi di posta elettronica. Vengono infine introdotti i principali aspetti di gestione e sicurezza delle reti, con riferimento alla valutazione dei rischi, al controllo degli accessi, ai firewall, ai TCP wrapper e agli strumenti di monitoraggio.",
+            "related": {
+                "informationTheory": "Informazione e sua misura",
+                "networkTopologies": "Topologie di rete",
+                "protocols": "Protocolli di comunicazione",
+                "dataTransmission": "Trasmissione dei dati",
+                "osiModel": "Modello ISO/OSI",
+                "dataLinkLayer": "Livello di collegamento dati",
+                "networkLayer": "Livello di rete e protocollo IP",
+                "networkServices": "Servizi di rete",
+                "networkSecurity": "Sicurezza delle reti"
+            }
         }
     },
     "footer": {

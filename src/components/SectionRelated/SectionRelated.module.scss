@@ -1,0 +1,58 @@
+@use "../../assets/styles/variables";
+@use "../../assets/styles/card";
+
+.related {
+  h2 {
+    margin-bottom: variables.$space-4;
+  }
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: variables.$space-4;
+}
+
+/* Button topic */
+.button {
+    background-color: #262b33;
+    border-radius: variables.$radius-card;
+    padding: variables.$space-4 variables.$space-5;
+    min-height: 64px;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: variables.$text-white;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.button:hover {
+  background: #464d58;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
