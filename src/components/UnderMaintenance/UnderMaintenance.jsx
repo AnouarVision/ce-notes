@@ -88,7 +88,7 @@ export default function UnderMaintenance({
             href="mailto:ce-notes@outlook.it"
             className={styles.email}
         >
-            anouarnaouri904@gmail.com
+            ce-notes@outlook.it
         </a>
 
 
