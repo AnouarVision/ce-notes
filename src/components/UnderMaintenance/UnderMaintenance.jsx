@@ -85,7 +85,7 @@ export default function UnderMaintenance({
         <p className={styles.questions}> {t("maintenance.questions")} </p>
         {t("maintenance.contact")}{" "}
         <a
-            href="mailto:anouarnaouri904@gmail.com"
+            href="mailto:ce-notes@outlook.it"
             className={styles.email}
         >
             anouarnaouri904@gmail.com
