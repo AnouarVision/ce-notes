@@ -1,0 +1,77 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/mixins" as *;
+
+.demo {
+  margin: $space-5 0;
+  padding: $space-4;
+  border-left: 4px solid $primary;
+  background: $bg-dark-2;
+  border-radius: $radius-card;
+
+  h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    color: $text-white;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $space-4;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart {
+  background: $bg-surface;
+  border: 1px solid $border-color;
+  border-radius: $radius-card;
+  padding: $space-3;
+
+  h5 {
+    margin-bottom: $space-2;
+    color: $primary;
+  }
+
+  p {
+    margin-top: $space-2;
+    font-size: $fs-small;
+    color: $text-gray-400;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+
+    line {
+      stroke: $text-gray-500;
+      stroke-width: 2;
+    }
+
+    text {
+      fill: $text-gray-500;
+      font-size: 12px;
+    }
+  }
+}
+
+.analog {
+  fill: none;
+  stroke: $text-gray-300;
+  stroke-width: 3;
+}
+
+.digital {
+  fill: none;
+  stroke: $primary;
+  stroke-width: 3;
+}
+
+.threshold {
+  stroke: $primary;
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}

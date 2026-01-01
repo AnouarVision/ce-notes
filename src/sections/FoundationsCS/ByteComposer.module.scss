@@ -1,0 +1,194 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/mixins" as *;
+
+.demoSection {
+  margin: $space-5 0;
+  padding: $space-4;
+  background: $bg-surface;
+  border: 1px solid $border-color;
+  border-radius: $radius-card;
+
+  h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    color: $primary;
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    padding: $space-3;
+  }
+
+  @media (max-width: 600px) {
+    padding: $space-2;
+    margin: $space-3 0;
+  }
+}
+
+.hint {
+  font-size: $fs-small;
+  color: $text-gray-500;
+  margin-bottom: $space-3;
+  text-align: left;
+
+  @media (max-width: 600px) {
+    font-size: calc($fs-small * 0.95);
+    margin-bottom: $space-2;
+  }
+}
+
+.byte {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+  justify-content: center;
+  margin-bottom: $space-3;
+
+  @media (max-width: 1024px) {
+    gap: $space-2;
+  }
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(70px, 1fr));
+    gap: $space-2;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: $space-2;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(4, minmax(60px, 1fr));
+    gap: $space-1;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bit {
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  border-radius: 0.6rem;
+  border: 1px solid $border-color;
+  background: $bg-dark-3;
+  color: $text-gray-400;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 10px rgba($primary, 0.4),
+      0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 1024px) {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    font-size: 0.95rem;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+  }
+}
+
+.on {
+  background: rgba($primary, 0.15);
+  border-color: $primary;
+  color: $primary;
+  box-shadow: 0 0 10px rgba($primary, 0.4);
+
+  &:hover {
+    box-shadow:
+      0 0 10px rgba($primary, 0.4),
+      0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+      box-shadow: 0 0 8px rgba($primary, 0.4);
+    }
+  }
+}
+
+.byteInfo {
+  text-align: center;
+  color: $text-gray-400;
+  margin-top: $space-3;
+
+  @media (max-width: 1024px) {
+    margin-top: $space-2;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 0.95rem;
+    margin-top: $space-2;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+}
+
+.value {
+  color: $primary;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
+}
+
+.note {
+  margin-top: $space-2;
+  font-size: $fs-small;
+  color: $text-gray-500;
+
+  @media (max-width: 600px) {
+    font-size: calc($fs-small * 0.95);
+    margin-top: $space-1;
+  }
+}

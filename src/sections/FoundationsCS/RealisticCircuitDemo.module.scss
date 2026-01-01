@@ -1,0 +1,236 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/mixins" as *;
+
+.demo {
+  margin: $space-5 0;
+  padding: $space-4;
+  border-radius: $radius-card;
+  border: 1px solid $border-color;
+  background: $bg-dark-2;
+}
+
+.head {
+  margin-bottom: $space-3;
+
+  h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    color: $text-white;
+  }
+
+  p {
+    margin: 0;
+    color: $text-gray-400;
+
+    strong {
+      color: $primary;
+      font-weight: 600;
+    }
+  }
+}
+
+.stage {
+  border-radius: $radius-card;
+  background: $bg-surface;
+  border: 1px solid $border-color;
+  padding: $space-3;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*@media (max-width: 700px) {
+  .svg {
+    min-height: 220px;
+  }
+}*/
+
+
+/* wires */
+.wireBase {
+  stroke: $border-color;
+  stroke-width: 10;
+  fill: none;
+  stroke-linecap: round;
+}
+
+.wireFlow {
+  stroke: $primary;
+  stroke-width: 6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-dasharray: 14 18;
+  opacity: 0;
+}
+
+.flowOn {
+  opacity: 0.95;
+  animation: dash 1.2s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -64;
+  }
+}
+
+/* battery */
+.smallLabel {
+  font-size: 14px;
+  fill: $text-gray-300;
+  font-weight: 600;
+}
+
+.polarity {
+  font-size: 16px;
+  fill: $text-gray-400;
+  font-weight: 700;
+}
+
+.batLong {
+  stroke: $text-gray-300;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.batShort {
+  stroke: $text-gray-400;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+/* switch */
+.switchGroup {
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+.node {
+  fill: $bg-dark-1;
+  stroke: $text-gray-300;
+  stroke-width: 3;
+}
+
+.switchMetal {
+  stroke: $text-gray-300;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.switchArm {
+  stroke: $text-gray-300;
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: all 220ms ease;
+}
+
+.armClosed {
+  stroke: $primary;
+}
+
+.hint {
+  font-size: 12px;
+  fill: $text-gray-500;
+}
+
+/* LED */
+.diode {
+  fill: rgba($primary, 0.12);
+  stroke: $text-gray-300;
+  stroke-width: 3;
+  transition: all 220ms ease;
+}
+
+.diodeOn {
+  fill: rgba($primary, 0.35);
+  stroke: $primary;
+}
+
+.diodeBar {
+  stroke: $text-gray-300;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.glow {
+  fill: transparent;
+  stroke: $border-color;
+  stroke-width: 2;
+  transition: all 220ms ease;
+}
+
+.glowOn {
+  stroke: $primary;
+  fill: rgba($primary, 0.25);
+  filter: drop-shadow(0 0 12px rgba($primary, 0.55));
+}
+
+.ledText {
+  font-size: 12px;
+  fill: $text-gray-300;
+  font-weight: 700;
+}
+
+/* readout */
+.readout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $space-2;
+  margin-top: $space-3;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: $bg-dark-2;
+  border: 1px solid $border-color;
+  border-radius: $radius-card;
+  padding: $space-2;
+}
+
+.k {
+  font-size: $fs-small;
+  color: $text-gray-500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.v {
+  font-size: $fs-body;
+  color: $text-gray-300;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .smallLabel {
+    font-size: 12px;
+  }
+
+  .polarity {
+    font-size: 14px;
+  }
+
+  .ledText {
+    font-size: 11px;
+  }
+
+  .wireBase {
+    stroke-width: 8;
+  }
+
+  .wireFlow {
+    stroke-width: 5;
+  }
+
+  .switchArm,
+  .switchMetal {
+    stroke-width: 5;
+  }
+}

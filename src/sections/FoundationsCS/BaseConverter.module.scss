@@ -1,0 +1,88 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/mixins" as *;
+
+.demoSection {
+  margin: $space-5 0;
+  padding: $space-4;
+  background: $bg-surface;
+  border: 1px solid $border-color;
+  border-radius: $radius-card;
+
+  h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    color: $primary;
+  }
+}
+
+.hint {
+  font-size: $fs-small;
+  color: $text-gray-500;
+  margin-bottom: $space-3;
+}
+
+/* LAYOUT */
+.numberDemo {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+}
+
+/* INPUT */
+.inputWrapper {
+  display: flex;
+}
+
+.input {
+  flex: 1;
+  padding: $space-2;
+  border-radius: 0.4rem;
+  border: 1px solid $border-color;
+  background: $bg-dark-3;
+  color: $text-gray-300;
+  font-size: $fs-body;
+  text-align: left;
+
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
+}
+
+/* RESULTS GRID */
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: $space-2;
+}
+
+/* CARD */
+.card {
+  background: $bg-dark-3;
+  border: 1px solid $border-color;
+  border-radius: 0.4rem;
+  padding: $space-2;
+  text-align: center;
+}
+
+/* LABEL */
+.label {
+  font-size: $fs-small;
+  color: $text-gray-500;
+  margin-bottom: 4px;
+}
+
+/* MAIN VALUE */
+.main {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $primary;
+}
+
+/* MONOSPACE (binario) */
+.mono {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $primary;
+  letter-spacing: 1px;
+}

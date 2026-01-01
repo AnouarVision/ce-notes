@@ -1,0 +1,165 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/mixins" as *;
+
+.demoSection {
+  margin: $space-5 0;
+  padding: $space-4;
+  background: $bg-surface;
+  border: 1px solid $border-color;
+  border-radius: $radius-card;
+
+  h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    color: $primary;
+    text-align: left;
+  }
+
+  @media (max-width: 600px) {
+    padding: $space-3;
+  }
+}
+
+
+.hint {
+  font-size: $fs-small;
+  color: $text-gray-500;
+  margin-bottom: $space-3;
+}
+
+/* BUTTON GRID */
+.asciiInput {
+  display: flex;
+  gap: $space-4;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: $space-3;
+
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space-2;
+  }
+}
+
+
+.charBtn {
+  width: 120px;
+  height: 60px;
+  border-radius: 0.6rem;
+  border: 1px solid $border-color;
+  background: $bg-dark-3;
+  color: $text-gray-300;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: $primary;
+    color: $primary;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    font-size: 1rem;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+}
+
+
+.active {
+  background: rgba($primary, 0.15);
+  border-color: $primary;
+  color: $primary;
+  box-shadow: 0 0 10px rgba($primary, 0.4);
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 10px rgba($primary, 0.4),
+      0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* OUTPUT GRID */
+.asciiOutput {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: $space-2;
+  margin-top: $space-3;
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* CARD */
+.card {
+  background: $bg-dark-3;
+  border: 1px solid $border-color;
+  border-radius: $radius-card;
+  padding: $space-2;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    padding: $space-2 $space-1;
+  }
+}
+
+/* LABEL */
+.label {
+  font-size: $fs-small;
+  color: $text-gray-500;
+  margin-bottom: 4px;
+}
+
+/* MAIN VALUE */
+.main {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $primary;
+
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+}
+
+/* MONOSPACE (binario) */
+.mono {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: $primary;
+  letter-spacing: 1px;
+
+  @media (max-width: 600px) {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    word-break: break-all;
+  }
+}
+
+
+.note {
+  margin-top: $space-1;
+  font-size: $fs-small;
+  color: $text-gray-500;
+}
