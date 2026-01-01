@@ -1,5 +1,5 @@
 {
-    "navbar":{
+    "navbar": {
         "links": {
             "topics": "Topics",
             "exercises": "Exercises"
@@ -20,99 +20,91 @@
                 "description": "Core principles of computer security, including cryptography, access control, secure system design, network security, and modern cyber threats."
             },
             "dataStructures": {
-            "title": "Data Structures & Algorithms",
-            "description": "Study of algorithmic efficiency and data organization, covering core data structures, algorithmic techniques, searching and sorting, graph algorithms, and complexity analysis."
+                "title": "Data Structures & Algorithms",
+                "description": "Study of algorithmic efficiency and data organization, covering core data structures, algorithmic techniques, searching and sorting, graph algorithms, and complexity analysis."
             },
             "databases": {
-            "title": "Databases",
-            "description": "Fundamentals of database systems, including data modeling, relational databases, schema design and normalization, SQL, and basic concepts of concurrency and reliability."
+                "title": "Databases",
+                "description": "Fundamentals of database systems, including data modeling, relational databases, schema design and normalization, SQL, and basic concepts of concurrency and reliability."
             },
             "introCs": {
-            "title": "Introductory Computer Science",
-            "description": "Foundations of computer science, from low-level data representation and machine execution to high-level programming, object-oriented design, and core software design patterns."
+                "title": "Introductory Computer Science",
+                "description": "Foundations of computer science, from low-level data representation and machine execution to high-level programming, object-oriented design, and core software design patterns."
             },
             "linearAlgebra": {
-            "title": "Linear Algebra & Geometry",
-            "description": "Vectors, linear transformations, matrices, systems of equations, and geometric interpretations in two- and three-dimensional space."
+                "title": "Linear Algebra & Geometry",
+                "description": "Vectors, linear transformations, matrices, systems of equations, and geometric interpretations in two- and three-dimensional space."
             },
             "analysis": {
-            "title": "Mathematical Analysis",
-            "description": "Study of real analysis, limits, sequences and series, differential and integral calculus, ordinary differential equations, and multivariable analysis, including measure, integration, and vector calculus."
+                "title": "Mathematical Analysis",
+                "description": "Study of real analysis, limits, sequences and series, differential and integral calculus, ordinary differential equations, and multivariable analysis, including measure, integration, and vector calculus."
             },
             "networking": {
-            "title": "Networking",
-            "description": "Data transmission, network protocols, the ISO/OSI model, routing, network services, and fundamental security concepts."
+                "title": "Networking",
+                "description": "Data transmission, network protocols, the ISO/OSI model, routing, network services, and fundamental security concepts."
             },
             "physics": {
-            "title": "Physics",
-            "description": "Foundations of classical physics, including kinematics and dynamics, systems of particles, rigid body motion, thermodynamics, electric and magnetic phenomena, and Maxwell’s equations."
+                "title": "Physics",
+                "description": "Foundations of classical physics, including kinematics and dynamics, systems of particles, rigid body motion, thermodynamics, electric and magnetic phenomena, and Maxwell’s equations."
             }
         }
     },
     "maintenance": {
         "title": "Exercises under maintenance",
         "description": "This section is currently being built and refined. Check back soon.",
-
         "status": "Under maintenance",
         "message": "The platform is being improved. This section will be available shortly.",
-
         "eta": {
             "label": "Estimated time",
             "available": "Available now"
         },
-
         "questions": "Have questions?",
         "contact": "Contact me at",
         "thanks": "Thank you for your patience."
     },
-
     "about": {
         "hero": {
             "title": "About ",
             "subtitle": "A personal study hub for Computer Engineering and Computer Science, focused on clarity, structure and long-term understanding."
         },
-
         "mission": {
             "title": "Mission",
             "p1": "CE Notes was created to collect and organize fundamental topics in computer engineering and related disciplines in a single, coherent place.",
             "p2": "The goal is not speed or shortcuts, but building solid foundations through well-structured explanations and rigorous reasoning."
         },
-
         "values": {
             "title": "Core Values",
             "clarity": {
-            "title": "Clarity",
-            "description": "Complex concepts are explained in a clear and accessible way. No unnecessary jargon, just straightforward knowledge."
+                "title": "Clarity",
+                "description": "Complex concepts are explained in a clear and accessible way. No unnecessary jargon, just straightforward knowledge."
             },
             "practicality": {
-            "title": "Practicality",
-            "description": "Theory meets practice. Every concept is backed by real-world examples and working code implementations."
+                "title": "Practicality",
+                "description": "Theory meets practice. Every concept is backed by real-world examples and working code implementations."
             },
             "organization": {
-            "title": "Organization",
-            "description": "Content is carefully structured for both quick reference and deep learning. Find what you need, when you need it."
+                "title": "Organization",
+                "description": "Content is carefully structured for both quick reference and deep learning. Find what you need, when you need it."
             },
             "completeness": {
-            "title": "Completeness",
-            "description": "From fundamentals to advanced topics, the essential knowledge every engineer should know is covered."
+                "title": "Completeness",
+                "description": "From fundamentals to advanced topics, the essential knowledge every engineer should know is covered."
             }
         },
-
         "coverage": {
             "title": "What CE Notes Covers",
             "description": "The platform spans the core areas of computer engineering and scientific foundations, including:",
             "list": {
-            "cybersecurity": "Cybersecurity",
-            "dsa": "Data Structures & Algorithms",
-            "databases": "Databases",
-            "cs": "Introductory Computer Science",
-            "algebra": "Linear Algebra & Geometry",
-            "analysis": "Mathematical Analysis",
-            "networking": "Networking",
-            "physics": "Physics"
+                "cybersecurity": "Cybersecurity",
+                "dsa": "Data Structures & Algorithms",
+                "databases": "Databases",
+                "cs": "Introductory Computer Science",
+                "algebra": "Linear Algebra & Geometry",
+                "analysis": "Mathematical Analysis",
+                "networking": "Networking",
+                "physics": "Physics"
             }
         },
-
         "audience": {
             "title": "Who This Is For",
             "description": "CE Notes is designed as a structured, long-term reference for students, self-learners and professionals, focusing on fundamental concepts rather than fragmented tutorials."
@@ -127,7 +119,6 @@
         "physics": {
             "title": "Physics",
             "subtitle": "Fundamental laws of nature, motion and energy.",
-
             "overview": "Classical physics provides a quantitative description of natural phenomena based on a small number of fundamental principles, expressed through precise mathematical relations.\n\nThe study begins with the introduction of the mathematical tools necessary for physical modeling, including scalar and vector quantities, differential and integral calculus, and ordinary differential equations of first and second order. These tools allow physical quantities to be defined operationally and related through well-defined physical laws.\n\nThe core of the subject is classical mechanics, where the motion of bodies is described within well-defined reference frames. Kinematics addresses the geometrical aspects of motion through the concepts of position, velocity, and acceleration, while dynamics establishes the connection between motion and its causes through Newton’s laws.\n\nThe treatment is extended from single particles to systems of particles and rigid bodies, introducing rotational motion, moments of inertia, rolling motion, collisions, and oscillatory phenomena.\n\nThe final part of the subject concerns thermodynamics, where macroscopic systems are described in terms of state variables and transformations, culminating in the concepts of entropy and irreversibility.",
             "related": {
                 "mathTools": "Mathematical Tools for Physics",
@@ -188,9 +179,7 @@
         "introCs": {
             "title": "Foundations of Computer Science",
             "subtitle": "Information representation, programming, and data structures.",
-
             "overview": "Foundations of computer science provide a systematic view of the principles underlying computing systems and programming. It introduces low-level representation of information, analyzing numerical data encoding, instruction representation, and processor architecture. Particular attention is devoted to the C programming language as a tool for understanding the relationship between software and hardware, including the processes of compilation, assembly, and execution.\n\nThe fundamental concepts that characterize a programming language are then introduced, including syntax, formal grammar, semantics, and syntactic structures. The C language is studied in depth, covering data types, variables and constants, operators and expressions, pointers, arrays, control statements, functions, and structured data.\n\nIt continues with the study of elementary data structures and associated programming paradigms, addressing lists in their different representations, as well as iteration and recursion. In this context, the C++ language is introduced, with particular reference to object-oriented programming, including classes and objects, data abstraction, inheritance, polymorphism, virtual functions, generic programming, and exception handling.\n\nThe treatment is completed with an analysis of the fundamental mechanisms of object-oriented programming, such as encapsulation, delegation, substitutability, and resource management. Finally, the principles underlying design patterns and programming idioms are introduced, with reference to recurring solutions such as RAII, Observer, Factory, Singleton, and Adapter.",
-
             "related": {
                 "lowLevelRepresentation": "Low-Level Representation",
                 "cLanguage": "The C Programming Language",
@@ -234,9 +223,7 @@
         "networking": {
             "title": "Networking",
             "subtitle": "Principles of data communication and computer networks.",
-
             "overview": "Networking studies the fundamental principles governing the transmission of information between interconnected computing systems. The subject introduces the concept of information and its measurement, the main network topologies, and the role of protocols as sets of rules that regulate communication between distributed entities.\n\nA significant part is devoted to data transmission, analyzing the nature of analog and digital signals, modulation and multiplexing techniques, the operation of modems, and communication interfaces. Issues related to coding, transmission errors, and the distinction between synchronous and asynchronous systems are also addressed.\n\nThe study of computer networks continues with the analysis of network structures, distinguishing between switched and dedicated networks, point-to-point and multipoint systems, and the main types of wide area networks (WANs). In this context, the ISO/OSI model is introduced as a conceptual framework for the design and analysis of network protocols.\n\nParticular attention is given to the lower and intermediate layers of the ISO/OSI stack. The data link layer is examined through the specifications of data link control protocols, including BSC, HDLC, SDLC, and PPP. The network layer addresses the IP protocol, the definition of subnets and interfaces, and routing configuration mechanisms, both static and dynamic.\n\nThe treatment is completed with the study of network services, including name management through host tables and DNS, access to network resources, and electronic mail services. Finally, the main aspects of network management and security are introduced, with reference to risk assessment, access control, firewalls, TCP wrappers, and network monitoring tools.",
-
             "related": {
                 "informationTheory": "Information and Its Measurement",
                 "networkTopologies": "Network Topologies",
@@ -249,9 +236,149 @@
                 "networkSecurity": "Network Security"
             }
         }
-
-  },
+    },
     "footer": {
         "tagline": "A personal study tool."
+    },
+    "lowLevelRepresentation": {
+        "hero": {
+            "titleStart": "Low-level ",
+            "titleHighlight": "representation",
+            "subtitle": "How computers handle information"
+        },
+        "sections": {
+            "title": "Table of contents",
+            "whyComputers": "Why computers don't speak like us",
+            "bitsBytes": "Bits, bytes and information capacity",
+            "numbersToSymbols": "From number to symbol: character encoding",
+            "dataRepresentation": "Data representation",
+            "numericTypes": "Numeric types in C language",
+            "charType": "The char type and character encoding",
+            "conventions": "Representation conventions",
+            "positionalCoding": "Positional coding"
+        },
+        "content": {
+            "whyComputersTitle": "Why computers don't speak like us",
+            "whyComputers": [
+                "A computer does not operate on concepts like letters, words, or meanings: it works exclusively on <strong> measurable physical phenomena</strong>. At the core of any digital system are <strong>electrical circuits</strong>, through which data is transmitted and stored. A real circuit can be in 2 fundamental states: <strong>closed</strong> (current flows) or <strong>open</strong> (no current).",
+                "This concept becomes clearer by observing what happens in a real circuit.",
+                "In hardware, these 2 conditions are realized and recognized through <strong>voltage levels</strong>: the presence of a voltage above a certain threshold indicates a closed circuit, while absence (or a very low voltage) indicates an open circuit. Unlike the analog world, where values can vary continuously, these states are <strong>discretized</strong>, i.e., intentionally reduced to a finite number of possibilities.",
+                "We can now see how a continuous voltage is transformed into only two states.",
+                "The choice to use <strong>only two distinct states</strong> is not random. Two-level systems (open/closed circuit, low/high voltage) are: easier to design, more stable over time, less sensitive to electrical noise and environmental variations.",
+                "In the presence of disturbances, it is much easier to correctly distinguish <strong>two well-separated states</strong> than many intermediate levels. For this reason, the physical behavior of the circuit is represented abstractly by associating these two states with two conventional symbols: 0 and 1. This gives birth to the <strong>binary system</strong>, which is the basis of all computer operation.",
+                "The single binary symbol, <strong>0</strong> or <strong>1</strong>, is called a <strong>bit</strong> (contraction of binary digit). The bit represents the smallest unit of information that a digital system can handle: a <strong>choice between two mutually exclusive alternatives</strong>, directly connected to the physical state of an electronic circuit."
+            ],
+            "bitsBytesTitle": "Bits, bytes and information capacity",
+            "bitsBytes": [
+                "To make information management easier, bits are not treated individually but <strong>grouped into fixed-size units</strong>. The most common unit is the <strong>byte</strong>, now defined as a sequence of <strong>8 bits</strong>.",
+                "A byte is not just an abstract concept: we can build it manually.",
+                "Historically, the term byte simply referred to a group of bits and <strong>did not have a universal size</strong>: in early architectures it could vary depending on the hardware design. Standardization on <strong>8 bits</strong> gradually emerged because this size was adequate for several fundamental purposes.",
+                "A group of 8 bits can represent <strong>2⁸ = 256 distinct configurations</strong>, enough to: encode a complete set of basic textual characters, represent small numerical values without more complex structures, efficiently address portions of memory.",
+                "Furthermore, many computer architectures are designed so that <strong>memory is addressed by byte</strong>, not by individual bits: each memory address refers to an 8-bit cell. This simplifies hardware design, memory management, and interaction with input/output devices."
+            ],
+            "numbersToSymbolsTitle": "From numbers to symbols: character encoding",
+            "numbersToSymbols": [
+                "At this point, a crucial problem arises: if the computer stores and manipulates only binary numbers, <strong>how can it represent abstract symbols like letters, digits or punctuation marks?</strong> The answer is <strong>encoding</strong>: a shared convention that establishes a correspondence between: a graphic symbol, a numeric value, a sequence of bits.",
+                "In other words, a letter is not seen by the computer as a letter, but as a number to which <strong>we assign a symbolic meaning</strong>."
+            ],
+            "dataRepresentationTitle": "Data representation",
+            "dataRepresentation": [
+                "When writing a program, one of the fundamental problems is to determine <strong>how to represent information inside the computer</strong>. Any data processed by software, regardless of its complexity, must be translated into a form compatible with hardware, i.e., <strong>sequences of bits</strong>.",
+                "Conceptually, the data manipulated by a program can be reduced to <strong>two main categories</strong>: data representing <strong>numeric values</strong>, data representing <strong>textual or symbolic information</strong>.",
+                "These two categories also reflect the way information is traditionally recorded and transmitted in human culture: through <strong>numbers</strong> and <strong>symbols</strong>."
+            ],
+            "numericTypesTitle": "Numeric types in C",
+            "numericTypes": [
+                "In the C language, the distinction between numbers is explicit and assigned to well-defined types, including: <strong>int</strong>, <strong>float</strong>, <strong>double</strong>.",
+                "In all these cases, what the computer stores is not the number as an abstract mathematical concept, but a <strong>binary encoding</strong> that represents or approximates that value according to precise rules defined by the language and architecture."
+            ],
+            "charTypeTitle": "The char type and character encoding",
+            "charType": [
+                "In programming languages, a single character is represented using the <strong>char</strong> type. A char does not directly contain a letter, but a <strong>numeric value</strong>.",
+                "The meaning of this value depends on a <strong>character encoding table</strong>, which establishes the association between numbers and graphic symbols. In an encoding like <strong>ASCII</strong>, for example, a certain numeric value corresponds to the letter 'A', another to the letter 'B', and so on."
+            ],
+            "conventionsTitle": "Representation conventions",
+            "conventions": [
+                "In general, data representation inside a computer results from the combination of multiple <strong>formal conventions</strong>, including: the <strong>positionality</strong> of the encoding, the <strong>number base</strong> used, the <strong>number of digits</strong> employed, <strong>sign encoding</strong> for negative numbers, representation of <strong>fractional parts</strong> and rational values."
+            ],
+            "positionalCodingTitle": "Positional coding",
+            "positionalCoding": [
+                "To represent numbers, number systems use a finite set of <strong>elementary digits</strong>, called the <strong>base</strong>. In daily life, we are accustomed to the <strong>decimal base</strong>, which uses digits from 0 to 9. With these digits, it is possible to represent the first ten values directly; to represent larger numbers, <strong>sequences of digits</strong> are used.",
+                "In a positional numbering system, the meaning of a digit does <strong>not depend solely on its value</strong> but also on its <strong>position</strong> within the number. For this reason, numbers made up of the same digits but arranged in a different order represent different values: for example, 125 and 315 do not indicate the same quantity.",
+                "Each position within the number is associated with a <strong>weight</strong>, which depends on the base of the numbering system. Moving from right to left, the weight of the digits increases regularly, according to the chosen base. The rightmost digit is called the <strong>least significant digit</strong>, while the leftmost is the <strong>most significant digit</strong>."
+            ]
+        },
+        "realisticCircuitDemo": {
+            "title": "Electric Circuit (diagram)",
+            "description": "Click on the switch: when the circuit is closed, current flows and the LED lights up.",
+            "switch": {
+                "label": "Switch",
+                "hint": "(click)"
+            },
+            "battery": {
+                "label": "Battery"
+            },
+            "led": {
+                "on": "ON",
+                "off": "OFF"
+            },
+            "readout": {
+                "circuit": "Circuit",
+                "voltage": "Voltage",
+                "bit": "Bit"
+            },
+            "status": {
+                "closed": {
+                    "circuit": "Closed",
+                    "voltage": "High",
+                    "bit": "1"
+                },
+                "open": {
+                    "circuit": "Open",
+                    "voltage": "Low",
+                    "bit": "0"
+                }
+            }
+        },
+        "signalDiscretizationDemo": {
+            "title": "Signal Discretization",
+            "analog": {
+                "title": "Analog Signal",
+                "description": "The voltage varies <strong>continuously</strong> and is affected by noise.",
+                "yAxis": "V",
+                "xAxis": "t"
+            },
+            "digital": {
+                "title": "Digital Signal (discretized)",
+                "description": "The signal is <strong>reduced to two levels</strong>: above or below the threshold.",
+                "threshold": "Threshold",
+                "yAxis": "V",
+                "xAxis": "t"
+            }
+        },
+        "byteComposer": {
+            "title": "Compose a Byte",
+            "hint": "Click on bits to toggle them",
+            "decimalValue": "Decimal Value",
+            "note": "This byte can represent 256 values (from 0 to 255)",
+            "bit": "Bit {{position}}"
+        },
+        "asciiConverter": {
+            "title": "Convert letters to numbers (ASCII)",
+            "hint": "Click on a letter to discover its ASCII value",
+            "characterLabel": "Character",
+            "decimalLabel": "Decimal",
+            "binaryLabel": "Binary",
+            "hexLabel": "Hexadecimal"
+        },
+        "baseConverter": {
+            "title": "Convert Between Number Bases",
+            "hint": "Enter a number in decimal",
+            "inputPlaceholder": "Enter a number",
+            "decimal": "Decimal",
+            "binary": "Binary",
+            "hexadecimal": "Hexadecimal",
+            "octal": "Octal"
+        }
     }
 }

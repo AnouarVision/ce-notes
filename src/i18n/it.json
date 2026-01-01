@@ -239,5 +239,146 @@
     },
     "footer": {
         "tagline": "Strumento di studio personale."
+    },
+    "lowLevelRepresentation": {
+        "hero": {
+            "titleStart": "Rappresentazione di ",
+            "titleHighlight": "basso livello",
+            "subtitle": "Come i computer gestiscono l'informazione"
+        },
+        "sections": {
+            "title": "Mappa dei contenuti",
+            "whyComputers": "Perché il computer non parla come noi",
+            "bitsBytes": "Bit, byte e capacità informativa",
+            "numbersToSymbols": "Dal numero al simbolo: la codifica dei caratteri",
+            "dataRepresentation": "Rappresentazione dei dati",
+            "numericTypes": "Tipi numerici nel linguaggio C",
+            "charType": "Il tipo char e la codifica dei caratteri",
+            "conventions": "Convenzioni di rappresentazione",
+            "positionalCoding": "Codifica posizionale"
+        },
+        "content": {
+            "whyComputersTitle": "Perché i computer non parlano come noi",
+            "whyComputers": [
+                "Un computer non opera su concetti come lettere, parole o significati: lavora esclusivamente su <strong>fenomeni fisici misurabili</strong>. Alla base di ogni sistema di calcolo digitale ci sono <strong>circuiti elettrici</strong>, attraverso i quali vengono trasmessi e memorizzati i dati. Un circuito elettrico può trovarsi in 2 condizioni fondamentali: <strong>chiuso</strong>, quando è attraversato da una corrente elettrica, oppure <strong>aperto</strong>, quando la corrente non passa.",
+                "Questo concetto diventa più chiaro osservando cosa accade in un circuito reale.",
+                "Nell'hardware queste 2 condizioni vengono realizzate e riconosciute attraverso <strong>livelli di tensione</strong>: la presenza di una tensione superiore a una certa soglia indica un circuito chiuso, mentre l’assenza (o una tensione molto bassa) indica un circuito aperto. A differenza del mondo analogico, in cui i valori possono variare in modo continuo, questi stati vengono <strong>discretizzati</strong>, cioè ridotti intenzionalmente a un numero finito di possibilità.",
+                "Possiamo ora osservare come una tensione continua venga trasformata in due soli stati.",
+                "La scelta di utilizzare <strong>solo due stati distinti</strong> non è casuale. Sistemi basati su due livelli (circuito aperto/chiuso, tensione bassa/alta) sono: più semplici da progettare, più stabili nel tempo, meno sensibili al rumore elettrico e alle variazioni ambientali.",
+                "In presenza di disturbi, infatti, è molto più facile distinguere correttamente <strong>due stati ben separati</strong> che non molti livelli intermedi. Per questo motivo, il comportamento fisico del circuito viene rappresentato in forma astratta associando a questi due stati 2 simboli convenzionali: <strong>0</strong> e <strong>1</strong>. Nasce così il <strong>sistema binario</strong>, alla base di tutto il funzionamento dei computer.",
+                "Il singolo simbolo binario, 0 oppure 1, prende il nome di <strong>bit</strong> (contrazione di binary digit). Il bit rappresenta l’unità minima di informazione che un sistema digitale può gestire: una <strong>scelta tra due alternative mutuamente esclusive</strong>, direttamente collegata allo stato fisico di un circuito elettronico."
+            ],
+            "bitsBytesTitle": "Bit, byte e capacità dell'informazione",
+            "bitsBytes": [
+                "Per rendere più agevole la gestione dell’informazione, i bit non vengono trattati singolarmente ma <strong>raggruppati in unità di dimensione fissa</strong>. L’unità di riferimento più diffusa è il <strong>byte</strong>, oggi definito come una sequenza di <strong>8 bit</strong>.",
+                "Un byte non è solo un concetto astratto: possiamo costruirlo manualmente.",
+                "Storicamente il termine byte indicava semplicemente un gruppo di bit e <strong>non aveva una dimensione universale</strong>: nelle prime architetture poteva variare in base al progetto hardware. La standardizzazione sugli <strong>8 bit</strong> si è affermata progressivamente perché tale dimensione risultava adeguata a diversi scopi fondamentali.",
+                "Un gruppo di 8 bit permette infatti di rappresentare <strong>2⁸ = 256 configurazioni distinte</strong>, un numero sufficiente per: codificare un insieme completo di caratteri testuali di base, rappresentare piccoli valori numerici senza ricorrere a strutture più complesse, indirizzare in modo efficiente porzioni di memoria.",
+                "Inoltre, molte architetture di calcolatori sono progettate in modo che la <strong>memoria sia indirizzata a byte</strong>, non a singoli bit: ogni indirizzo di memoria fa riferimento a una cella di 8 bit. Questo semplifica la progettazione dell’hardware, la gestione della memoria e l’interazione con i dispositivi di input/output."
+            ],
+            "numbersToSymbolsTitle": "Da numeri a simboli: codifica dei caratteri",
+            "numbersToSymbols": [
+                "A questo punto emerge un problema cruciale: se il computer conserva e manipola solo numeri binari, <strong>come può rappresentare simboli astratti come lettere, cifre o segni di punteggiatura?</strong> La risposta è la <strong>codifica</strong>: una convenzione condivisa che stabilisce una corrispondenza tra: un simbolo grafico, un valore numerico, una sequenza di bit.",
+                "In altre parole, una lettera non è vista dal computer come una lettera, ma come un numero a cui <strong>noi attribuiamo un significato simbolico</strong>."
+            ],
+            "dataRepresentationTitle": "Rappresentazione dei dati",
+            "dataRepresentation": [
+                "Quando si scrive un programma, uno dei problemi fondamentali è stabilire <strong>come rappresentare l’informazione all’interno del computer</strong>. Qualsiasi dato elaborato da un software, indipendentemente dalla sua complessità, deve essere tradotto in una forma compatibile con l’hardware, cioè in <strong>sequenze di bit</strong>.",
+                "Dal punto di vista concettuale, i dati che un programma manipola possono essere ricondotti a <strong>due grandi categorie</strong> fondamentali: dati che rappresentano <strong>valori numerici</strong>, dati che rappresentano <strong>informazioni testuali o simboliche</strong>.",
+                "Queste due categorie riflettono anche il modo in cui, nella cultura umana, l’informazione viene tradizionalmente registrata e trasmessa: attraverso <strong>numeri</strong> e <strong>segni</strong>."
+            ],
+            "numericTypesTitle": "Tipi numerici in C",
+            "numericTypes": [
+                "Nel linguaggio C, la distinzione tra i numeri è esplicita e affidata a tipi ben definiti, tra cui: <strong>int</strong>, <strong>float</strong>, <strong>double</strong>.",
+                "In tutti questi casi, ciò che il computer conserva non è il numero come concetto matematico astratto, ma una <strong>codifica binaria</strong> che rappresenta o approssima quel valore secondo regole precise stabilite dal linguaggio e dall’architettura."
+            ],
+            "charTypeTitle": "Il tipo char e la codifica dei caratteri",
+            "charType": [
+                "Nei linguaggi di programmazione, un singolo carattere viene rappresentato tramite il tipo <strong>char</strong>. Un char non contiene direttamente una lettera, ma un <strong>valore numerico</strong>.",
+                "Il significato di questo valore dipende da una <strong>tabella di codifica dei caratteri</strong>, che stabilisce l’associazione tra numeri e simboli grafici. In una codifica come <strong>ASCII</strong>, ad esempio, un determinato valore numerico corrisponde alla lettera “A”, un altro alla lettera “B” e così via."
+            ],
+            "conventionsTitle": "Convenzioni di rappresentazione",
+            "conventions": [
+                "In generale, la rappresentazione dei dati all’interno di un computer è il risultato della combinazione di più <strong>convenzioni formali</strong>, tra cui: la <strong>posizionalità</strong> della codifica, la <strong>base di numerazione</strong> utilizzata, il <strong>numero di cifre</strong> impiegate, la <strong>codifica del segno</strong> per i numeri negativi, la rappresentazione delle <strong>parti frazionarie</strong> e dei valori razionali."
+            ],
+            "positionalCodingTitle": "Codifica posizionale",
+            "positionalCoding": [
+                "Per rappresentare i numeri, i sistemi di numerazione utilizzano un insieme finito di <strong>cifre elementari</strong>, chiamato <strong>base</strong>. Nella vita quotidiana siamo abituati alla <strong>base decimale</strong>, che impiega le cifre da 0 a 9. Con queste cifre è possibile rappresentare direttamente i primi dieci valori; per rappresentare numeri più grandi si utilizzano <strong>sequenze di cifre</strong>.",
+                "In un sistema di numerazione posizionale, il significato di una cifra <strong>non dipende solo dal suo valore</strong>, ma anche dalla <strong>posizione</strong> che occupa all’interno del numero. Per questo motivo, numeri formati dalle stesse cifre ma disposte in ordine diverso rappresentano valori differenti: ad esempio, 125 e 315 non indicano la stessa quantità.",
+                "Ogni posizione all’interno del numero è associata a un <strong>peso</strong>, che dipende dalla base del sistema di numerazione. Spostandosi da destra verso sinistra, il peso delle cifre aumenta in modo regolare, secondo la base scelta. La cifra più a destra è detta <strong>cifra meno significativa</strong> (least significant digit), mentre quella più a sinistra è la <strong>cifra più significativa</strong> (most significant digit)."
+            ]
+        },
+        "realisticCircuitDemo": {
+            "title": "Circuito elettrico (schema)",
+            "description": "Clicca sull’interruttore: quando il circuito è chiuso la corrente scorre e il LED si accende.",
+            "switch": {
+                "label": "Interruttore",
+                "hint": "(clicca)"
+            },
+            "battery": {
+                "label": "Batteria"
+            },
+            "led": {
+                "on": "ON",
+                "off": "OFF"
+            },
+            "readout": {
+                "circuit": "Circuito",
+                "voltage": "Tensione",
+                "bit": "Bit"
+            },
+            "status": {
+                "closed": {
+                    "circuit": "Chiuso",
+                    "voltage": "Alta",
+                    "bit": "1"
+                },
+                "open": {
+                    "circuit": "Aperto",
+                    "voltage": "Bassa",
+                    "bit": "0"
+                }
+            }
+        },
+        "signalDiscretizationDemo": {
+            "title": "Discretizzazione del segnale",
+            "analog": {
+                "title": "Segnale analogico",
+                "description": "La tensione varia in modo <strong>continuo</strong> ed è influenzata dal rumore.",
+                "yAxis": "V",
+                "xAxis": "t"
+            },
+            "digital": {
+                "title": "Segnale digitale (discretizzato)",
+                "description": "Il segnale viene <strong>ridotto a due livelli</strong>: sopra o sotto la soglia.",
+                "threshold": "Soglia",
+                "yAxis": "V",
+                "xAxis": "t"
+            }
+        },
+        "byteComposer": {
+            "title": "Componi un Byte",
+            "hint": "Clicca sui bit per attivarli / disattivarli",
+            "decimalValue": "Valore decimale",
+            "note": "Questo byte può rappresentare 256 valori (da 0 a 255)",
+            "bit": "Bit {{position}}"
+        },
+        "asciiConverter": {
+            "title": "Converti lettere in numeri (ASCII)",
+            "hint": "Clicca su una lettera per scoprire il suo valore ASCII",
+            "characterLabel": "Carattere",
+            "decimalLabel": "Decimale",
+            "binaryLabel": "Binario",
+            "hexLabel": "Esadecimale"
+        },
+        "baseConverter": {
+            "title": "Converti tra basi numeriche",
+            "hint": "Inserisci un numero in base decimale",
+            "inputPlaceholder": "Inserisci numero",
+            "decimal": "Decimale",
+            "binary": "Binario",
+            "hexadecimal": "Esadecimale",
+            "octal": "Ottale"
+        }
     }
 }

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { topicContent } from "../../data/topicContent";
 import TopicHero from "../../components/TopicHero/TopicHero";
 import TopicOverview from "../../components/TopicOverview/TopicOverview";
-import TopicRelated from "../../components/SectionRelated/SectionRelated";
+import SectionRelated from "../../components/SectionRelated/SectionRelated";
 import TopicNavigation from "../../components/TopicNavigation/TopicNavigation";
 import styles from "./Topic.module.scss";
 
@@ -23,7 +23,10 @@ export default function Topic() {
       <div className={styles.content}>
         <div className={styles.main}>
           <TopicOverview text={t(topic.overviewKey)} />
-          <TopicRelated topics={topic.related} />
+          <SectionRelated
+            topicSlug={topicSlug}
+            topics={topic.related}
+          />
         </div>
 
         {/* Sidebar */}
