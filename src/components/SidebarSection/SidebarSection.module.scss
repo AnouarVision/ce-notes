@@ -1,0 +1,105 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/mixins" as *;
+@use "sass:color";
+
+.sidebar {
+    width: 100%;
+    background-color: color.adjust($bg-dark-2, $lightness: 2%);
+    border-radius: $radius-card;
+    padding: $space-4;
+    border: 1px solid $border-color;
+}
+
+.sidebar h3 {
+    color: $primary;
+    font-size: $fs-small;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: $space-3;
+    border-bottom: 1px solid $primary;
+    padding-bottom: $space-2;
+    text-align: left;
+}
+
+/* TOC */
+.toc {
+    display: flex;
+    flex-direction: column;
+    gap: $space-1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toc a {
+    display: block;
+    padding: $space-2;
+    border-radius: $radius-button-sm;
+    font-size: $fs-body;
+    color: $text-gray-400;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+
+    &:hover {
+        background-color: rgba($primary, 0.1);
+        color: $primary;
+    }
+}
+
+.active {
+    background-color: rgba($primary, 0.12);
+    color: $primary;
+    font-weight: 600;
+    border-left: 3px solid $primary;
+    padding-left: calc($space-2 - 3px);
+}
+
+/* TOGGLE */
+.toggle {
+    width: 100%;
+    padding: $space-2;
+    background: none;
+    border: none;
+    border-radius: $radius-button-sm;
+    font-size: $fs-body;
+    color: $text-gray-400;
+    text-align: left;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+        background-color: rgba($primary, 0.1);
+        color: $primary;
+    }
+}
+
+.toggle span {
+    font-size: 1.4rem;
+    color: $primary;
+    transition: transform 0.2s ease;
+}
+
+.open {
+    transform: rotate(180deg);
+}
+
+/* SUB TOC */
+.subtoc {
+    margin-left: $space-3;
+    padding-left: $space-2;
+    border-left: 1px solid $border-color;
+
+    display: flex;
+    flex-direction: column;
+    gap: $space-1;
+
+    li a,
+    .toggle {
+        font-size: $fs-small;
+        padding: $space-1 $space-2;
+        color: $text-gray-500;
+    }
+}

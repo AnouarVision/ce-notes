@@ -1,0 +1,90 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/mixins" as *;
+
+.layout {
+  width: 100%;
+  padding: $space-5 80px;
+
+  @media (max-width: 900px) {
+    padding: $space-4 $space-3;
+  }
+}
+
+// Inner wrapper containing sidebar and main content
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+}
+
+.inner > :first-child {
+  width: 100%;
+}
+
+.content {
+  background-color: $bg-dark-2;
+  border-radius: $radius-card;
+  padding: $space-5;
+  border: 1px solid $border-color;
+
+  width: 100%;
+}
+
+.content {
+  h2 {
+    color: $primary;
+    margin-bottom: $space-3;
+    padding-bottom: $space-2;
+    border-bottom: 1px solid $primary;
+  }
+
+  h3 {
+    margin-top: $space-5;
+    margin-bottom: $space-2;
+    color: $primary;
+    font-size: $fs-h2;
+    font-weight: 700;
+  }
+
+  h4 {
+    margin-top: $space-4;
+    margin-bottom: $space-2;
+    color: $primary;
+    font-size: $fs-card-title;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: $space-3;
+    color: $text-gray-400;
+  }
+
+  strong {
+    color: $primary;
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 0 0 $space-3 0;
+    padding-left: $space-4;
+    display: grid;
+    gap: $space-1;
+
+    li {
+      color: $text-gray-400;
+    }
+  }
+
+  ul:not(.scrollList) {
+    list-style: disc;
+  }
+}
+
+.content h2,
+.content h3,
+.content h4 {
+  scroll-margin-top: 96px;
+}

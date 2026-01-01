@@ -1,0 +1,49 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/mixins" as *;
+
+.hero {
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+
+  padding: $space-4 $space-3;
+  background: $bg-dark-3;
+  border-bottom: 1px solid $border-color;
+
+  h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: $space-2;
+
+    margin-bottom: $space-2;
+    line-height: 1.15;
+
+    font-size: clamp(
+      40px,
+      5vw,
+      $fs-hero-max
+    );
+
+    span {
+      color: $primary;
+    }
+  }
+
+  p {
+    max-width: 640px;
+    color: $text-gray-400;
+    font-size: $fs-body;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: $space-6 $space-4;
+
+    p {
+      font-size: $fs-body;
+    }
+  }
+}
