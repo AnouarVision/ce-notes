@@ -380,5 +380,42 @@
             "hexadecimal": "Esadecimale",
             "octal": "Ottale"
         }
+    },
+    "algorithmAnalysis": {
+        "hero": {
+            "titleStart": "Analisi degli ",
+            "titleHighlight": "algoritmi",
+            "subtitle": "Misurare l'efficienza computazionale"
+        },
+        "sections": {
+            "title": "Mappa dei contenuti",
+            "introduction": "Introduzione all'analisi degli algoritmi",
+            "complexity": "Complessità computazionale",
+            "bigO": "Notazione Big-O",
+            "examples": "Esempi pratici"
+        },
+        "content": {
+            "introductionTitle": "Introduzione all'analisi degli algoritmi",
+            "introduction": [
+                "L'<strong>analisi degli algoritmi</strong> è lo studio della <strong>efficienza</strong> e della <strong>performance</strong> di un algoritmo. Quando scriviamo un algoritmo per risolvere un problema, non ci interessa solo che funzioni correttamente, ma anche <strong>quanto bene funzioni</strong> in termini di tempo e memoria impiegati.",
+                "Un algoritmo è una <strong>sequenza finita di passi</strong> che descrive come risolvere un problema computazionale. Due algoritmi diversi possono risolvere lo stesso problema, ma con <strong>efficienze molto diverse</strong>. L'obiettivo dell'analisi è <strong>confrontare e valutare</strong> questi algoritmi per scegliere il più adatto al nostro caso d'uso."
+            ],
+            "complexityTitle": "Complessità computazionale",
+            "complexity": [
+                "La <strong>complessità computazionale</strong> misura quantitativamen­te il numero di <strong>operazioni elementari</strong> necessarie a un algoritmo per completare un'esecuzione in funzione della <strong>dimensione dell'input</strong>. È una misura astratta che non dipende dal processore o dal linguaggio di programmazione usato.",
+                "Generalmente si distingue tra: <strong>complessità temporale</strong> (tempo necessario) e <strong>complessità spaziale</strong> (memoria necessaria). Nella maggior parte dei casi, ci interessiamo principalmente alla <strong>complessità temporale</strong>, poiché il tempo è spesso il fattore più critico."
+            ],
+            "bigOTitle": "Notazione Big-O",
+            "bigO": [
+                "Invece di contare il <strong>numero esatto di operazioni</strong>, utilizziamo la <strong>Notazione Big-O</strong> per descrivere il <strong>comportamento asintotico</strong> dell'algoritmo. In altre parole, siamo interessati a come crescerà il tempo di esecuzione quando aumentiamo la dimensione dell'input verso l'infinito.",
+                "La notazione O() ci permette di <strong>ignorare le costanti moltiplicative</strong> e i <strong>termini di ordine inferiore</strong>, focalizzandoci sul <strong>termine dominante</strong>. Ad esempio, un algoritmo con complessità 2n² + 3n + 5 avrà complessità O(n²).",
+                "Le complessità più comuni, ordinate da migliore a peggiore, sono: O(1), O(log n), O(n), O(n log n), O(n²), O(n³), O(2ⁿ), O(n!)."
+            ],
+            "examplesTitle": "Esempi pratici",
+            "examples": [
+                "Consideriamo la ricerca di un elemento in una lista: <strong>ricerca lineare</strong> richiede O(n) operazioni nel caso peggiore (scansionando tutti gli elementi), mentre <strong>ricerca binaria</strong> in una lista ordinata richiede O(log n) operazioni.",
+                "Allo stesso modo, algoritmi di ordinamento come <strong>bubble sort</strong> hanno complessità O(n²), mentre algoritmi più efficienti come <strong>merge sort</strong> o <strong>quick sort</strong> hanno complessità O(n log n), una differenza drammatica per liste di grandi dimensioni."
+            ]
+        }
     }
 }

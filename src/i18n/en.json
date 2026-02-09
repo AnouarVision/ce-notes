@@ -380,5 +380,42 @@
             "hexadecimal": "Hexadecimal",
             "octal": "Octal"
         }
+    },
+    "algorithmAnalysis": {
+        "hero": {
+            "titleStart": "Algorithm ",
+            "titleHighlight": "analysis",
+            "subtitle": "Measuring computational efficiency"
+        },
+        "sections": {
+            "title": "Table of contents",
+            "introduction": "Introduction to algorithm analysis",
+            "complexity": "Computational complexity",
+            "bigO": "Big-O notation",
+            "examples": "Practical examples"
+        },
+        "content": {
+            "introductionTitle": "Introduction to algorithm analysis",
+            "introduction": [
+                "<strong>Algorithm analysis</strong> is the study of the <strong>efficiency</strong> and <strong>performance</strong> of an algorithm. When we write an algorithm to solve a problem, we not only care that it works correctly, but also <strong>how well it works</strong> in terms of time and memory consumed.",
+                "An algorithm is a <strong>finite sequence of steps</strong> that describes how to solve a computational problem. Two different algorithms can solve the same problem but with <strong>very different efficiencies</strong>. The goal of analysis is to <strong>compare and evaluate</strong> these algorithms to choose the most appropriate one for our use case."
+            ],
+            "complexityTitle": "Computational complexity",
+            "complexity": [
+                "<strong>Computational complexity</strong> quantitatively measures the number of <strong>elementary operations</strong> an algorithm needs to complete an execution as a function of the <strong>size of the input</strong>. It is an abstract measure that does not depend on the processor or programming language used.",
+                "We generally distinguish between: <strong>time complexity</strong> (time required) and <strong>space complexity</strong> (memory required). In most cases, we are primarily interested in <strong>time complexity</strong>, since time is often the most critical factor."
+            ],
+            "bigOTitle": "Big-O notation",
+            "bigO": [
+                "Instead of counting the <strong>exact number of operations</strong>, we use <strong>Big-O Notation</strong> to describe the <strong>asymptotic behavior</strong> of the algorithm. In other words, we are interested in how the execution time will grow as we increase the input size toward infinity.",
+                "The O() notation allows us to <strong>ignore multiplicative constants</strong> and <strong>lower-order terms</strong>, focusing on the <strong>dominant term</strong>. For example, an algorithm with complexity 2n² + 3n + 5 has complexity O(n²).",
+                "The most common complexities, ordered from best to worst, are: O(1), O(log n), O(n), O(n log n), O(n²), O(n³), O(2ⁿ), O(n!)."
+            ],
+            "examplesTitle": "Practical examples",
+            "examples": [
+                "Consider finding an element in a list: <strong>linear search</strong> requires O(n) operations in the worst case (scanning all elements), while <strong>binary search</strong> on a sorted list requires O(log n) operations.",
+                "Similarly, sorting algorithms like <strong>bubble sort</strong> have O(n²) complexity, while more efficient algorithms like <strong>merge sort</strong> or <strong>quick sort</strong> have O(n log n) complexity, a dramatic difference for large lists."
+            ]
+        }
     }
 }

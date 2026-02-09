@@ -35,6 +35,34 @@
   text-decoration: none;
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search {
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  color: variables.$text-white;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    color: variables.$primary;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
 //Menu Button
 .menuButton {
   font-size: 1.6rem;

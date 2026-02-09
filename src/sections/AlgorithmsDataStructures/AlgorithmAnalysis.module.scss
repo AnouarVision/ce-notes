@@ -1,0 +1,24 @@
+@use "../../assets/styles/variables" as *;
+
+/* PAGE ROOT */
+.page {
+  background-color: $bg-dark-2;
+}
+
+.section {
+  padding: 2rem 0;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color, #333);
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color, #555);
+    margin-bottom: 1rem;
+  }
+}

@@ -40,3 +40,25 @@ export const lowLevelRepresentationTOC = {
     }
   ]
 };
+
+export const algorithmAnalysisTOC = {
+  title: "algorithmAnalysis.sections.title",
+  items: [
+    {
+      id: "introduction",
+      label: "algorithmAnalysis.sections.introduction"
+    },
+    {
+      id: "complexity",
+      label: "algorithmAnalysis.sections.complexity"
+    },
+    {
+      id: "big-o",
+      label: "algorithmAnalysis.sections.bigO"
+    },
+    {
+      id: "examples",
+      label: "algorithmAnalysis.sections.examples"
+    }
+  ]
+};
