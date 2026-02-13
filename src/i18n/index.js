@@ -11,10 +11,13 @@ i18n
       en: { translation: en },
       it: { translation: it },
     },
-    lng: "en",
-    fallbackLng: "en",
+    lng: localStorage.getItem("lang") || "it",
+    fallbackLng: "it",
     interpolation: {
       escapeValue: false,
+    },
+    react: {
+      transKeepBasicHtmlNodesFor: ['br', 'strong', 'i', 'p', 'em', 'code'],
     },
   });
 

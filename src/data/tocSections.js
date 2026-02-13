@@ -45,20 +45,38 @@ export const algorithmAnalysisTOC = {
   title: "algorithmAnalysis.sections.title",
   items: [
     {
-      id: "introduction",
-      label: "algorithmAnalysis.sections.introduction"
+      id: "why-this-course",
+      label: "algorithmAnalysis.sections.whyThisCourse"
     },
     {
-      id: "complexity",
-      label: "algorithmAnalysis.sections.complexity"
+      id: "fundamentals",
+      label: "algorithmAnalysis.sections.fundamentals",
+      open: true,
+      children: [
+        {
+          id: "algorithms",
+          label: "algorithmAnalysis.sections.algorithms"
+        },
+        {
+          id: "describing-algorithms",
+          label: "algorithmAnalysis.sections.describingAlgorithms"
+        }
+      ]
     },
     {
-      id: "big-o",
-      label: "algorithmAnalysis.sections.bigO"
-    },
-    {
-      id: "examples",
-      label: "algorithmAnalysis.sections.examples"
+      id: "algorithm-evaluation",
+      label: "algorithmAnalysis.algorithm_evaluation.title",
+      open: true,
+      children: [
+        {
+          id: "time-measurement",
+          label: "algorithmAnalysis.sections.timeMeasurement"
+        },
+        {
+          id: "big-o-notation",
+          label: "algorithmAnalysis.sections.bigONotation"
+        }
+      ]
     }
   ]
 };

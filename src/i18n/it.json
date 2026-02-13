@@ -389,10 +389,22 @@
         },
         "sections": {
             "title": "Mappa dei contenuti",
-            "introduction": "Introduzione all'analisi degli algoritmi",
-            "complexity": "Complessità computazionale",
-            "bigO": "Notazione Big-O",
-            "examples": "Esempi pratici"
+            "whyThisCourse": "Scopo del corso",
+            "fundamentals": "Le basi",
+            "algorithms": "Cosa sono gli algoritmi e perché contano",
+            "describingAlgorithms": "Come descriviamo gli algoritmi",
+            "measuringSpeed": "Come si valuta un algoritmo?",
+            "timeMeasurement": "Correttezza ed efficienza",
+            "bigONotation": "Valutazione degli algoritmi – Correttezza",
+            "recursiveAlgorithms": "Algoritmi ricorsivi e ricorrenze",
+            "recursion": "Quando gli algoritmi chiamano se stessi",
+            "masterTheorem": "Il teorema del maestro",
+            "caseStudies": "Casi studio – Algoritmi reali",
+            "sorting": "Ordinamento",
+            "search": "Ricerca",
+            "advancedConcepts": "Concetti avanzati",
+            "correctnessProof": "Dimostrazione di correttezza",
+            "epilogue": "Epilogo"
         },
         "content": {
             "introductionTitle": "Introduzione all'analisi degli algoritmi",
@@ -416,6 +428,292 @@
                 "Consideriamo la ricerca di un elemento in una lista: <strong>ricerca lineare</strong> richiede O(n) operazioni nel caso peggiore (scansionando tutti gli elementi), mentre <strong>ricerca binaria</strong> in una lista ordinata richiede O(log n) operazioni.",
                 "Allo stesso modo, algoritmi di ordinamento come <strong>bubble sort</strong> hanno complessità O(n²), mentre algoritmi più efficienti come <strong>merge sort</strong> o <strong>quick sort</strong> hanno complessità O(n log n), una differenza drammatica per liste di grandi dimensioni."
             ]
+        },
+        "why_this_course": {
+            "title": "Scopo del corso",
+            "p1": "Immagina di lavorare in un'azienda che gestisce miliardi di dati. Un tuo collega ti propone un'idea per ordinare questi dati più velocemente. Come fai a sapere se la sua idea è davvero migliore della soluzione attuale? Come fai a prevedere quanto tempo impiegherà prima di avere i risultati?",
+            "p2_intro": "<strong>Non puoi aspettare di eseguire il programma e cronometrarlo:</strong> i dati sono troppi, i computer variano, il timing dipende da mille fattori esterni.",
+            "p3_intro": "<br/>Quello che serve è uno <strong>strumento matematico</strong> che ti permetta di:",
+            "p2_item1": "Confrontare la velocità di algoritmi diversi",
+            "p2_item2": "Prevedere come un algoritmo si comporta al crescere dei dati",
+            "p2_item3": "scegliere l'algoritmo migliore per il tuo problema"
+        },
+        "fundamentals": {
+            "title": "Le basi",
+            "chapter1": {
+                "title": "Cosa sono gli algoritmi e perché contano",
+                "section1": {
+                    "title": "Definizioni fondamentali",
+                    "subsection1": {
+                        "title": "Problema Computazionale",
+                        "p1": "Dato un dominio di dati di input <i>I</i> e un dominio di dati di output <i>O</i>, un <strong>problema computazionale</strong> è una <strong>relazione matematica</strong>",
+                        "p2": "<i>R</i> ⊆ <i>I</i> × <i>O</i>",
+                        "p3": "che associa a ogni elemento <i>x</i> ∈ <i>I</i> uno o più elementi <i>y</i> ∈ <i>O</i> tali che (<i>x</i>,<i>y</i>) ∈ <i>R</i>. ",
+                        "p4": "Per ogni istanza di input <i>x</i>, il problema consiste nel determinare uno (o tutti) gli elementi 𝑦 del dominio di output che sono in relazione con <i>x</i> secondo <i>R</i>."
+                    },
+                    "subsection2": {
+                        "title": "Algoritmo",
+                        "p1": "Dato un <strong>problema computazionale</strong>, un <strong>algoritmo</strong> è un procedimento <strong>finito</strong> e <strong>effettivo</strong>, costituito da un <strong>insieme di istruzioni elementari e ben definite</strong>, espresse in un sistema <strong>formale</strong> di calcolo, che trasforma un insieme di dati in ingresso in un insieme di dati in uscita che rappresentano la soluzione del problema, in un tempo finito.",
+                        "p2": "Perché una sequenza ordinata di azioni possa essere considerata un vero algoritmo, è necessario che soddisfi alcune proprietà fondamentali. In particolare, un algoritmo deve essere:",
+                        "p2_item1": "<strong>Generale</strong>: applicabile a tutte le possibili istanze del problema, e non solo a casi specifici",
+                        "p2_item2": "<strong>Finito</strong>: deve terminare dopo un numero limitato di passi",
+                        "p2_item3": "<strong>Non ambiguo</strong>: ogni istruzione deve essere chiara e interpretabile in un unico modo",
+                        "p2_item4": "<strong>Completo/Robusto</strong>: deve prevedere ogni possibile situazione di dati in ingresso e comportarsi correttamente in tutti i casi",
+                        "p2_item5": "<strong>Deterministico</strong>: partendo dagli stessi dati in ingresso, deve produrre sempre gli stessi dati in uscita",
+                        "p2_item6": "<strong>Eseguibile</strong>: deve essere possibile individuare un esecutore (umano o macchina) in grado di svolgere tutte le azioni previste",
+                        "p2_item7": "<strong>Efficace</strong>: deve condurre alla soluzione del problema in modo ottimale, sia in termini di tempo di esecuzione sia di utilizzo della memoria."
+                    }
+                },
+                "section2": {
+                    "title": "Un po' di storia",
+                    "p1_item1": "Gli algoritmi hanno radici antiche, già presenti nei testi matematici egizi e babilonesi:",
+                    "p1_item1_children_0": "<strong>Papiro di Rhind (ca. 1850 a.C.)</strong>: contiene un algoritmo per la moltiplicazione.",
+                    "p1_item1_children_1": "I matematici babilonesi e indiani svilupparono algoritmi numerici e geometrici (calcolo di tangenti, sezioni di angoli, massimo comune divisore con Euclide).",
+                    "p2_item2": "Il termine <strong>algoritmo</strong> deriva da <strong>Abu Abdullah Muhammad bin Musa al-Khwarizmi</strong> (VIII–IX secolo)</strong>, matematico e studioso di Baghdad:",
+                    "p2_item2_children_0": "La sua opera più famosa: <i>Al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa-l-muqābala</i> (ca. 820 d.C.), tradotta in latino come <i>Liber algebrae et almucabala</i>.",
+                    "p2_item2_children_1": "Introduce i numeri indiani (arabi) in Occidente e concetti di calcolo sistematico.",
+                    "p2_item2_children_2": "Il termine \"algoritmo\" nasce dal suo nome, mentre \"zero\" e \"cifra\" derivano da <i>sifr</i>, il numero arabo 0."
+                },
+                "section3": {
+                    "title": "Esempi di problemi computazionali e algoritmi",
+                    "definitionLabel": "Definizione",
+                    "algorithmLabel": "Algoritmo",
+                    "list": [
+                        {
+                            "problem": "Eliminazione",
+                            "definition": "Sia S = {s₀, s₁, ..., sₙ₋₁} un insieme di elementi e t ∈ S un elemento target. Eliminare t da S consiste nel restituire un insieme S' = S \\ {t} che non contiene più t.\nS' = S \\ {t}",
+                            "algorithm": "Scorri tutti gli elementi di S; se trovi un elemento uguale a t, rimuovilo dall'insieme. Alla fine, restituisci S'."
+                        },
+                        {
+                            "problem": "Ordinamento",
+                            "definition": "Sia S = {s₀, s₁, ..., sₙ₋₁} un insieme di elementi. Ordinare S consiste nel produrre un insieme S' = {s'₀, s'₁, ..., s'ₙ₋₁} tale che s'₀ ≤ s'₁ ≤ ... ≤ s'ₙ₋₁ secondo un criterio prefissato.\nOrd(S) = S' con s'₀ ≤ s'₁ ≤ ... ≤ s'ₙ₋₁",
+                            "algorithm": "Ad esempio, con <strong>Bubble Sort</strong>: confronta coppie di elementi adiacenti e scambiali se sono nell'ordine sbagliato; ripeti finché S' è completamente ordinato."
+                        },
+                        {
+                            "problem": "Ricerca",
+                            "definition": "Sia A = a₀, a₁, ..., aₙ₋₁ una sequenza ordinata di dati distinti. La ricerca di un valore v in A consiste nel trovare un indice i tale che 0 ≤ i ≤ n−1 se v = aᵢ, oppure restituire −1 se v non è presente.\nlookup(A,v) = i, ∃i ∈ {0,...,n−1} : aᵢ = v; −1 altrimenti",
+                            "algorithm": "Per trovare v in A, confronta v con ciascun elemento in sequenza; restituisci l'indice corrispondente se trovato, altrimenti −1. In alternativa, se A è ordinato, puoi usare <strong>Ricerca binaria</strong> per ottimizzare il tempo di ricerca."
+                        },
+                        {
+                            "problem": "Massimo",
+                            "definition": "Sia A = a₀, a₁, ..., aₙ₋₁ una sequenza di dati comparabili. Trovare il massimo in A consiste nel determinare l'elemento m ∈ A tale che m ≥ aᵢ per tutti gli i ∈ {0,...,n−1}.\nmax(A) = m dove m ≥ aᵢ ∀i ∈ {0,...,n−1}",
+                            "algorithm": "Inizializza m = a₀; scorri gli elementi da a₁ a aₙ₋₁; se trovi un elemento maggiore di m, aggiorna m. Alla fine, restituisci m."
+                        }
+                    ]
+                }
+            },
+            "chapter2": {
+                "title": "Come descriviamo gli algoritmi",
+                "section1": {
+                    "title": "Perché non basta il linguaggio naturale",
+                    "p1": "Le descrizioni di algoritmi in linguaggio naturale sono spesso <i>imprecise</i> e <i>ambigue</i>, perché il linguaggio naturale non è progettato per esprimere procedure in modo rigoroso e univoco. In linguaggio naturale parole e frasi possono avere più significati e lasciare dubbi sull’esatta sequenza di passi da eseguire, rendendo difficile analizzare o implementare l’algoritmo.",
+                    "p2": "Per superare queste limitazioni è necessario adottare descrizioni più formali e sistematiche:",
+                    "p2_item1_children_0": "<strong>Modalità formali</strong> come pseudocodice o formalismi matematici permettono di descrivere algoritmi con un livello di dettaglio tale da essere non ambiguo e interpretabile sia da umani sia, con la traduzione in codice, da macchine.",
+                    "p2_item1_children_1": "La formalizzazione esplicita i costrutti logici, le condizioni e le iterazioni in modo simile alla struttura dei linguaggi di programmazione, ma indipendente da un linguaggio specifico."
+                },
+                "section2": {
+                    "title": "Pseudo-codice",
+                    "p1": "Il <strong>pseudocodice</strong> è un linguaggio di descrizione per algoritmi che sta a metà tra il linguaggio naturale e un linguaggio di programmazione. Non ha una sintassi rigida come i linguaggi di programmazione, ma utilizza costrutti strutturati (assegnazioni, condizionali, cicli) per rappresentare in modo chiaro e leggibile i passi dell’algoritmo."
+                },
+                "section3": {
+                    "title": "Simboli dello pseudo-codice",
+                    "p1": "Di seguito troverai una guida completa con i simboli e i costrutti fondamentali dello pseudocodice. La tabella mostra ogni elemento della sintassi, una breve descrizione del suo significato e un esempio di utilizzo.",
+                    "tableHeaders": {
+                        "pseudocode": "Pseudocodice",
+                        "description": "Descrizione",
+                        "example": "Esempio"
+                    },
+                    "items": [
+                        {
+                            "pseudocode": "variable nome: tipo",
+                            "description": "Dichiarazione di variabile con tipo specificato (integer, integer[] per array)",
+                            "example": "variable i: integer ← 0 / variable arr: integer[]"
+                        },
+                        {
+                            "pseudocode": "{var} ← {espr}",
+                            "description": "Assegnazione: assegna il valore di un'espressione a una variabile",
+                            "example": "x ← 5 / y ← A[i] + 1"
+                        },
+                        {
+                            "pseudocode": "=, ≠, <, >, ≤, ≥",
+                            "description": "Operatori di confronto",
+                            "example": "if x ≤ 10 then"
+                        },
+                        {
+                            "pseudocode": "for {indice} to {intervallo} do ... end for",
+                            "description": "Ciclo for: ripete da 0 fino a intervallo",
+                            "example": "for i to n-1 do ... end for"
+                        },
+                        {
+                            "pseudocode": "while {condizione} do ... end while",
+                            "description": "Ciclo while: ripete finché la condizione è vera",
+                            "example": "while i < n do ... end while"
+                        },
+                        {
+                            "pseudocode": "if {condizione} then ... else ... end if",
+                            "description": "Condizionale: esegue blocchi diversi in base alla condizione",
+                            "example": "if x > 0 then ... else ... end if"
+                        },
+                        {
+                            "pseudocode": "return valore",
+                            "description": "Restituisce un valore e termina la funzione",
+                            "example": "return max"
+                        },
+                        {
+                            "pseudocode": "A[i]",
+                            "description": "Accesso all'elemento i-esimo dell'array A",
+                            "example": "x ← A[0]"
+                        },
+                        {
+                            "pseudocode": "function nome(p: tipo) → ritorno",
+                            "description": "Definizione di funzione con parametri tipizzati e tipo di ritorno",
+                            "example": "function max(A: integer[], n: integer) → integer"
+                        },
+                        {
+                            "pseudocode": "// commento",
+                            "description": "Commento: testo ignorato dall'esecuzione",
+                            "example": "// inizializza il contatore"
+                        },
+                        {
+                            "pseudocode": "+, -, *, /, mod",
+                            "description": "Operatori aritmetici (mod = resto della divisione)",
+                            "example": "x ← (a + b) mod n"
+                        }
+                    ]
+                }
+            }
+        },
+        "algorithm_evaluation": {
+            "title": "Come si valuta un algoritmo?",
+            "p1": "Quando analizziamo un algoritmo dobbiamo porci <strong>due domande fondamentali</strong>:",
+            "p1_item1": "<strong>È corretto?</strong>",
+            "p1_item2": "<strong>È efficiente?</strong>",
+            "p2": "Sono due aspetti distinti: un algoritmo può essere corretto ma lentissimo, oppure veloce ma sbagliato.",
+            "chapter3": {
+                "title": "Correttezza ed efficienza",
+                "section1": {
+                    "title": "Correttezza",
+                    "p1": "Un algoritmo è corretto se:",
+                    "p1_item1": "produce sempre il risultato atteso",
+                    "p1_item2": "termina in un numero finito di passi",
+                    "p2": "La correttezza può essere dimostrata:",
+                    "p2_item1": "con una <strong>dimostrazione matematica formale</strong>",
+                    "p2_item2": "oppure con una <strong>descrizione rigorosa ma informale</strong>, argomentando perché ogni passo è valido",
+                    "p3": "Attenzione però:",
+                    "p3_item1": "esistono problemi che <strong>non possono essere risolti</strong> (problemi indecidibili)",
+                    "p3_item2": "esistono problemi che possono essere risolti solo <strong>in modo approssimato</strong>",
+                    "p3_item3": "per alcuni problemi esiste un limite teorico: oltre una certa efficienza <strong>non si può andare</strong>"
+                },
+                "section2": {
+                    "title": "Efficienza",
+                    "p1": "Una volta stabilito che l’algoritmo funziona, dobbiamo capire quanto “costa” eseguirlo.",
+                    "p2": "Qui entra in gioco la <strong>complessità algoritmica</strong>."
+                },
+                "section3": {
+                    "title": "Cos’è la complessità?",
+                    "p1": "È lo studio delle risorse che un algoritmo consuma in funzione:",
+                    "p1_item1": "della dimensione dell’input (n)",
+                    "p1_item2": "del tipo di input",
+                    "p2": "Le principali risorse sono:",
+                    "p2_item1": "<strong>Tempo</strong>: quanto tempo impiega a completare l’esecuzione",
+                    "p2_item2": "<strong>Spazio</strong>: quanta memoria utilizza durante l’esecuzione",
+                    "p2_item3": "<strong>Banda</strong>: quanti dati deve trasmettere (nel caso di algoritmi distribuiti)"
+                },
+                "section4": {
+                    "title": "Il problema del tempo reale",
+                    "p1": "Potremmo dire:",
+                    "p2": "“Misuriamo il tempo con un cronometro.”",
+                    "p3": "Ma questo non è affidabile.",
+                    "p4": "Il tempo reale dipende da troppi fattori:",
+                    "p4_item1": "qualità del codice scritto",
+                    "p4_item2": "linguaggio usato",
+                    "p4_item3": "ottimizzazioni del compilatore",
+                    "p4_item4": "tipo di processore",
+                    "p4_item5": "cache e memoria",
+                    "p4_item6": "sistema operativo",
+                    "p4_item7": "altri processi in esecuzione",
+                    "p5": "Due persone con lo stesso algoritmo potrebbero ottenere tempi diversi.",
+                    "p6": "Quindi serve un modello più astratto."
+                },
+                "section5": {
+                    "title": "Una definizione più teorica di tempo",
+                    "p1": "In analisi degli algoritmi non misuriamo secondi.",
+                    "p2": "Misuriamo:",
+                    "p3": "Numero di operazioni significative eseguite dall’algoritmo",
+                    "p4": "Cosa significa \"operazioni significative\"?",
+                    "p5": "Sono quelle che caratterizzano il problema."
+                },
+                "section6": {
+                    "title": "Esempio: contare il numero di occorrenze di un elemento in un array",
+                    "p1": "Algoritmo: scorri l’array, ogni volta che trovi l’elemento target incrementa un contatore. Alla fine restituisci il contatore.",
+                    "p2": "Operazioni significative: confronti tra elementi dell’array e il target, incrementi del contatore.",
+                    "p3": "Il numero di operazioni è proporzionale alla dimensione dell’array (n).",
+                    "p4": "Perché?",
+                    "p5": "Perché sono le operazioni che determinano il comportamento dell’algoritmo."
+                }
+            },
+            "chapter4": {
+                "title": "Valutazione degli algoritmi – Correttezza",
+                "p1": "Quando diciamo che un algoritmo è corretto, non basta che “sembri funzionare”.",
+                "p2": "Serve un ragionamento formale che dimostri che:",
+                "p2_item1": "produce sempre il risultato giusto",
+                "p2_item2": "per ogni input valido",
+                "p2_item3": "e termina",
+                "p3": "Uno degli strumenti più potenti per dimostrare la correttezza degli algoritmi iterativi è il concetto di <strong>invariante</strong>.",
+                "section1": {
+                    "title": "Cos'è un invariante?",
+                    "p1": "Un <strong>invariante</strong> è una proprietà che rimane vera durante l'esecuzione di una parte del programma.",
+                    "subsection1": {
+                        "title": "Invariante di ciclo",
+                        "p1": "È una condizione che risulta vera <strong>ogni volta che il controllo entra nel ciclo</strong>, cioè immediatamente prima dell'esecuzione del corpo dell'iterazione.",
+                        "p2": "Quando parliamo di \"inizio dell'iterazione\" intendiamo il momento in cui la guardia del ciclo è vera e il corpo sta per essere eseguito."
+                    },
+                    "subsection2": {
+                        "title": "Invariante di classe",
+                        "p1": "Nel contesto della programmazione a oggetti, è una proprietà che deve essere vera prima e dopo l'esecuzione di ogni metodo pubblico, cioè al termine di ogni operazione visibile dall'esterno.",
+                        "p2": "<strong>Esempio:</strong> in una classe che rappresenta una coda, un possibile invariante è:",
+                        "formula": "0 ≤ size ≤ capacity",
+                        "p3": "Questa proprietà deve essere sempre rispettata dopo qualsiasi operazione (enqueue, dequeue, ecc.)."
+                    }
+                },
+                "section2": {
+                    "title": "Come si usa un invariante per dimostrare correttezza?",
+                    "p1": "La struttura della dimostrazione ricorda l'induzione matematica e prevede tre passaggi fondamentali:",
+                    "step1_title": "1. Inizializzazione (caso base)",
+                    "step1_text": "Dimostrare che l'invariante è vero <strong>prima della prima iterazione</strong>.",
+                    "step2_title": "2. Conservazione (passo induttivo)",
+                    "step2_text": "Dimostrare che: se l'invariante è vero prima di un'iterazione, allora rimane vero anche dopo l'esecuzione del corpo del ciclo.",
+                    "step3_title": "3. Conclusione",
+                    "step3_text": "Quando il ciclo termina, la condizione di uscita combinata con l'invariante deve implicare la correttezza dell'algoritmo. In altre parole, l'invariante, al momento dell'uscita, deve trasformarsi nella proprietà che volevamo dimostrare."
+                },
+                "section3": {
+                    "title": "Esempio: Calcolo del massimo",
+                    "pseudocode": "function max(A: integer[], n: integer) → integer\n    variable maxSoFar: integer ← A[0]\n    variable i: integer\n    for i ← 1 to n-1 do\n        if A[i] > maxSoFar then\n            maxSoFar ← A[i]\n    return maxSoFar",
+                    "invariant_title": "Invariante di ciclo",
+                    "invariant_text": "All'inizio di ogni iterazione con indice i, <code>maxSoFar</code> contiene il massimo degli elementi <code>A[0 ... i-1]</code>.",
+                    "init_title": "Inizializzazione",
+                    "init_text": "Prima della prima iterazione (i = 1): <code>maxSoFar = A[0]</code>. Quindi è effettivamente il massimo di <code>A[0 ... 0]</code>. L'invariante è vero.",
+                    "conservation_title": "Conservazione",
+                    "conservation_text": "Se prima dell'iterazione i il massimo parziale è corretto, confrontiamo <code>A[i]</code> e aggiorniamo se necessario. Quindi alla fine dell'iterazione i, <code>maxSoFar</code> è il massimo di <code>A[0 ... i]</code>. L'invariante è preservato.",
+                    "conclusion_title": "Conclusione",
+                    "conclusion_text": "Quando il ciclo termina (i = n), <code>maxSoFar</code> è il massimo di <code>A[0 ... n-1]</code>. Quindi l'algoritmo è corretto."
+                },
+                "section4": {
+                    "title": "Correttezza degli algoritmi ricorsivi",
+                    "p1": "Per gli algoritmi ricorsivi, invece dell'invariante di ciclo, utilizziamo direttamente l'<strong>induzione sulla dimensione dell'input</strong>.",
+                    "subsection1": {
+                        "title": "Esempio: Ricerca binaria ricorsiva",
+                        "pseudocode": "function binarySearch(A: integer[], v: integer, start: integer, end: integer) → integer\n    if start > end then\n        return -1\n    variable m: integer ← floor((start + end)/2)\n    if A[m] == v then\n        return m\n    else if A[m] < v then\n        return binarySearch(A, v, m+1, end)\n    else\n        return binarySearch(A, v, start, m-1)",
+                        "p1": "La dimostrazione si fa per induzione sulla dimensione del sottoarray <code>n = end - start + 1</code>.",
+                        "base_title": "Caso base",
+                        "base_text": "Se n = 0 (cioè <code>start > end</code>), la funzione restituisce -1, che è corretto.",
+                        "hypothesis_title": "Ipotesi induttiva",
+                        "hypothesis_text": "Supponiamo che l'algoritmo sia corretto per tutti gli input di dimensione minore di n.",
+                        "step_title": "Passo induttivo",
+                        "step_text": "Per un array di dimensione n: se troviamo l'elemento al centro → corretto. Altrimenti chiamiamo ricorsivamente su un sottoarray più piccolo. Per ipotesi induttiva, quella chiamata è corretta. Quindi anche il caso di dimensione n è corretto."
+                    }
+                }
+            }
         }
     }
 }

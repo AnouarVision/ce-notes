@@ -10,7 +10,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   color: variables.$text-white;
   margin: 0;
 }
@@ -28,6 +30,21 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: variables.$fs-h3;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: variables.$fs-h4;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: variables.$fs-h5;
+  font-weight: 550;
+}
+
 p {
   margin: 0;
   color: variables.$text-gray-400;
@@ -36,4 +53,15 @@ p {
 small {
   font-size: variables.$fs-small;
   color: variables.$text-gray-500;
+}
+
+code {
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  background: rgba(variables.$primary, 0.15);
+  color: variables.$primary;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }

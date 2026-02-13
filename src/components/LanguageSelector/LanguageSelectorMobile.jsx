@@ -21,6 +21,7 @@ export default function LanguageSelectorMobile() {
 
   const handleChange = (code) => {
     i18n.changeLanguage(code);
+    localStorage.setItem("lang", code);
     setOpen(false);
   };
 

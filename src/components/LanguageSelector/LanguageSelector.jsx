@@ -36,6 +36,7 @@ export default function LanguageSelector() {
   // Handle language selection
   const handleSelect = (code) => {
     i18n.changeLanguage(code);
+    localStorage.setItem("lang", code);
     setOpen(false);
   };
 

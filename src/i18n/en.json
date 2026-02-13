@@ -383,39 +383,278 @@
     },
     "algorithmAnalysis": {
         "hero": {
-            "titleStart": "Algorithm ",
-            "titleHighlight": "analysis",
+            "titleStart": "Analysis of ",
+            "titleHighlight": "Algorithms",
             "subtitle": "Measuring computational efficiency"
         },
         "sections": {
-            "title": "Table of contents",
-            "introduction": "Introduction to algorithm analysis",
-            "complexity": "Computational complexity",
-            "bigO": "Big-O notation",
-            "examples": "Practical examples"
+            "title": "Contents Map",
+            "whyThisCourse": "Course objective",
+            "fundamentals": "The Fundamentals",
+            "algorithms": "What Are Algorithms and Why They Matter",
+            "describingAlgorithms": "How We Describe Algorithms",
+            "measuringSpeed": "How to Evaluate an Algorithm",
+            "timeMeasurement": "Correctness and Efficiency",
+            "bigONotation": "Evaluating Algorithms – Correctness",
+            "recursiveAlgorithms": "Recursive Algorithms and Recurrences",
+            "recursion": "When Algorithms Call Themselves",
+            "masterTheorem": "The Master Theorem",
+            "caseStudies": "Case Studies – Real Algorithms",
+            "sorting": "Sorting",
+            "search": "Search",
+            "advancedConcepts": "Advanced Concepts",
+            "correctnessProof": "Proof of Correctness",
+            "epilogue": "Epilogue"
         },
-        "content": {
-            "introductionTitle": "Introduction to algorithm analysis",
-            "introduction": [
-                "<strong>Algorithm analysis</strong> is the study of the <strong>efficiency</strong> and <strong>performance</strong> of an algorithm. When we write an algorithm to solve a problem, we not only care that it works correctly, but also <strong>how well it works</strong> in terms of time and memory consumed.",
-                "An algorithm is a <strong>finite sequence of steps</strong> that describes how to solve a computational problem. Two different algorithms can solve the same problem but with <strong>very different efficiencies</strong>. The goal of analysis is to <strong>compare and evaluate</strong> these algorithms to choose the most appropriate one for our use case."
-            ],
-            "complexityTitle": "Computational complexity",
-            "complexity": [
-                "<strong>Computational complexity</strong> quantitatively measures the number of <strong>elementary operations</strong> an algorithm needs to complete an execution as a function of the <strong>size of the input</strong>. It is an abstract measure that does not depend on the processor or programming language used.",
-                "We generally distinguish between: <strong>time complexity</strong> (time required) and <strong>space complexity</strong> (memory required). In most cases, we are primarily interested in <strong>time complexity</strong>, since time is often the most critical factor."
-            ],
-            "bigOTitle": "Big-O notation",
-            "bigO": [
-                "Instead of counting the <strong>exact number of operations</strong>, we use <strong>Big-O Notation</strong> to describe the <strong>asymptotic behavior</strong> of the algorithm. In other words, we are interested in how the execution time will grow as we increase the input size toward infinity.",
-                "The O() notation allows us to <strong>ignore multiplicative constants</strong> and <strong>lower-order terms</strong>, focusing on the <strong>dominant term</strong>. For example, an algorithm with complexity 2n² + 3n + 5 has complexity O(n²).",
-                "The most common complexities, ordered from best to worst, are: O(1), O(log n), O(n), O(n log n), O(n²), O(n³), O(2ⁿ), O(n!)."
-            ],
-            "examplesTitle": "Practical examples",
-            "examples": [
-                "Consider finding an element in a list: <strong>linear search</strong> requires O(n) operations in the worst case (scanning all elements), while <strong>binary search</strong> on a sorted list requires O(log n) operations.",
-                "Similarly, sorting algorithms like <strong>bubble sort</strong> have O(n²) complexity, while more efficient algorithms like <strong>merge sort</strong> or <strong>quick sort</strong> have O(n log n) complexity, a dramatic difference for large lists."
-            ]
+        "why_this_course": {
+            "title": "Course objective",
+            "p1": "Imagine working at a company that manages billions of data. A colleague proposes an idea to sort this data faster. How do you know if their idea is truly better than the current solution? How do you predict how long it will take to get the results?",
+            "p2_intro": "<strong>You can't wait to run the program and time it:</strong> there's too much data, computers vary, timing depends on thousands of external factors.",
+            "p3_intro": "<br/>What you need is a <strong>mathematical tool</strong> that allows you to:",
+            "p2_item1": "Compare the speed of different algorithms",
+            "p2_item2": "Predict how an algorithm behaves as data grows",
+            "p2_item3": "choose the best algorithm for your problem"
+        },
+        "fundamentals": {
+            "title": "The Fundamentals",
+            "chapter1": {
+                "title": "What Are Algorithms and Why They Matter",
+                "section1": {
+                    "title": "Fundamental Definitions",
+                    "subsection1": {
+                        "title": "Computational Problem",
+                        "p1": "Given an input domain <i>I</i> and an output domain <i>O</i>, a <strong>computational problem</strong> is a <strong>mathematical relation</strong>",
+                        "p2": "<i>R</i> ⊆ <i>I</i> × <i>O</i>",
+                        "p3": "that associates with each element <i>x</i> ∈ <i>I</i> one or more elements <i>y</i> ∈ <i>O</i> such that (<i>x</i>,<i>y</i>) ∈ <i>R</i>.",
+                        "p4": "For each input instance <i>x</i>, the problem consists in determining one (or all) elements <i>y</i> of the output domain that are related to <i>x</i> according to <i>R</i>."
+                    },
+                    "subsection2": {
+                        "title": "Algorithm",
+                        "p1": "Given a <strong>computational problem</strong>, an <strong>algorithm</strong> is a <strong>finite</strong> and <strong>effective</strong> procedure, consisting of a <strong>set of elementary and well-defined instructions</strong>, expressed in a <strong>formal</strong> system of computation, that transforms a set of input data into a set of output data representing the solution to the problem, in finite time.",
+                        "p2": "For an ordered sequence of actions to be considered a true algorithm, it must satisfy some fundamental properties. In particular, an algorithm must be:",
+                        "p2_item1": "<strong>General</strong>: applicable to all possible instances of the problem, not just specific cases.",
+                        "p2_item2": "<strong>Finite</strong>: must terminate after a limited number of steps.",
+                        "p2_item3": "<strong>Unambiguous</strong>: each instruction must be clear and interpretable in a unique way.",
+                        "p2_item4": "<strong>Complete/Robust</strong>: must account for every possible input data situation and behave correctly in all cases.",
+                        "p2_item5": "<strong>Deterministic</strong>: starting from the same input data, must always produce the same output data.",
+                        "p2_item6": "<strong>Executable</strong>: must be possible to identify an executor (human or machine) capable of performing all the planned actions.",
+                        "p2_item7": "<strong>Effective</strong>: must lead to the problem's solution optimally, both in terms of execution time and memory usage."
+                    }
+                },
+                "section2": {
+                    "title": "A bit of history",
+                    "p1_item1": "Algorithms have ancient roots, already present in Egyptian and Babylonian mathematical texts:",
+                    "p1_item1_children_0": "<strong>Rhind Papyrus (ca. 1850 BC)</strong>: contains an algorithm for multiplication.",
+                    "p1_item1_children_1": "Babylonian and Indian mathematicians developed numerical and geometric algorithms (calculation of tangents, angle bisection, greatest common divisor with Euclid).",
+                    "p2_item2": "The term <strong>algorithm</strong> derives from <strong>Abu Abdullah Muhammad bin Musa al-Khwarizmi</strong> (VIII–IX century)</strong>, a mathematician and scholar of Baghdad:",
+                    "p2_item2_children_0": "His most famous work: <i>Al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa-l-muqābala</i> (ca. 820 AD), translated into Latin as <i>Liber algebrae et almucabala</i>.",
+                    "p2_item2_children_1": "He introduced Indian (Arabic) numerals to the West and concepts of systematic computation.",
+                    "p2_item2_children_2": "The term \"algorithm\" is born from his name, while \"zero\" and \"digit\" derive from <i>sifr</i>, the Arabic numeral 0."
+                },
+                "section3": {
+                    "title": "Examples of Computational Problems and Algorithms",
+                    "definitionLabel": "Definition",
+                    "algorithmLabel": "Algorithm",
+                    "list": [
+                        {
+                            "problem": "Deletion",
+                            "definition": "Let S = {s₀, s₁, ..., sₙ₋₁} be a set of elements and t ∈ S a target element. Deleting t from S consists of returning a set S' = S \\ {t} that no longer contains t.\nS' = S \\ {t}",
+                            "algorithm": "Iterate through all elements of S; if you find an element equal to t, remove it from the set. At the end, return S'."
+                        },
+                        {
+                            "problem": "Sorting",
+                            "definition": "Let S = {s₀, s₁, ..., sₙ₋₁} be a set of elements. Sorting S consists of producing a set S' = {s'₀, s'₁, ..., s'ₙ₋₁} such that s'₀ ≤ s'₁ ≤ ... ≤ s'ₙ₋₁ according to a predefined criterion.\nSort(S) = S' with s'₀ ≤ s'₁ ≤ ... ≤ s'ₙ₋₁",
+                            "algorithm": "For example, with <strong>Bubble Sort</strong>: compare pairs of adjacent elements and swap them if they're in the wrong order; repeat until S' is completely sorted."
+                        },
+                        {
+                            "problem": "Search",
+                            "definition": "Let A = a₀, a₁, ..., aₙ₋₁ be a sorted sequence of distinct data. Searching for a value v in A consists of finding an index i such that 0 ≤ i ≤ n−1 if v = aᵢ, or returning −1 if v is not present.\nlookup(A,v) = i, ∃i ∈ {0,...,n−1} : aᵢ = v; −1 otherwise",
+                            "algorithm": "To find v in A, compare v with each element in sequence; return the corresponding index if found, otherwise −1. Alternatively, if A is sorted, you can use <strong>Binary Search</strong> to optimize the search time."
+                        },
+                        {
+                            "problem": "Maximum",
+                            "definition": "Let A = a₀, a₁, ..., aₙ₋₁ be a sequence of comparable data. Finding the maximum in A consists of determining the element m ∈ A such that m ≥ aᵢ for all i ∈ {0,...,n−1}.\nmax(A) = m where m ≥ aᵢ ∀i ∈ {0,...,n−1}",
+                            "algorithm": "Initialize m = a₀; iterate through elements from a₁ to aₙ₋₁; if you find an element greater than m, update m. At the end, return m."
+                        }
+                    ]
+                }
+            },
+            "chapter2": {
+                "title": "How We Describe Algorithms",
+                "section1": {
+                    "title": "Why Natural Language Is Not Enough",
+                    "p1": "Descriptions of algorithms in natural language are often <i>imprecise</i> and <i>ambiguous</i>, because natural language is not designed to express procedures rigorously and unambiguously. In natural language, words and phrases can have multiple meanings and leave doubts about the exact sequence of steps to follow, making it difficult to analyze or implement the algorithm.",
+                    "p2": "To overcome these limitations, it is necessary to adopt more formal and systematic descriptions:",
+                    "p2_item1_children_0": "<strong>Formal methods</strong> such as pseudo-code or mathematical formalisms allow describing algorithms with a level of detail that is unambiguous and interpretable by both humans and, with translation to code, by machines.",
+                    "p2_item1_children_1": "Formalization makes logical constructs, conditions, and iterations explicit in a manner similar to the structure of programming languages, but independent of any specific language."
+                },
+                "section2": {
+                    "title": "Pseudo-code",
+                    "p1": "<strong>Pseudo-code</strong> is a language for describing algorithms that stands halfway between natural language and a programming language. It does not have rigid syntax like programming languages, but uses structured constructs (assignments, conditionals, loops) to represent the steps of the algorithm in a clear and readable way."
+                },
+                "section3": {
+                    "title": "Pseudo-code Symbols",
+                    "p1": "Below you will find a complete guide with the fundamental symbols and constructs of pseudo-code. The table shows each element of the syntax, a brief description of its meaning, and an example of use.",
+                    "tableHeaders": {
+                        "pseudocode": "Pseudocode",
+                        "description": "Description",
+                        "example": "Example"
+                    },
+                    "items": [
+                        {
+                            "pseudocode": "variable name: type",
+                            "description": "Variable declaration with specified type (integer, integer[] for arrays)",
+                            "example": "variable i: integer ← 0 / variable arr: integer[]"
+                        },
+                        {
+                            "pseudocode": "{var} ← {espr}",
+                            "description": "Assignment: assigns the value of an expression to a variable",
+                            "example": "x ← 5 / y ← A[i] + 1"
+                        },
+                        {
+                            "pseudocode": "=, ≠, <, >, ≤, ≥",
+                            "description": "Comparison operators",
+                            "example": "if x ≤ 10 then"
+                        },
+                        {
+                            "pseudocode": "for {index} to {range} do ... end for",
+                            "description": "For loop: repeats from 0 to range",
+                            "example": "for i to n-1 do ... end for"
+                        },
+                        {
+                            "pseudocode": "while {condition} do ... end while",
+                            "description": "While loop: repeats while condition is true",
+                            "example": "while i < n do ... end while"
+                        },
+                        {
+                            "pseudocode": "if {condition} then ... else ... end if",
+                            "description": "Conditional: executes different blocks based on condition",
+                            "example": "if x > 0 then ... else ... end if"
+                        },
+                        {
+                            "pseudocode": "return value",
+                            "description": "Returns a value and terminates the function",
+                            "example": "return max"
+                        },
+                        {
+                            "pseudocode": "A[i]",
+                            "description": "Access to the i-th element of array A",
+                            "example": "x ← A[0]"
+                        },
+                        {
+                            "pseudocode": "function name(p: type) → return",
+                            "description": "Function definition with typed parameters and return type",
+                            "example": "function max(A: integer[], n: integer) → integer"
+                        },
+                        {
+                            "pseudocode": "// comment",
+                            "description": "Comment: text ignored during execution",
+                            "example": "// initialize counter"
+                        },
+                        {
+                            "pseudocode": "+, -, *, /, mod",
+                            "description": "Arithmetic operators (mod = remainder of division)",
+                            "example": "x ← (a + b) mod n"
+                        }
+                    ]
+                }
+            }
+        },
+        "algorithm_evaluation": {
+            "title": "How to Evaluate an Algorithm",
+            "chapter3": {
+                "title": "Correctness and Efficiency",
+                "section1": {
+                    "title": "Correctness",
+                    "p1": "An algorithm is correct if:",
+                    "p1_item1": "it always produces the expected result",
+                    "p1_item2": "it terminates in a finite number of steps",
+                    "p2": "Correctness can be demonstrated:",
+                    "p2_item1": "with a <strong>formal mathematical proof</strong>",
+                    "p2_item2": "or with a <strong>rigorous but informal description</strong>, arguing why each step is valid",
+                    "p3": "But be careful:",
+                    "p3_item1": "there are problems that <strong>cannot be solved</strong> (undecidable problems)",
+                    "p3_item2": "there are problems that can only be solved <strong>approximately</strong>",
+                    "p3_item3": "for some problems there is a theoretical limit: beyond a certain efficiency <strong>it is not possible to go</strong>"
+                },
+                "section2": {
+                    "title": "Efficiency",
+                    "p1": "Once we establish that the algorithm works, we need to understand how much it 'costs' to run it.",
+                    "p2": "This is where <strong>algorithmic complexity</strong> comes in."
+                },
+                "section3": {
+                    "title": "What is Complexity?",
+                    "p1": "It is the study of the resources that an algorithm consumes as a function of:",
+                    "p1_item1": "the size of the input (n)",
+                    "p1_item2": "the type of input",
+                    "p2": "The main resources are:",
+                    "p2_item1": "<strong>Time</strong>: how long it takes to complete execution",
+                    "p2_item2": "<strong>Space</strong>: how much memory it uses during execution",
+                    "p2_item3": "<strong>Bandwidth</strong>: how much data it needs to transmit (in the case of distributed algorithms)"
+                }
+            },
+            "chapter4": {
+                "title": "Evaluating Algorithms - Correctness",
+                "p1": "When we say that an algorithm is correct, it's not enough that it \"seems to work\".",
+                "p2": "A formal reasoning is needed to prove that:",
+                "p2_item1": "it always produces the correct result",
+                "p2_item2": "for every valid input",
+                "p2_item3": "and it terminates",
+                "p3": "One of the most powerful tools for proving the correctness of iterative algorithms is the concept of <strong>invariant</strong>.",
+                "section1": {
+                    "title": "What is an invariant?",
+                    "p1": "An <strong>invariant</strong> is a property that remains true during the execution of a part of the program.",
+                    "subsection1": {
+                        "title": "Loop Invariant",
+                        "p1": "It is a condition that holds true <strong>every time control enters the loop</strong>, i.e., immediately before the execution of the loop body.",
+                        "p2": "When we talk about \"beginning of the iteration\" we mean the moment when the loop guard is true and the body is about to be executed."
+                    },
+                    "subsection2": {
+                        "title": "Class Invariant",
+                        "p1": "In the context of object-oriented programming, it is a property that must be true before and after the execution of every public method, i.e., at the end of every externally visible operation.",
+                        "p2": "<strong>Example:</strong> in a class representing a queue, a possible invariant is:",
+                        "formula": "0 ≤ size ≤ capacity",
+                        "p3": "This property must always be satisfied after any operation (enqueue, dequeue, etc.)."
+                    }
+                },
+                "section2": {
+                    "title": "How to use an invariant to prove correctness?",
+                    "p1": "The structure of the proof resembles mathematical induction and involves three fundamental steps:",
+                    "step1_title": "1. Initialization (base case)",
+                    "step1_text": "Prove that the invariant is true <strong>before the first iteration</strong>.",
+                    "step2_title": "2. Maintenance (inductive step)",
+                    "step2_text": "Prove that: if the invariant is true before an iteration, then it remains true after the execution of the loop body.",
+                    "step3_title": "3. Termination",
+                    "step3_text": "When the loop terminates, the exit condition combined with the invariant must imply the correctness of the algorithm. In other words, the invariant, at the moment of exit, must become the property we wanted to prove."
+                },
+                "section3": {
+                    "title": "Example: Computing the Maximum",
+                    "pseudocode": "function max(A: integer[], n: integer) → integer\n    variable maxSoFar: integer ← A[0]\n    variable i: integer\n    for i ← 1 to n-1 do\n        if A[i] > maxSoFar then\n            maxSoFar ← A[i]\n    return maxSoFar",
+                    "invariant_title": "Loop Invariant",
+                    "invariant_text": "At the beginning of each iteration with index i, <code>maxSoFar</code> contains the maximum of elements <code>A[0 ... i-1]</code>.",
+                    "init_title": "Initialization",
+                    "init_text": "Before the first iteration (i = 1): <code>maxSoFar = A[0]</code>. So it is indeed the maximum of <code>A[0 ... 0]</code>. The invariant holds.",
+                    "conservation_title": "Maintenance",
+                    "conservation_text": "If before iteration i the partial maximum is correct, we compare <code>A[i]</code> and update if necessary. So at the end of iteration i, <code>maxSoFar</code> is the maximum of <code>A[0 ... i]</code>. The invariant is preserved.",
+                    "conclusion_title": "Termination",
+                    "conclusion_text": "When the loop terminates (i = n), <code>maxSoFar</code> is the maximum of <code>A[0 ... n-1]</code>. Therefore the algorithm is correct."
+                },
+                "section4": {
+                    "title": "Correctness of Recursive Algorithms",
+                    "p1": "For recursive algorithms, instead of loop invariants, we directly use <strong>induction on input size</strong>.",
+                    "subsection1": {
+                        "title": "Example: Recursive Binary Search",
+                        "pseudocode": "function binarySearch(A: integer[], v: integer, start: integer, end: integer) → integer\n    if start > end then\n        return -1\n    variable m: integer ← floor((start + end)/2)\n    if A[m] == v then\n        return m\n    else if A[m] < v then\n        return binarySearch(A, v, m+1, end)\n    else\n        return binarySearch(A, v, start, m-1)",
+                        "p1": "The proof is done by induction on the size of the subarray <code>n = end - start + 1</code>.",
+                        "base_title": "Base Case",
+                        "base_text": "If n = 0 (i.e., <code>start > end</code>), the function returns -1, which is correct.",
+                        "hypothesis_title": "Inductive Hypothesis",
+                        "hypothesis_text": "Assume that the algorithm is correct for all inputs of size less than n.",
+                        "step_title": "Inductive Step",
+                        "step_text": "For an array of size n: if we find the element at the center → correct. Otherwise we recursively call on a smaller subarray. By the inductive hypothesis, that call is correct. Therefore the case of size n is also correct."
+                    }
+                }
+            }
         }
     }
 }
