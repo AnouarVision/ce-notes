@@ -16,7 +16,7 @@ The content is accessible through a simple web interface, both on desktop and mo
 ## Live Version
 
 The project is available online via **Netlify**:  
-https://cs-notes.netlify.app/
+[https://cs-notes.netlify.app/](https://cs-notes-uni.netlify.app/)
 
 ---
 
