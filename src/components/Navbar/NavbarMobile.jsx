@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
-import logo from "../../assets/icons/logo_ce_notes.png";
+import logo from "../../assets/icons/logo_cs_notes.png";
 import styles from "./NavbarMobile.module.scss";
 
 export default function NavbarMobile() {
