@@ -2,10 +2,10 @@
   <img src="mascotte.png" alt="CE notes mascot" width="130">
 </div>
 
-<h1 align="center">CE notes</h1>
+<h1 align="center">CS notes</h1>
 
 ## Overview
-This repository contains notes and code related to **Computer Engineering** (UNIFI) and **Information Technology** (ITS Umbria Academy).
+This repository contains notes and code from the **Computer Science (L‑31)** program at the University of Florence (Unifi).
 
 The material is organized as a personal technical reference and evolves over time as part of an ongoing study.
 
@@ -16,7 +16,7 @@ The content is accessible through a simple web interface, both on desktop and mo
 ## Live Version
 
 The project is available online via **Netlify**:  
-https://ce-notes.netlify.app/
+https://cs-notes.netlify.app/
 
 ---
 
