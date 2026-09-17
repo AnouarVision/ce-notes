@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="mascotte.png" alt="CE notes mascot" width="130">
+  <img src="mascotte.png" alt="CS notes mascot" width="130">
 </div>
 
 <h1 align="center">CS notes</h1>
@@ -15,7 +15,7 @@ The content is accessible through a simple web interface, both on desktop and mo
 
 ## Live Version
 
-The project is available online via **Netlify**:  
+The project is available online via **Netlify**:
 [https://cs-notes.netlify.app/](https://cs-notes-uni.netlify.app/)
 
 ---

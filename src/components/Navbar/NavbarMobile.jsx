@@ -29,13 +29,13 @@ export default function NavbarMobile() {
           <div className={styles.brand}>
             <img
               src={logo}
-              alt="CE notes logo"
+              alt="CS notes logo"
               width={40}
               height={40}
             />
 
             <Link to="/" className={styles.logo}>
-              CE notes
+              CS notes
             </Link>
           </div>
 

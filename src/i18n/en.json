@@ -69,7 +69,7 @@
         },
         "mission": {
             "title": "Mission",
-            "p1": "CE Notes was created to collect and organize fundamental topics in computer engineering and related disciplines in a single, coherent place.",
+            "p1": "CS Notes was created to collect and organize fundamental topics in computer engineering and related disciplines in a single, coherent place.",
             "p2": "The goal is not speed or shortcuts, but building solid foundations through well-structured explanations and rigorous reasoning."
         },
         "values": {
@@ -92,7 +92,7 @@
             }
         },
         "coverage": {
-            "title": "What CE Notes Covers",
+            "title": "What CS Notes Covers",
             "description": "The platform spans the core areas of computer engineering and scientific foundations, including:",
             "list": {
                 "cybersecurity": "Cybersecurity",
@@ -107,7 +107,7 @@
         },
         "audience": {
             "title": "Who This Is For",
-            "description": "CE Notes is designed as a structured, long-term reference for students, self-learners and professionals, focusing on fundamental concepts rather than fragmented tutorials."
+            "description": "CS Notes is designed as a structured, long-term reference for students, self-learners and professionals, focusing on fundamental concepts rather than fragmented tutorials."
         }
     },
     "topicPage": {

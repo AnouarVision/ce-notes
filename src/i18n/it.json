@@ -69,7 +69,7 @@
         },
         "mission": {
             "title": "Missione",
-            "p1": "CE Notes nasce per raccogliere e organizzare i temi fondamentali dell’ingegneria informatica e delle discipline affini in un unico spazio coerente.",
+            "p1": "CS Notes nasce per raccogliere e organizzare i temi fondamentali dell’ingegneria informatica e delle discipline affini in un unico spazio coerente.",
             "p2": "L’obiettivo non è la velocità o le scorciatoie, ma la costruzione di solide basi attraverso spiegazioni ben strutturate e ragionamento rigoroso."
         },
         "values": {
@@ -92,7 +92,7 @@
             }
         },
         "coverage": {
-            "title": "Cosa copre CE Notes",
+            "title": "Cosa copre CS Notes",
             "description": "La piattaforma abbraccia le principali aree dell’ingegneria informatica e delle basi scientifiche, tra cui:",
             "list": {
                 "cybersecurity": "Cybersecurity",
@@ -107,7 +107,7 @@
         },
         "audience": {
             "title": "A chi è rivolto",
-            "description": "CE Notes è pensato come riferimento strutturato e a lungo termine per studenti, autodidatti e professionisti, con un focus sui concetti fondamentali piuttosto che su tutorial frammentati."
+            "description": "CS Notes è pensato come riferimento strutturato e a lungo termine per studenti, autodidatti e professionisti, con un focus sui concetti fondamentali piuttosto che su tutorial frammentati."
         }
     },
     "topicPage": {

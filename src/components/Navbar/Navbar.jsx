@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
-import logo from "../../assets/icons/logo_ce_notes.png";
+import logo from "../../assets/icons/logo_cs_notes.png";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import Search from "../Search/Search";
 
@@ -17,12 +17,12 @@ export default function Navbar() {
           <div className={styles.brand}>
             <img
               src={logo}
-              alt="CE notes logo"
+              alt="CS notes logo"
               width={40}
               height={40}
             />
             <Link to="/" className={styles.logo}>
-              CE notes
+              CS notes
             </Link>
           </div>
 

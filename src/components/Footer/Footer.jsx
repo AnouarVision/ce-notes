@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`${styles.inner} container`}>
         <p>
-          © {new Date().getFullYear()} CE notes. {t("footer.tagline")}
+          © {new Date().getFullYear()} CS notes. {t("footer.tagline")}
         </p>
       </div>
     </footer>

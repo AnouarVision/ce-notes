@@ -11,7 +11,7 @@ export default function About() {
         <div className={styles.hero}>
           <h1>
             {t("about.hero.title")}{""}
-            <span className={styles.highlight}>CE Notes</span>
+            <span className={styles.highlight}>CS Notes</span>
           </h1>
           <p className={styles.subtitle}>
             {t("about.hero.subtitle")}
