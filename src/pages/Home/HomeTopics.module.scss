@@ -49,7 +49,6 @@
     color: variables.$text-gray-400;
   }
 
-  // Subtle hover gradient overlay
   &::before {
     content: "";
     position: absolute;
@@ -77,6 +76,16 @@
     &::before {
       opacity: 1;
     }
+  }
+}
+
+.mobileLoader {
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -109,5 +118,31 @@
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .mobileHidden {
+    display: none;
+  }
+
+  .mobileLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: variables.$space-1;
+    width: 100%;
+    margin: variables.$space-4 auto 0;
+    min-height: 36px;
+    color: variables.$primary;
+    font-size: variables.$fs-small;
+    font-weight: 600;
+  }
+
+  .loaderDot {
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(variables.$primary, 0.3);
+    border-top-color: variables.$primary;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
   }
 }

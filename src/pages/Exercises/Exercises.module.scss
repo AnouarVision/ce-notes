@@ -1,0 +1,412 @@
+@use "../../assets/styles/variables";
+@use "sass:color";
+
+.exercises {
+  min-height: calc(100vh - variables.$navbar-height);
+  padding: variables.$space-6 variables.$space-4;
+  background: variables.$bg-dark-3;
+}
+
+.header {
+  max-width: 720px;
+  margin-bottom: variables.$space-6;
+}
+
+.eyebrow {
+  margin-bottom: variables.$space-2;
+  color: variables.$primary;
+  font-size: variables.$fs-small;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  margin-bottom: variables.$space-2;
+  color: variables.$text-white;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.intro,
+.sectionHeader p,
+.modeCard p,
+.areaCard p {
+  color: variables.$text-gray-400;
+}
+
+.modes,
+.areaSection {
+  margin-bottom: variables.$space-6;
+}
+
+.modes h2,
+.sectionHeader h2 {
+  margin-bottom: variables.$space-3;
+  color: variables.$text-white;
+  font-size: variables.$fs-h3;
+}
+
+.modeGrid,
+.areaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: variables.$space-3;
+}
+
+.modeCard,
+.areaCard {
+  padding: variables.$space-4;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$radius-card;
+  background-color: variables.$bg-surface;
+}
+
+.modeCard {
+  display: flex;
+  gap: variables.$space-3;
+}
+
+.modeIcon {
+  flex: 0 0 auto;
+  color: variables.$primary;
+  font-size: 1.4rem;
+}
+
+.modeCard h3,
+.areaCard h3 {
+  margin-bottom: variables.$space-2;
+  color: variables.$text-white;
+  font-size: variables.$fs-card-title;
+}
+
+.areaSection {
+  padding-top: variables.$space-5;
+  border-top: 1px solid variables.$border-color;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: variables.$space-4;
+  margin-bottom: variables.$space-4;
+}
+
+.filter {
+  display: grid;
+  gap: variables.$space-1;
+  min-width: 220px;
+  color: variables.$text-gray-400;
+  font-size: variables.$fs-small;
+}
+
+.filter select {
+  min-height: 42px;
+  padding: 0 variables.$space-2;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$radius-button-sm;
+  background-color: variables.$bg-surface;
+  color: variables.$text-white;
+  font: inherit;
+}
+
+.areaGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.areaCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.areaTag {
+  align-self: flex-start;
+  margin-bottom: variables.$space-3;
+  color: variables.$text-gray-500;
+  font-size: variables.$fs-small;
+  font-weight: 600;
+}
+
+.areaCard p {
+  margin-bottom: variables.$space-2;
+  font-size: 0.95rem;
+}
+
+.mobileLoader {
+  display: none;
+}
+
+.loaderDot {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(variables.$primary, 0.3);
+  border-top-color: variables.$primary;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.exerciseMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: variables.$space-2;
+  margin-bottom: variables.$space-1;
+  color: variables.$text-gray-500;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cardActions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: auto;
+}
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 14px;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$radius-button-sm;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.notesButton {
+  background-color: transparent;
+  color: variables.$text-white;
+}
+
+.exerciseButton {
+  border-color: variables.$primary;
+  background-color: variables.$primary;
+  color: variables.$bg-dark-1;
+}
+
+.notesButton:hover,
+.notesButton:focus-visible {
+  border-color: variables.$text-gray-500;
+  background-color: variables.$bg-dark-2;
+  color: variables.$text-white;
+}
+
+.exerciseButton:hover {
+  border-color: color.adjust(
+    variables.$primary,
+    $lightness: 4%,
+    $saturation: 15%
+  );
+  background-color: color.adjust(
+    variables.$primary,
+    $lightness: 4%,
+    $saturation: 15%
+  );
+  color: variables.$bg-dark-1;
+}
+
+.notesButton:focus-visible,
+.exerciseButton:focus-visible {
+  outline: 2px solid variables.$primary;
+  outline-offset: 2px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: variables.$space-1;
+  margin-bottom: variables.$space-4;
+  color: variables.$primary;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    gap 0.2s ease;
+}
+
+.backLink:hover,
+.backLink:focus-visible {
+  color: variables.$text-white;
+  gap: variables.$space-2;
+  text-decoration: underline;
+}
+
+.exercisePageSection {
+  padding-top: variables.$space-5;
+  border-top: 1px solid variables.$border-color;
+}
+
+.exercisePageSection h2 {
+  margin-bottom: variables.$space-3;
+  color: variables.$text-white;
+  font-size: variables.$fs-h3;
+}
+
+.exercisePageList {
+  display: grid;
+  gap: variables.$space-3;
+  max-width: 820px;
+}
+
+.exercisePageCard {
+  display: block;
+  padding: variables.$space-4;
+  border: 1px solid variables.$border-color;
+  border-left: 3px solid variables.$primary;
+  border-radius: variables.$radius-card;
+  background-color: variables.$bg-surface;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.exercisePageCard:hover,
+.exercisePageCard:focus-visible {
+  border-color: variables.$primary;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.exercisePageCard h3 {
+  margin-bottom: variables.$space-2;
+  color: variables.$text-white;
+  font-size: variables.$fs-card-title;
+}
+
+.exercisePageCard p {
+  color: variables.$text-gray-400;
+}
+
+.detailLayout {
+  display: grid;
+  gap: variables.$space-4;
+  max-width: 860px;
+}
+
+.promptCard,
+.solutionCard {
+  padding: variables.$space-5;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$radius-card;
+  background-color: variables.$bg-surface;
+}
+
+.promptCard {
+  border-left: 3px solid variables.$primary;
+}
+
+.promptCard h2,
+.solutionCard h2 {
+  margin-bottom: variables.$space-2;
+  color: variables.$text-white;
+}
+
+.promptCard p,
+.solutionCard > p,
+.solutionTemplate p,
+.solutionTemplate li {
+  color: variables.$text-gray-400;
+}
+
+.solutionCard > p {
+  margin-bottom: variables.$space-4;
+}
+
+.solutionTemplate {
+  padding-top: variables.$space-4;
+  border-top: 1px solid variables.$border-color;
+}
+
+.solutionTemplate h3 {
+  margin: variables.$space-4 0 variables.$space-2;
+  color: variables.$primary;
+  font-size: 1rem;
+}
+
+.solutionTemplate h3:first-child {
+  margin-top: 0;
+}
+
+.solutionTemplate ol {
+  display: grid;
+  gap: variables.$space-1;
+  padding-left: variables.$space-4;
+}
+
+.solutionTemplate pre {
+  overflow-x: auto;
+  margin: 0;
+  padding: variables.$space-3;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$radius-button-sm;
+  background-color: variables.$bg-dark-1;
+  color: variables.$text-gray-300;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 800px) {
+  .modeGrid,
+  .areaGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sectionHeader {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .filter {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .exercises {
+    padding: variables.$space-5 variables.$space-3;
+  }
+
+  .modeGrid,
+  .areaGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobileLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    margin-top: variables.$space-3;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.actionButton:focus-visible {
+  outline: 2px solid variables.$primary;
+  outline-offset: 2px;
+}
+
+@media (max-width: 420px) {
+  .cardActions {
+    grid-template-columns: 1fr;
+  }
+}

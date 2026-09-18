@@ -16,8 +16,24 @@ export const topics = [
     slug: "introductory-computer-science",
   },
   {
+    key: "programming",
+    slug: "programming",
+  },
+  {
+    key: "objectOrientedProgramming",
+    slug: "object-oriented-programming",
+  },
+  {
+    key: "computerArchitecture",
+    slug: "computer-architecture",
+  },
+  {
     key: "linearAlgebra",
     slug: "linear-algebra-geometry",
+  },
+  {
+    key: "discreteMathLogic",
+    slug: "discrete-mathematics-logic",
   },
   {
     key: "analysis",

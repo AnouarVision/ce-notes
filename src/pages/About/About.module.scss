@@ -41,43 +41,44 @@
   line-height: 1.6;
 }
 
-//Cards
+// Cards
 .card {
   width: 100%;
-
   padding: variables.$space-5;
   border-radius: variables.$radius-card;
-
-  background-color: variables.$bg-surface;
-  border: 1px solid variables.$border-color;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.75));
+  border: 1px solid rgba(variables.$border-color, 0.8);
+  box-shadow: 0 14px 32px rgba(2, 6, 23, 0.2);
 
   h2 {
-    font-size: 1.6rem;
+    margin: 0 0 variables.$space-3;
+    padding-bottom: variables.$space-2;
+    border-bottom: 1px solid rgba(variables.$primary, 0.25);
+    font-size: 1.5rem;
     font-weight: 700;
     color: variables.$text-white;
-    margin-bottom: variables.$space-2;
   }
 
   p {
+    margin: 0 0 variables.$space-2;
     font-size: variables.$fs-body;
     color: variables.$text-gray-300;
-    line-height: 1.7;
-    margin-bottom: variables.$space-2;
+    line-height: 1.75;
   }
 }
 
-// Muted Card
 .cardMuted {
   @extend .card;
-  background-color: variables.$bg-dark-1;
+  background: linear-gradient(180deg, rgba(11, 11, 11, 0.92), rgba(21, 21, 21, 0.82));
+  border-color: rgba(variables.$border-color, 0.9);
 
   p {
     font-size: variables.$fs-small;
     color: variables.$text-gray-400;
+    margin-bottom: 0;
   }
 }
 
-//Core Values
 .values {
   width: 100%;
   text-align: center;
@@ -92,51 +93,75 @@
 
 .valuesGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: variables.$space-4;
 }
 
 .valueCard {
+  position: relative;
   padding: variables.$space-4;
   border-radius: variables.$radius-card;
-
-  background-color: variables.$bg-surface;
-  border: 1px solid variables.$border-color;
-
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.66));
+  border: 1px solid rgba(variables.$border-color, 0.85);
   text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba(variables.$primary, 0.45);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+  }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: variables.$text-white;
-    margin-bottom: 6px;
+    margin: 0 0 8px;
+    padding-top: variables.$space-1;
   }
 
   p {
     font-size: variables.$fs-small;
     color: variables.$text-gray-400;
     line-height: 1.6;
+    margin: 0;
   }
 }
 
 .check {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
   margin-bottom: variables.$space-2;
-  font-size: 1.5rem;
+  border-radius: 999px;
+  background: rgba(variables.$primary, 0.12);
+  border: 1px solid rgba(variables.$primary, 0.35);
+  font-size: 1rem;
   font-weight: 700;
   color: variables.$primary;
 }
 
-//List
 .list {
-  margin-top: variables.$space-2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 20px;
+  margin: variables.$space-3 0 0;
   padding-left: 1.2rem;
+  list-style: disc;
 
   li {
     font-size: variables.$fs-body;
     color: variables.$text-gray-300;
-    margin-bottom: 6px;
+    line-height: 1.6;
+    margin: 0;
   }
+}
+
+.emphasis {
+  color: variables.$primary;
+  font-weight: 700;
 }
 
 // Responsive Design

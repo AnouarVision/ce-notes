@@ -28,17 +28,29 @@ export default function Navbar() {
 
           <ul className={styles.nav}>
             <li>
-              <NavLink to="/" end>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) => isActive ? styles.active : undefined}
+              >
                 {t("navbar.links.topics")}
               </NavLink>
             </li>
             <li>
-              <NavLink to="/exercises">
+              <NavLink
+                to="/exercises"
+                end
+                className={({ isActive }) => isActive ? styles.active : undefined}
+              >
                 {t("navbar.links.exercises")}
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about">
+              <NavLink
+                to="/about"
+                end
+                className={({ isActive }) => isActive ? styles.active : undefined}
+              >
                 About
               </NavLink>
             </li>

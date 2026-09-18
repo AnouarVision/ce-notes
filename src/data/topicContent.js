@@ -203,6 +203,117 @@ export const topicContent = {
     ],
   },
 
+  "computer-architecture": {
+    titleKey: "topics.computerArchitecture.title",
+    subtitleKey: "topics.computerArchitecture.subtitle",
+    overviewKey: "topics.computerArchitecture.overview",
+
+    navigation: [
+      { slug: "computer-architecture", titleKey: "topics.computerArchitecture.title" },
+      { slug: "introductory-computer-science", titleKey: "topics.introCs.title" },
+      { slug: "data-structures", titleKey: "topics.dataStructures.title" },
+      { slug: "database-systems", titleKey: "topics.databases.title" },
+      { slug: "networking", titleKey: "topics.networking.title" },
+      { slug: "cybersecurity", titleKey: "topics.cybersecurity.title" },
+      { slug: "linear-algebra-geometry", titleKey: "topics.linearAlgebra.title" },
+      { slug: "mathematical-analysis", titleKey: "topics.analysis.title" },
+    ],
+
+    related: [
+      {
+        slug: "computer-evolution",
+        titleKey: "topics.computerArchitecture.related.computerEvolution"
+      },
+      {
+        slug: "performance",
+        titleKey: "topics.computerArchitecture.related.performance"
+      },
+      {
+        slug: "combinational-logic",
+        titleKey: "topics.computerArchitecture.related.combinationalLogic"
+      },
+      {
+        slug: "timing-memory",
+        titleKey: "topics.computerArchitecture.related.timingMemory"
+      },
+      {
+        slug: "riscv-assembly",
+        titleKey: "topics.computerArchitecture.related.riscvAssembly"
+      },
+      {
+        slug: "binary-arithmetic",
+        titleKey: "topics.computerArchitecture.related.binaryArithmetic"
+      },
+      {
+        slug: "single-cycle-cpu",
+        titleKey: "topics.computerArchitecture.related.singleCycleCpu"
+      },
+      {
+        slug: "pipelining",
+        titleKey: "topics.computerArchitecture.related.pipelining"
+      },
+      {
+        slug: "memory-hierarchy",
+        titleKey: "topics.computerArchitecture.related.memoryHierarchy"
+      }
+    ]
+  },
+
+  programming: {
+    titleKey: "topics.programming.title",
+    subtitleKey: "topics.programming.subtitle",
+    overviewKey: "topics.programming.overview",
+
+    navigation: [
+      { slug: "programming", titleKey: "topics.programming.title" },
+      { slug: "introductory-computer-science", titleKey: "topics.introCs.title" },
+      { slug: "data-structures", titleKey: "topics.dataStructures.title" },
+      { slug: "computer-architecture", titleKey: "topics.computerArchitecture.title" },
+      { slug: "database-systems", titleKey: "topics.databases.title" },
+      { slug: "networking", titleKey: "topics.networking.title" },
+      { slug: "cybersecurity", titleKey: "topics.cybersecurity.title" },
+      { slug: "discrete-mathematics-logic", titleKey: "topics.discreteMathLogic.title" },
+    ],
+
+    related: [
+      { slug: "computational-thinking", titleKey: "topics.programming.related.computationalThinking" },
+      { slug: "algorithms-and-programs", titleKey: "topics.programming.related.algorithmsAndPrograms" },
+      { slug: "problem-decomposition", titleKey: "topics.programming.related.problemDecomposition" },
+      { slug: "complexity-analysis", titleKey: "topics.programming.related.complexityAnalysis" },
+      { slug: "procedural-programming", titleKey: "topics.programming.related.proceduralProgramming" },
+      { slug: "java-language", titleKey: "topics.programming.related.javaLanguage" },
+      { slug: "control-flow", titleKey: "topics.programming.related.controlFlow" },
+      { slug: "methods-and-recursion", titleKey: "topics.programming.related.methodsAndRecursion" }
+    ]
+  },
+
+  "object-oriented-programming": {
+    titleKey: "topics.objectOrientedProgramming.title",
+    subtitleKey: "topics.objectOrientedProgramming.subtitle",
+    overviewKey: "topics.objectOrientedProgramming.overview",
+
+    navigation: [
+      { slug: "object-oriented-programming", titleKey: "topics.objectOrientedProgramming.title" },
+      { slug: "programming", titleKey: "topics.programming.title" },
+      { slug: "introductory-computer-science", titleKey: "topics.introCs.title" },
+      { slug: "data-structures", titleKey: "topics.dataStructures.title" },
+      { slug: "computer-architecture", titleKey: "topics.computerArchitecture.title" },
+      { slug: "database-systems", titleKey: "topics.databases.title" },
+      { slug: "networking", titleKey: "topics.networking.title" },
+      { slug: "discrete-mathematics-logic", titleKey: "topics.discreteMathLogic.title" },
+    ],
+
+    related: [
+      { slug: "oop-foundations", titleKey: "topics.objectOrientedProgramming.related.foundations" },
+      { slug: "classes-and-objects", titleKey: "topics.objectOrientedProgramming.related.classesAndObjects" },
+      { slug: "interfaces-and-inheritance", titleKey: "topics.objectOrientedProgramming.related.interfacesAndInheritance" },
+      { slug: "exceptions", titleKey: "topics.objectOrientedProgramming.related.exceptions" },
+      { slug: "generic-programming", titleKey: "topics.objectOrientedProgramming.related.genericProgramming" },
+      { slug: "data-structures", titleKey: "topics.objectOrientedProgramming.related.dataStructures" },
+      { slug: "collections", titleKey: "topics.objectOrientedProgramming.related.collections" }
+    ]
+  },
+
   "linear-algebra-geometry": {
     titleKey: "topics.linearAlgebra.title",
     subtitleKey: "topics.linearAlgebra.subtitle",
@@ -253,6 +364,58 @@ export const topicContent = {
         titleKey: "topics.linearAlgebra.related.spectralTheorems"
       }
     ],
+  },
+
+  "discrete-mathematics-logic": {
+    titleKey: "topics.discreteMathLogic.title",
+    subtitleKey: "topics.discreteMathLogic.subtitle",
+    overviewKey: "topics.discreteMathLogic.overview",
+
+    navigation: [
+      { slug: "discrete-mathematics-logic", titleKey: "topics.discreteMathLogic.title" },
+      { slug: "mathematical-analysis", titleKey: "topics.analysis.title" },
+      { slug: "linear-algebra-geometry", titleKey: "topics.linearAlgebra.title" },
+      { slug: "data-structures", titleKey: "topics.dataStructures.title" },
+      { slug: "database-systems", titleKey: "topics.databases.title" },
+      { slug: "networking", titleKey: "topics.networking.title" },
+      { slug: "cybersecurity", titleKey: "topics.cybersecurity.title" },
+      { slug: "physics", titleKey: "topics.physics.title" },
+    ],
+
+    related: [
+      {
+        slug: "sets-and-operations",
+        titleKey: "topics.discreteMathLogic.related.setsAndOperations"
+      },
+      {
+        slug: "relations-and-order",
+        titleKey: "topics.discreteMathLogic.related.relationsAndOrder"
+      },
+      {
+        slug: "induction-and-recursion",
+        titleKey: "topics.discreteMathLogic.related.inductionAndRecursion"
+      },
+      {
+        slug: "modular-arithmetic",
+        titleKey: "topics.discreteMathLogic.related.modularArithmetic"
+      },
+      {
+        slug: "combinatorics",
+        titleKey: "topics.discreteMathLogic.related.combinatorics"
+      },
+      {
+        slug: "algebraic-structures",
+        titleKey: "topics.discreteMathLogic.related.algebraicStructures"
+      },
+      {
+        slug: "graph-theory",
+        titleKey: "topics.discreteMathLogic.related.graphTheory"
+      },
+      {
+        slug: "logic-and-automated-reasoning",
+        titleKey: "topics.discreteMathLogic.related.logicAndAutomatedReasoning"
+      }
+    ]
   },
 
   "mathematical-analysis": {

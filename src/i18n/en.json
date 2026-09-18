@@ -10,7 +10,7 @@
     },
     "home": {
         "hero": {
-            "subtitle": "Technical notes and exercises across Computer Engineering and Computer Science domains.",
+            "subtitle": "Technical notes and exercises from the Computer Science (L‑31) program",
             "cta": "Start reading"
         },
         "topics": {
@@ -31,9 +31,25 @@
                 "title": "Introductory Computer Science",
                 "description": "Foundations of computer science, from low-level data representation and machine execution to high-level programming, object-oriented design, and core software design patterns."
             },
+            "programming": {
+                "title": "Programming",
+                "description": "Computational thinking, algorithms, complexity analysis, and procedural programming with Java."
+            },
+            "objectOrientedProgramming": {
+                "title": "Object-Oriented Programming",
+                "description": "Classes, objects, interfaces, inheritance, exceptions, generic programming, data structures, and collections."
+            },
+            "computerArchitecture": {
+                "title": "Computer Architecture",
+                "description": "Hardware design principles, combinational logic, RISC-V assembly, single-cycle CPUs, pipelining, and memory hierarchies."
+            },
             "linearAlgebra": {
                 "title": "Linear Algebra & Geometry",
                 "description": "Vectors, linear transformations, matrices, systems of equations, and geometric interpretations in two- and three-dimensional space."
+            },
+            "discreteMathLogic": {
+                "title": "Discrete Mathematics & Logic",
+                "description": "Sets, relations, induction, combinatorics, modular arithmetic, algebraic structures, graphs, and mathematical logic."
             },
             "analysis": {
                 "title": "Mathematical Analysis",
@@ -46,7 +62,8 @@
             "physics": {
                 "title": "Physics",
                 "description": "Foundations of classical physics, including kinematics and dynamics, systems of particles, rigid body motion, thermodynamics, electric and magnetic phenomena, and Maxwell’s equations."
-            }
+            },
+            "loading": "Loading..."
         }
     },
     "maintenance": {
@@ -62,43 +79,209 @@
         "contact": "Contact me at",
         "thanks": "Thank you for your patience."
     },
+    "exercises": {
+        "eyebrow": "Practice",
+        "title": "Exercises",
+        "description": "Choose a way to review and quickly find the area you want to work on.",
+        "modesTitle": "How do you want to practice?",
+        "modes": {
+            "review": {
+                "title": "Review",
+                "description": "Revisit the essential concepts before moving on to a new topic."
+            },
+            "practice": {
+                "title": "Practice",
+                "description": "Turn theory into code and check that the important steps are clear."
+            },
+            "mixed": {
+                "title": "Mixed practice",
+                "description": "Alternate different subjects to strengthen connections and method."
+            }
+        },
+        "areasTitle": "Practice areas",
+        "areasDescription": "Choose a subject to start reviewing the available notes.",
+        "filterLabel": "Filter by area",
+        "allAreas": "All areas",
+        "loading": "Loading",
+        "linkedArea": "Practice area",
+        "openNotes": "Open notes",
+        "openExercises": "View exercises",
+        "topicExercisesTitle": "Subject exercises",
+        "backToExercises": "Back to exercises",
+        "backToSubject": "Back to subject",
+        "notFound": "Exercise area not found",
+        "exerciseLabel": "Exercise",
+        "promptTitle": "Exercise prompt",
+        "solutionTitle": "Solution",
+        "solutionIntro": "Space reserved for the complete solution to the exercise.",
+        "approachTitle": "Idea and approach",
+        "approachPlaceholder": "Describe the general idea and the choices made here.",
+        "solutionStepsTitle": "Working",
+        "stepPlaceholder": "Add one step of the solution.",
+        "codeTitle": "Code or calculations",
+        "codePlaceholder": "// Add the solution here",
+        "items": {
+            "javaControlFlow": {
+                "title": "Control flow in Java",
+                "description": "Write a program that analyzes a sequence of numbers and counts the positive, negative, and zero values.",
+                "difficulty": "Beginner"
+            },
+            "recursion": {
+                "title": "Recursion and the base case",
+                "description": "Define a recursive method for computing a factorial and explain its base case.",
+                "difficulty": "Beginner"
+            },
+            "classDesign": {
+                "title": "Design a class",
+                "description": "Model a Book class with state, a constructor, access methods, and a loan operation.",
+                "difficulty": "Beginner"
+            },
+            "interfaces": {
+                "title": "Interfaces and inheritance",
+                "description": "Define a Payable interface and implement it in two classes with different behavior.",
+                "difficulty": "Intermediate"
+            },
+            "complexity": {
+                "title": "Compare complexity",
+                "description": "Determine the time complexity of three code fragments and rank the solutions by efficiency.",
+                "difficulty": "Intermediate"
+            },
+            "stacksAndQueues": {
+                "title": "Stacks and queues",
+                "description": "Choose the best structure for simulating a print queue and justify the operations used.",
+                "difficulty": "Beginner"
+            },
+            "sqlQuery": {
+                "title": "SQL query",
+                "description": "Write a query that finds students enrolled in more than one course and orders the result by surname.",
+                "difficulty": "Intermediate"
+            },
+            "normalization": {
+                "title": "Normalize a schema",
+                "description": "Identify the functional dependencies and bring a redundant schema to third normal form.",
+                "difficulty": "Advanced"
+            },
+            "binaryArithmetic": {
+                "title": "Binary arithmetic",
+                "description": "Represent two integers in two’s complement and add them while checking for overflow.",
+                "difficulty": "Intermediate"
+            },
+            "pipeline": {
+                "title": "Analyze a pipeline",
+                "description": "Identify dependencies between RISC-V instructions and propose ways to resolve pipeline hazards.",
+                "difficulty": "Advanced"
+            },
+            "combinatorics": {
+                "title": "Count the possibilities",
+                "description": "Calculate how many ways elements can be selected and ordered under given constraints.",
+                "difficulty": "Intermediate"
+            },
+            "graphs": {
+                "title": "Classify a graph",
+                "description": "Classify a graph as connected, bipartite, or Eulerian and justify each answer.",
+                "difficulty": "Intermediate"
+            },
+            "accessControl": {
+                "title": "Design access control",
+                "description": "Assign roles and permissions to a small system and verify which operations are authorized.",
+                "difficulty": "Intermediate"
+            },
+            "threatModel": {
+                "title": "Analyze a threat",
+                "description": "Identify assets, threats, vulnerabilities, and countermeasures for a web service.",
+                "difficulty": "Intermediate"
+            },
+            "dataRepresentation": {
+                "title": "Represent a value",
+                "description": "Convert integer and character values between decimal, binary, and hexadecimal representations.",
+                "difficulty": "Beginner"
+            },
+            "cPointers": {
+                "title": "Pointers in C",
+                "description": "Write a function that modifies two variables through pointers and explain pass-by-address.",
+                "difficulty": "Intermediate"
+            },
+            "linearSystem": {
+                "title": "Solve a linear system",
+                "description": "Solve a system of three equations using Gaussian elimination.",
+                "difficulty": "Intermediate"
+            },
+            "eigenvalues": {
+                "title": "Compute eigenvalues and eigenvectors",
+                "description": "Find the eigenvalues and eigenvectors of a two-by-two matrix and interpret the result.",
+                "difficulty": "Advanced"
+            },
+            "functionLimit": {
+                "title": "Study a limit",
+                "description": "Compute a function limit and determine whether the point is a discontinuity.",
+                "difficulty": "Beginner"
+            },
+            "derivative": {
+                "title": "Analyze a derivative",
+                "description": "Compute a derivative and use its sign to find intervals of increase and decrease.",
+                "difficulty": "Intermediate"
+            },
+            "subnetting": {
+                "title": "Split a network into subnets",
+                "description": "Determine the mask, usable addresses, and broadcast address for an assigned IPv4 network.",
+                "difficulty": "Intermediate"
+            },
+            "routing": {
+                "title": "Choose a route",
+                "description": "Build a routing table from a simple network topology.",
+                "difficulty": "Intermediate"
+            },
+            "newtonLaw": {
+                "title": "Apply Newton’s laws",
+                "description": "Draw the force diagram and calculate the acceleration of a body on an inclined plane.",
+                "difficulty": "Beginner"
+            },
+            "energy": {
+                "title": "Conservation of energy",
+                "description": "Calculate speed or height in a frictionless system using conservation of mechanical energy.",
+                "difficulty": "Intermediate"
+            }
+        }
+    },
     "about": {
         "hero": {
             "title": "About ",
-            "subtitle": "A personal study hub for Computer Engineering and Computer Science, focused on clarity, structure and long-term understanding."
+            "subtitle": "A personal study hub for Computer Science (L‑31), focused on clarity, structure and long-term learning."
         },
         "mission": {
             "title": "Mission",
-            "p1": "CS Notes was created to collect and organize fundamental topics in computer engineering and related disciplines in a single, coherent place.",
-            "p2": "The goal is not speed or shortcuts, but building solid foundations through well-structured explanations and rigorous reasoning."
+            "p1": "CS Notes brings together the core topics of computer science and related fields in one clear, organized place.",
+            "p2": "The goal is not to rush or cut corners, but to build a solid understanding with explanations that are structured and easy to follow."
         },
         "values": {
             "title": "Core Values",
             "clarity": {
                 "title": "Clarity",
-                "description": "Complex concepts are explained in a clear and accessible way. No unnecessary jargon, just straightforward knowledge."
+                "description": "Complex ideas explained simply, directly, and without unnecessary jargon."
             },
             "practicality": {
                 "title": "Practicality",
-                "description": "Theory meets practice. Every concept is backed by real-world examples and working code implementations."
+                "description": "Theory and practice side by side: concrete examples and code that make the concepts stick."
             },
             "organization": {
                 "title": "Organization",
-                "description": "Content is carefully structured for both quick reference and deep learning. Find what you need, when you need it."
+                "description": "Content arranged so it is easy to find, whether you need a quick check or a deeper study session."
             },
             "completeness": {
                 "title": "Completeness",
-                "description": "From fundamentals to advanced topics, the essential knowledge every engineer should know is covered."
+                "description": "From the basics to advanced topics, covering the knowledge that really matters."
             }
         },
         "coverage": {
             "title": "What CS Notes Covers",
-            "description": "The platform spans the core areas of computer engineering and scientific foundations, including:",
+            "description": "The platform covers the main areas of computer science and scientific foundations, including:",
             "list": {
                 "cybersecurity": "Cybersecurity",
                 "dsa": "Data Structures & Algorithms",
                 "databases": "Databases",
                 "cs": "Introductory Computer Science",
+                "programming": "Programming",
+                "architecture": "Computer Architecture",
                 "algebra": "Linear Algebra & Geometry",
                 "analysis": "Mathematical Analysis",
                 "networking": "Networking",
@@ -107,7 +290,7 @@
         },
         "audience": {
             "title": "Who This Is For",
-            "description": "CS Notes is designed as a structured, long-term reference for students, self-learners and professionals, focusing on fundamental concepts rather than fragmented tutorials."
+            "description": "CS Notes is made for students, self-learners, and professionals who want a clear, durable reference instead of fragmented tutorials."
         }
     },
     "topicPage": {
@@ -189,7 +372,53 @@
                 "designPatterns": "Fundamental Design Patterns"
             }
         },
+        "computerArchitecture": {
+            "title": "Computer Architecture",
+            "subtitle": "Digital circuits, CPUs, pipelines, and memory.",
+            "overview": "Computer architecture introduces the principles behind the design of computing systems and their operation at the hardware level. The subject begins with the analysis of modern computers and the evolution of technology, focusing on the role of performance and the criteria used to evaluate architectures.\n\nIt covers combinational logic networks, with particular attention to specification, synthesis, and minimization. The course also addresses timing methodologies and memory elements, as well as finite-state machines and sequential networks, which describe the dynamic behavior of digital systems.\n\nThe curriculum introduces the assembly language of the RISC-V system and its simulator, with a laboratory dedicated to assembly programming. Fundamental concepts such as number representation, binary arithmetic, ALU design, multiplication, division, and floating-point numbers are discussed in depth.\n\nA central part is devoted to the RISC-V processor, including the design of a single-cycle CPU, the data path, and the control unit. The subject then examines performance improvements through pipelining, analyzing pipeline hazards and the mechanisms used to solve them, including exceptions and processor enhancements.\n\nThe treatment concludes with memory hierarchies, cache organization, and an introduction to virtual memory, providing a complete view of modern computing systems.",
+            "related": {
+                "computerEvolution": "Modern Computers and Technological Evolution",
+                "performance": "Performance and Architecture Evaluation",
+                "combinationalLogic": "Combinational Logic Networks",
+                "timingMemory": "Timing and Memory Elements",
+                "finiteStateMachines": "Finite-State Machines and Sequential Networks",
+                "riscvAssembly": "RISC-V Assembly and Simulators",
+                "binaryArithmetic": "Number Representation and Binary Arithmetic",
+                "singleCycleCpu": "Single-Cycle CPU and Control",
+                "pipelining": "Pipelining and Pipeline Hazards",
+                "memoryHierarchy": "Memory Hierarchies and Caches"
+            }
+        },
+        "programming": {
+            "title": "Programming",
+            "subtitle": "From problems to programs, with Java.",
+            "overview": "Programming introduces the computational way of thinking and the tools needed to turn a problem into an executable solution. The course begins by distinguishing algorithms from programs and by using representation and decomposition to break complex problems into simpler parts.\n\nIt also introduces complexity analysis, providing the basic tools needed to estimate the cost of a solution and compare different approaches. On this foundation, procedural programming is studied through the organization of code around instructions, data, and well-defined procedures.\n\nJava is used as the main programming language. The course covers primitive types, variables, expressions, and basic operations, then moves to control flow through conditional and iterative structures.\n\nThe treatment concludes with methods, which make programs clearer and reusable, and recursion, with attention to how recursive calls work, how base cases are defined, and how they lead to a correct solution.",
+            "related": {
+                "computationalThinking": "Computational Thinking",
+                "algorithmsAndPrograms": "Algorithms and Programs",
+                "problemDecomposition": "Problem Representation and Decomposition",
+                "complexityAnalysis": "Introduction to Complexity Analysis",
+                "proceduralProgramming": "Procedural Programming",
+                "javaLanguage": "The Java Language",
+                "controlFlow": "Primitive Types and Control Flow",
+                "methodsAndRecursion": "Methods and Recursion"
+            }
+        },
         "linearAlgebra": {
+        "objectOrientedProgramming": {
+            "title": "Object-Oriented Programming",
+            "subtitle": "Classes, relationships, and reusable structures.",
+            "overview": "Object-oriented programming introduces a way of designing software around objects that combine data and behavior. The course begins with the foundations of the paradigm, clarifying the role of classes, objects, state, behavior, and responsibilities.\n\nIt then explores classes and objects in more detail, together with the mechanisms used to describe relationships between different types. Interfaces and inheritance are presented as tools for defining contracts, reusing code, and building flexible hierarchies while keeping what an object does separate from how it does it.\n\nThe treatment also covers exception handling, which is used to represent and manage abnormal situations without mixing error paths with the normal flow of a program. It then introduces generic programming, allowing reusable components to work with different types while preserving type safety.\n\nThe final part focuses on data structures and collections, with attention to how groups of objects are organized, traversed, and manipulated in object-oriented programs.",
+            "related": {
+                "foundations": "Object-Oriented Programming Foundations",
+                "classesAndObjects": "Classes and Objects",
+                "interfacesAndInheritance": "Interfaces and Inheritance",
+                "exceptions": "Exception Handling",
+                "genericProgramming": "Generic Programming",
+                "dataStructures": "Data Structures",
+                "collections": "Collections"
+            }
+        },
             "title": "Linear Algebra and Geometry",
             "subtitle": "Vector spaces, matrices, and linear transformations.",
             "overview": "Linear algebra and geometry introduces the fundamental mathematical structures used to describe and analyze linear systems in scientific and engineering contexts. The treatment begins with the study of Euclidean spaces and vectors, addressing coordinates, scalar and vector products, and the tools of analytic geometry in space.\n\nLinear systems and their representation through matrices are then introduced, with particular emphasis on the Gaussian elimination method as a fundamental tool for solving systems and analyzing their properties. Matrix algebra is developed systematically, including basic operations, invertible matrices, and the computation of the inverse.\n\nIt continues with the study of vector spaces and linear transformations, introducing concepts such as kernel and image, generators and linear independence, dimension and rank. In this framework, the representation theorem, the rank–nullity theorem, and Grassmann’s formula are presented.\n\nA central part is devoted to determinants, their properties and computational techniques, including Laplace expansions and the Binet theorem, as well as the relationship between determinant and rank. Eigenvalues and eigenvectors are subsequently introduced, together with the study of similar matrices and the problem of canonical forms.\n\nThe treatment concludes with the study of Euclidean spaces and orthogonal structures, including orthonormal bases, orthogonal matrices, orthogonal projections, and the Gram–Schmidt algorithm, leading to the method of least squares. Finally, spectral theorems, both in the real and complex cases and the study of quadratic forms are presented.",
@@ -202,6 +431,21 @@
                 "eigenvalues": "Eigenvalues and Eigenvectors",
                 "orthogonality": "Orthogonality and Least Squares",
                 "spectralTheorems": "Spectral Theorems and Quadratic Forms"
+            }
+        },
+        "discreteMathLogic": {
+            "title": "Discrete Mathematics and Logic",
+            "subtitle": "Sets, relations, discrete structures, and formal reasoning.",
+            "overview": "Discrete mathematics and logic introduces the mathematical structures and proof techniques used to reason about finite or countable objects, which are central to information theory, computer science, and formal logic. The course begins with sets, set operations, and relations between elements, including order and equivalence relations and their role in modeling structured data.\n\nIt then develops the basic tools of proof, such as induction and recursive definitions, with applications to sequences, arithmetic constructions, and combinatorial problems. Modular arithmetic is also introduced, including greatest common divisors, the Euclidean algorithm, Bézout’s identity, prime numbers, and Diophantine equations.\n\nA large part of the course is devoted to combinatorics, including permutations, arrangements, combinations, inclusion-exclusion, Euler’s totient function, and applications to RSA cryptography. The subject then moves to polynomials with integer and rational coefficients, algebraic structures such as groups, rings, and fields, and the symmetric group and its fundamental properties.\n\nThe course concludes with graph theory and mathematical logic: paths, trees, connectivity, Eulerian and Hamiltonian graphs, planar and bipartite graphs, graph coloring, Hall’s theorem, Menger’s theorem, and flow networks. The final part introduces propositional and predicate logic, skolemization, and automated deduction, providing the foundations for formal reasoning and verification.",
+            "related": {
+                "setsAndOperations": "Sets and Operations",
+                "relationsAndOrder": "Relations, Order, and Equivalence",
+                "inductionAndRecursion": "Induction and Recursion",
+                "modularArithmetic": "Modular Arithmetic and RSA",
+                "combinatorics": "Combinatorics",
+                "algebraicStructures": "Algebraic Structures",
+                "graphTheory": "Graph Theory",
+                "logicAndAutomatedReasoning": "Logic and Automated Reasoning"
             }
         },
         "analysis": {

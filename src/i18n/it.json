@@ -10,7 +10,7 @@
     },
     "home": {
         "hero": {
-            "subtitle": "Appunti tecnici ed esercizi su Ingegneria Informatica e Informatica.",
+            "subtitle": "Appunti tecnici ed esercizi di Informatica (L‑31)",
             "cta": "Inizia a leggere"
         },
         "topics": {
@@ -31,9 +31,25 @@
                 "title": "Fondamenti di informatica",
                 "description": "Basi dell’informatica, dalla rappresentazione dei dati a basso livello e dall’esecuzione delle macchine fino alla programmazione ad alto livello, alla progettazione orientata agli oggetti e ai principali pattern software."
             },
+            "programming": {
+                "title": "Programmazione",
+                "description": "Metodo informatico, algoritmi, analisi della complessità e programmazione procedurale con il linguaggio Java."
+            },
+            "objectOrientedProgramming": {
+                "title": "Programmazione orientata agli oggetti",
+                "description": "Classi, oggetti, interfacce, ereditarietà, eccezioni, programmazione generica, strutture dati e collezioni."
+            },
+            "computerArchitecture": {
+                "title": "Architetture degli elaboratori",
+                "description": "Project management di hardware, logica combinatoria, assembly RISC-V, CPU a ciclo singolo, pipeline e gerarchie di memoria."
+            },
             "linearAlgebra": {
                 "title": "Geometria e algebra lineare",
                 "description": "Vettori, trasformazioni lineari, matrici, sistemi di equazioni e interpretazioni geometriche nello spazio bidimensionale e tridimensionale."
+            },
+            "discreteMathLogic": {
+                "title": "Matematica discreta e logica",
+                "description": "Insiemi, relazioni, induzione, combinatoria, aritmetica modulare, strutture algebriche, grafi e logica matematica."
             },
             "analysis": {
                 "title": "Analisi matematica",
@@ -46,7 +62,8 @@
             "physics": {
                 "title": "Fisica",
                 "description": "Fondamenti della fisica classica, comprendenti cinematica e dinamica, sistemi di particelle, moto dei corpi rigidi, termodinamica, fenomeni elettrici e magnetici ed equazioni di Maxwell."
-            }
+            },
+            "loading": "Caricamento..."
         }
     },
     "maintenance": {
@@ -62,43 +79,209 @@
         "contact": "Contattami a",
         "thanks": "Grazie per la pazienza."
     },
+    "exercises": {
+        "eyebrow": "Allenamento",
+        "title": "Esercizi",
+        "description": "Scegli un modo per ripassare e trova rapidamente l’area su cui vuoi lavorare.",
+        "modesTitle": "Come vuoi esercitarti?",
+        "modes": {
+            "review": {
+                "title": "Ripasso",
+                "description": "Rivedi i concetti essenziali prima di affrontare un nuovo argomento."
+            },
+            "practice": {
+                "title": "Pratica",
+                "description": "Porta la teoria nel codice e verifica di aver capito i passaggi importanti."
+            },
+            "mixed": {
+                "title": "Allenamento misto",
+                "description": "Alterna argomenti diversi per consolidare collegamenti e metodo."
+            }
+        },
+        "areasTitle": "Aree di esercitazione",
+        "areasDescription": "Scegli una materia per iniziare il ripasso dagli appunti disponibili.",
+        "filterLabel": "Filtra per area",
+        "allAreas": "Tutte le aree",
+        "loading": "Caricamento",
+        "linkedArea": "Area di esercitazione",
+        "openNotes": "Apri gli appunti",
+        "openExercises": "Vedi esercizi",
+        "topicExercisesTitle": "Esercizi della materia",
+        "backToExercises": "Torna agli esercizi",
+        "backToSubject": "Torna alla materia",
+        "notFound": "Area di esercizi non trovata",
+        "exerciseLabel": "Esercizio",
+        "promptTitle": "Traccia",
+        "solutionTitle": "Soluzione",
+        "solutionIntro": "Spazio riservato alla soluzione completa dell’esercizio.",
+        "approachTitle": "Idea e approccio",
+        "approachPlaceholder": "Descrivi qui l’idea generale e le scelte fatte.",
+        "solutionStepsTitle": "Svolgimento",
+        "stepPlaceholder": "Inserisci un passaggio della soluzione.",
+        "codeTitle": "Codice o calcoli",
+        "codePlaceholder": "// Inserisci qui la soluzione",
+        "items": {
+            "javaControlFlow": {
+                "title": "Controllo del flusso in Java",
+                "description": "Scrivi un programma che analizzi una sequenza di numeri e conti quanti sono positivi, negativi e nulli.",
+                "difficulty": "Base"
+            },
+            "recursion": {
+                "title": "Ricorsione e caso base",
+                "description": "Definisci un metodo ricorsivo per calcolare il fattoriale e motivane il caso base.",
+                "difficulty": "Base"
+            },
+            "classDesign": {
+                "title": "Progetta una classe",
+                "description": "Modella una classe Libro con stato, costruttore, metodi di accesso e un’operazione prestito.",
+                "difficulty": "Base"
+            },
+            "interfaces": {
+                "title": "Interfacce ed ereditarietà",
+                "description": "Definisci un’interfaccia Pagabile e implementala in due classi con comportamenti diversi.",
+                "difficulty": "Intermedio"
+            },
+            "complexity": {
+                "title": "Confronta la complessità",
+                "description": "Determina la complessità temporale di tre frammenti di codice e ordina le soluzioni dalla più efficiente.",
+                "difficulty": "Intermedio"
+            },
+            "stacksAndQueues": {
+                "title": "Pile e code",
+                "description": "Scegli la struttura più adatta per simulare una coda di stampa e giustifica le operazioni usate.",
+                "difficulty": "Base"
+            },
+            "sqlQuery": {
+                "title": "Interrogazione SQL",
+                "description": "Scrivi una query per trovare gli studenti iscritti a più di un corso e ordina il risultato per cognome.",
+                "difficulty": "Intermedio"
+            },
+            "normalization": {
+                "title": "Normalizza uno schema",
+                "description": "Individua le dipendenze funzionali e porta uno schema ridondante fino alla terza forma normale.",
+                "difficulty": "Avanzato"
+            },
+            "binaryArithmetic": {
+                "title": "Aritmetica binaria",
+                "description": "Rappresenta due interi in complemento a due ed esegui la loro somma verificando l’overflow.",
+                "difficulty": "Intermedio"
+            },
+            "pipeline": {
+                "title": "Analizza una pipeline",
+                "description": "Individua le dipendenze tra istruzioni RISC-V e proponi come risolvere le criticità della pipeline.",
+                "difficulty": "Avanzato"
+            },
+            "combinatorics": {
+                "title": "Conta le possibilità",
+                "description": "Calcola in quanti modi si possono scegliere e ordinare elementi con vincoli assegnati.",
+                "difficulty": "Intermedio"
+            },
+            "graphs": {
+                "title": "Riconosci un grafo",
+                "description": "Classifica un grafo come connesso, bipartito o euleriano motivando ogni risposta.",
+                "difficulty": "Intermedio"
+            },
+            "accessControl": {
+                "title": "Progetta un controllo degli accessi",
+                "description": "Assegna ruoli e permessi a un piccolo sistema e verifica quali operazioni sono autorizzate.",
+                "difficulty": "Intermedio"
+            },
+            "threatModel": {
+                "title": "Analizza una minaccia",
+                "description": "Individua risorse, minacce, vulnerabilità e contromisure per un servizio web.",
+                "difficulty": "Intermedio"
+            },
+            "dataRepresentation": {
+                "title": "Rappresenta un dato",
+                "description": "Converti valori interi e caratteri tra rappresentazione decimale, binaria ed esadecimale.",
+                "difficulty": "Base"
+            },
+            "cPointers": {
+                "title": "Puntatori in C",
+                "description": "Scrivi una funzione che modifichi due variabili tramite puntatori e spiega il passaggio per indirizzo.",
+                "difficulty": "Intermedio"
+            },
+            "linearSystem": {
+                "title": "Risolvi un sistema lineare",
+                "description": "Risolvi un sistema di tre equazioni con il metodo di eliminazione di Gauss.",
+                "difficulty": "Intermedio"
+            },
+            "eigenvalues": {
+                "title": "Calcola autovalori e autovettori",
+                "description": "Determina autovalori e autovettori di una matrice due per due e interpreta il risultato.",
+                "difficulty": "Avanzato"
+            },
+            "functionLimit": {
+                "title": "Studia un limite",
+                "description": "Calcola il limite di una funzione e stabilisci se il punto considerato è di discontinuità.",
+                "difficulty": "Base"
+            },
+            "derivative": {
+                "title": "Analizza una derivata",
+                "description": "Calcola la derivata e usa il suo segno per individuare intervalli di crescita e decrescita.",
+                "difficulty": "Intermedio"
+            },
+            "subnetting": {
+                "title": "Dividi una rete in sottoreti",
+                "description": "Determina maschera, indirizzi utilizzabili e broadcast per una rete IPv4 assegnata.",
+                "difficulty": "Intermedio"
+            },
+            "routing": {
+                "title": "Scegli una rotta",
+                "description": "Costruisci una tabella di instradamento a partire da una semplice topologia di rete.",
+                "difficulty": "Intermedio"
+            },
+            "newtonLaw": {
+                "title": "Applica le leggi di Newton",
+                "description": "Disegna il diagramma delle forze e calcola l’accelerazione di un corpo su un piano inclinato.",
+                "difficulty": "Base"
+            },
+            "energy": {
+                "title": "Conservazione dell’energia",
+                "description": "Calcola velocità o altezza in un sistema senza attrito usando la conservazione dell’energia meccanica.",
+                "difficulty": "Intermedio"
+            }
+        }
+    },
     "about": {
         "hero": {
             "title": "Cos'è ",
-            "subtitle": "Un hub di studio personale per Ingegneria Informatica e Informatica, focalizzato su chiarezza, struttura e comprensione a lungo termine."
+            "subtitle": "Un hub di studio personale dedicato a Informatica (L‑31), focalizzato su chiarezza, struttura e apprendimento duraturo."
         },
         "mission": {
             "title": "Missione",
-            "p1": "CS Notes nasce per raccogliere e organizzare i temi fondamentali dell’ingegneria informatica e delle discipline affini in un unico spazio coerente.",
-            "p2": "L’obiettivo non è la velocità o le scorciatoie, ma la costruzione di solide basi attraverso spiegazioni ben strutturate e ragionamento rigoroso."
+            "p1": "CS Notes raccoglie in un unico posto i temi fondamentali dell’informatica e delle discipline affini, così da creare una base chiara e ordinata.",
+            "p2": "Qui non si cerca la scorciatoia: si costruisce una conoscenza solida, spiegata con ordine e senza troppi fronzoli."
         },
         "values": {
             "title": "Valori fondamentali",
             "clarity": {
                 "title": "Chiarezza",
-                "description": "I concetti complessi vengono spiegati in modo chiaro e accessibile. Nessun gergo superfluo, solo conoscenza diretta ed essenziale."
+                "description": "Concetti complessi spiegati in modo semplice, diretto e senza formalismi inutili."
             },
             "practicality": {
                 "title": "Praticità",
-                "description": "La teoria incontra la pratica. Ogni concetto è supportato da esempi reali e implementazioni di codice funzionanti."
+                "description": "Teoria e pratica insieme: esempi concreti e codice che aiutano davvero a capire."
             },
             "organization": {
                 "title": "Organizzazione",
-                "description": "I contenuti sono strutturati con cura sia per una consultazione rapida sia per uno studio approfondito. Trova ciò che serve, quando serve."
+                "description": "Contenuti ordinati per essere trovati facilmente, sia in consultazione veloce sia nello studio approfondito."
             },
             "completeness": {
                 "title": "Completezza",
-                "description": "Dalle basi agli argomenti avanzati, viene coperta la conoscenza essenziale che ogni ingegnere dovrebbe possedere."
+                "description": "Dai fondamenti ai temi più avanzati, con una visione utile per costruire una base solida."
             }
         },
         "coverage": {
             "title": "Cosa copre CS Notes",
-            "description": "La piattaforma abbraccia le principali aree dell’ingegneria informatica e delle basi scientifiche, tra cui:",
+            "description": "La piattaforma affronta le aree principali dell’informatica e delle basi scientifiche, tra cui:",
             "list": {
                 "cybersecurity": "Cybersecurity",
                 "dsa": "Algoritmi e strutture dati",
                 "databases": "Basi di dati",
                 "cs": "Fondamenti di informatica",
+                "programming": "Programmazione",
+                "architecture": "Architetture degli elaboratori",
                 "algebra": "Geometria e algebra lineare",
                 "analysis": "Analisi matematica",
                 "networking": "Reti di calcolatori",
@@ -107,7 +290,7 @@
         },
         "audience": {
             "title": "A chi è rivolto",
-            "description": "CS Notes è pensato come riferimento strutturato e a lungo termine per studenti, autodidatti e professionisti, con un focus sui concetti fondamentali piuttosto che su tutorial frammentati."
+            "description": "CS Notes è pensato per studenti, autodidatti e professionisti che cercano un punto di riferimento chiaro e duraturo, più che tutorial frammentati."
         }
     },
     "topicPage": {
@@ -189,7 +372,53 @@
                 "designPatterns": "Design pattern fondamentali"
             }
         },
+        "computerArchitecture": {
+            "title": "Architetture degli Elaboratori",
+            "subtitle": "Circuiti digitali, CPU, pipeline e memoria.",
+            "overview": "Architetture degli elaboratori introduce i principi alla base del progetto dei sistemi di elaborazione e del loro funzionamento a livello hardware. La disciplina inizia con l’analisi dei moderni elaboratori e dell’evoluzione tecnologica, ponendo attenzione al ruolo delle prestazioni e ai criteri di valutazione delle architetture.\n\nSi studiano le reti logiche combinatorie, con particolare riferimento alla specifica, alla sintesi e alla minimizzazione delle funzioni booleane. Vengono inoltre trattate le metodologie di timing e gli elementi di memoria, così come le macchine a stati finiti e le reti sequenziali, che consentono di descrivere il comportamento dinamico dei sistemi digitali.\n\nIl corso approfondisce l’introduzione al linguaggio assembly del sistema RISC-V e il relativo simulatore, con laboratorio dedicato alla programmazione in assembly. Si affrontano i concetti fondamentali della rappresentazione dei numeri, dell’aritmetica binaria e del progetto di una ALU, includendo moltiplicazione, divisione e numeri in virgola mobile.\n\nUna parte centrale è dedicata al processore RISC-V, con il progetto della CPU a ciclo singolo, il cammino dei dati e il controllo. Si tratta poi il miglioramento delle prestazioni attraverso il pipelining, analizzando le criticità della pipeline e i meccanismi di soluzione, inclusi le eccezioni e gli arricchimenti del processore.\n\nLa trattazione si conclude con lo studio delle gerarchie di memoria, delle cache e con cenni alla memoria virtuale, fornendo una visione completa del funzionamento dei sistemi di elaborazione moderni.",
+            "related": {
+                "computerEvolution": "Moderni elaboratori e evoluzione tecnologica",
+                "performance": "Prestazioni e valutazione delle architetture",
+                "combinationalLogic": "Reti logiche combinatorie",
+                "timingMemory": "Timing ed elementi di memoria",
+                "finiteStateMachines": "Macchine a stati finiti e reti sequenziali",
+                "riscvAssembly": "Assembly RISC-V e simulatori",
+                "binaryArithmetic": "Rappresentazione dei numeri e aritmetica binaria",
+                "singleCycleCpu": "CPU a ciclo singolo e controllo",
+                "pipelining": "Pipelining e criticità della pipeline",
+                "memoryHierarchy": "Gerarchie di memoria e cache"
+            }
+        },
+        "programming": {
+            "title": "Programmazione",
+            "subtitle": "Dal problema al programma, con Java.",
+            "overview": "Programmazione introduce il metodo informatico e gli strumenti necessari per trasformare un problema in una soluzione eseguibile. Il percorso parte dalla distinzione tra algoritmi e programmi e dall’uso della rappresentazione e della decomposizione per scomporre problemi complessi in parti più semplici.\n\nViene introdotta anche l’analisi della complessità, così da imparare a valutare il costo delle soluzioni e a confrontare approcci diversi. Su queste basi si studia la programmazione procedurale, organizzando il codice attraverso istruzioni, dati e procedure ben definite.\n\nIl linguaggio di riferimento è Java. Si affrontano i tipi primitivi, le variabili, le espressioni e le operazioni fondamentali, per poi passare al controllo del flusso con strutture condizionali e iterative.\n\nLa trattazione si completa con i metodi, usati per rendere il programma più leggibile e riutilizzabile, e con la ricorsione, analizzandone il funzionamento, i casi base e le condizioni che permettono di costruire una soluzione corretta.",
+            "related": {
+                "computationalThinking": "Metodo informatico",
+                "algorithmsAndPrograms": "Algoritmi e programmi",
+                "problemDecomposition": "Rappresentazione e decomposizione del problema",
+                "complexityAnalysis": "Introduzione all’analisi della complessità",
+                "proceduralProgramming": "Programmazione procedurale",
+                "javaLanguage": "Il linguaggio Java",
+                "controlFlow": "Tipi primitivi e controllo del flusso",
+                "methodsAndRecursion": "Metodi e ricorsione"
+            }
+        },
         "linearAlgebra": {
+        "objectOrientedProgramming": {
+            "title": "Programmazione Orientata agli Oggetti",
+            "subtitle": "Classi, relazioni e strutture riutilizzabili.",
+            "overview": "La programmazione orientata agli oggetti introduce un modo di progettare i programmi basato su oggetti che uniscono dati e comportamento. Il percorso parte dai concetti fondamentali del paradigma, chiarendo il ruolo di classi, oggetti, stato, comportamento e responsabilità.\n\nVengono poi approfondite le classi e gli oggetti, insieme ai meccanismi che permettono di descrivere relazioni tra tipi diversi. Interfacce ed ereditarietà vengono presentate come strumenti per definire contratti, riutilizzare il codice e costruire gerarchie flessibili, mantenendo separati ciò che un oggetto fa da come lo realizza.\n\nLa trattazione affronta anche la gestione delle eccezioni, necessaria per rappresentare e gestire situazioni anomale senza confondere il flusso normale del programma con quello degli errori. Si prosegue con la programmazione generica, che permette di scrivere componenti riutilizzabili su tipi diversi mantenendo il controllo sui tipi.\n\nLa parte finale è dedicata alle strutture dati e alle collezioni, con attenzione al modo in cui vengono organizzati, attraversati e manipolati gli insiemi di oggetti all’interno di programmi orientati agli oggetti.",
+            "related": {
+                "foundations": "Fondamenti della programmazione a oggetti",
+                "classesAndObjects": "Classi e oggetti",
+                "interfacesAndInheritance": "Interfacce ed ereditarietà",
+                "exceptions": "Gestione delle eccezioni",
+                "genericProgramming": "Programmazione generica",
+                "dataStructures": "Strutture di dati",
+                "collections": "Collezioni"
+            }
+        },
             "title": "Geometria e Algebra Lineare",
             "subtitle": "Strutture vettoriali, matrici e applicazioni lineari.",
             "overview": "Geometria e algebra lineare introduce lo studio delle strutture matematiche fondamentali utilizzate per descrivere e analizzare sistemi lineari in ambito scientifico e ingegneristico. La trattazione inizia con lo studio dello spazio euclideo e dei vettori, affrontando il concetto di coordinate, il prodotto scalare e il prodotto vettoriale, e sviluppando gli strumenti della geometria analitica nello spazio.\n\nVengono quindi introdotti i sistemi lineari e la loro rappresentazione mediante matrici, con particolare riferimento al metodo di eliminazione di Gauss come strumento fondamentale per la risoluzione dei sistemi e lo studio delle loro proprietà. L’algebra delle matrici è analizzata in modo sistematico, includendo le operazioni fondamentali, le matrici invertibili e il calcolo dell’inversa.\n\nSi prosegue con lo studio degli spazi vettoriali e delle applicazioni lineari, introducendo concetti quali nucleo e immagine, generatori e indipendenza lineare, dimensione e rango. In questo contesto vengono presentati il teorema di rappresentazione, il teorema di nullità più rango e la formula di Grassmann.\n\nUna parte centrale è dedicata al determinante, alle sue proprietà e alle tecniche di calcolo, inclusi gli sviluppi di Laplace e il teorema di Binet, nonché alla relazione tra determinante e rango. Successivamente vengono introdotti autovalori e autovettori, lo studio delle matrici simili e il problema della forma canonica.\n\nLa trattazione si conclude con lo studio degli spazi euclidei e delle strutture ortogonali, includendo basi ortonormali, matrici ortogonali, proiezioni ortogonali e l’algoritmo di Gram-Schmidt, fino al metodo dei minimi quadrati. Vengono infine presentati i teoremi spettrali, sia nel caso reale che complesso e lo studio delle forme quadratiche.",
@@ -202,6 +431,21 @@
                 "eigenvalues": "Autovalori e autovettori",
                 "orthogonality": "Ortogonalità e minimi quadrati",
                 "spectralTheorems": "Teoremi spettrali e forme quadratiche"
+            }
+        },
+        "discreteMathLogic": {
+            "title": "Matematica Discreta e Logica",
+            "subtitle": "Insiemi, relazioni, strutture discrete e strumenti logici.",
+            "overview": "Matematica discreta e logica introduce le strutture matematiche e i metodi di ragionamento su oggetti finiti o numerabili, fondamentali per la teoria dell’informazione, l’informatica e la logica formale. La trattazione inizia con lo studio degli insiemi, delle loro operazioni e delle relazioni fra elementi, includendo anche relazioni di ordine ed equivalenza e la loro importanza per la modellazione dei dati.\n\nSi approfondiscono poi gli strumenti di base della dimostrazione, come l’induzione e le definizioni per ricorrenza, con applicazioni a successioni, strutture aritmetiche e problemi combinatorici. Viene inoltre introdotta l’aritmetica modulare, con il calcolo del massimo comune divisore, l’algoritmo di Euclide, la formula di Bézout, i numeri primi e le equazioni diofantee.\n\nLa parte centrale del corso è dedicata al calcolo combinatorio, all’analisi delle permutazioni, disposizioni e combinazioni, all’inclusione-esclusione e alla funzione di Eulero, fino alla crittografia RSA e alle applicazioni dell’aritmetica modulare. Vengono poi studiati i polinomi a coefficienti interi e razionali, le strutture algebriche come gruppi, anelli e campi, il gruppo simmetrico e le loro proprietà.\n\nLa trattazione si conclude con la teoria dei grafi e la logica matematica. Si affrontano cammini, alberi, connettività, grafi euleriani e hamiltoniani, grafi planari e bipartiti, colorabilità, teoremi di Hall e Menger e nozioni sui flussi. Infine, vengono introdotti i fondamenti della logica proposizionale e dei predicati, la skolemizzazione e i metodi di deduzione automatica, ponendo le basi per il ragionamento formale e la verifica dei sistemi.",
+            "related": {
+                "setsAndOperations": "Insiemi e operazioni",
+                "relationsAndOrder": "Relazioni, ordine ed equivalenza",
+                "inductionAndRecursion": "Induzione e ricorsione",
+                "modularArithmetic": "Aritmetica modulare e RSA",
+                "combinatorics": "Calcolo combinatorio",
+                "algebraicStructures": "Strutture algebriche",
+                "graphTheory": "Teoria dei grafi",
+                "logicAndAutomatedReasoning": "Logica e deduzione automatica"
             }
         },
         "analysis": {

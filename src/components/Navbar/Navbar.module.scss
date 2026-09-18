@@ -49,10 +49,10 @@
   &:hover {
     color: variables.$primary;
   }
+}
 
-  &.active {
-    color: variables.$primary;
-  }
+.active {
+  color: variables.$primary !important;
 }
 
 
